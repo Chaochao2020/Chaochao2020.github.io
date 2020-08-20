@@ -6,17 +6,13 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/08/20/hello-world/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-20T04:53:50.242Z">
-<meta property="article:modified_time" content="2020-08-20T04:53:50.243Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,149 +150,309 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-笔记温习了一下html5和css3一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Hello World
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/10/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml5%E5%92%8Ccss3%E4%B8%80/">笔记:温习了一下HTML5和CSS3(一)</a>
     </h1>
   
 
         
-        <a href="/2020/08/20/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-20T04:53:50.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/10/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml5%E5%92%8Ccss3%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2020-07-10T08:36:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p><strong>HTML5</strong></p>
+<p>新增语义化特性</p>
+<ul>
+<li><header></li>
+<li><nav> --- 导航标签</li>
+<li><article></li>
+<li><aside></li>
+<li><footer></li>
+<li><section> --- 某个区域
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-42.png"></p>
+<p>新增多媒体标签</p>
+<ul>
+<li><video>
+*   <video src="文件地址" controls="controls"(显示播放控件)></video>
+*   尽量使用MP4格式</li>
+<li><audio>
+*   <audio src="文件地址" controls="controls"(显示播放控件)></audio>
+*   尽量使用MP3
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+</li>
+</ul>
+<p>新增的input类型 —- type</p>
+<ul>
+<li>email</li>
+<li>url —-网址</li>
+<li>date</li>
+<li>time</li>
+<li>month</li>
+<li>week</li>
+<li>number</li>
+<li>tel —- 电话号码</li>
+<li>search</li>
+<li>color</li>
+</ul>
+<p>新增的表单属性</p>
+<ul>
+<li>required—–内容不能为空,必填</li>
+<li>placeholder—–提示文本</li>
+<li>autofocus —- 自动获取光标</li>
+<li>autocomplete—-默认打开,记忆曾经输入过的内容</li>
+<li>multiple—–可以多选文件提交</li>
+</ul>
+<p><strong>CSS</strong></p>
+<p>新增选择器</p>
+<ul>
+<li><p>属性选择器 (权重为10)</p>
+<ul>
+<li>标签名[属性名] {}</li>
+<li>标签名[属性名=属性值] {}</li>
+</ul>
+</li>
+<li><p>结构伪类选择器</p>
+<ul>
+<li>父元素:first-child</li>
+<li>父元素:last-child</li>
+<li>父元素:nth-child(n)—-n可以是数字/关键字/公式<ul>
+<li>关键字: even(偶数)/odd(奇数)</li>
+<li>公式: n —-&gt; 选中所有的孩子</li>
+<li>2n —-&gt; 偶数</li>
+<li>2n+1 —&gt; 奇数</li>
+<li>5n —-&gt; 5的倍数</li>
+<li>-n+5 —&gt; 前5个</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>父元素:first-of-type —- 指定类型E的第一个</p>
+</li>
+<li><p>父元素:last-of-type —-  指定类型E 的最后一个</p>
+</li>
+<li><p>父元素:nth-of-type(n) —- 指定类型E的第n个</p>
+</li>
+<li><p>伪元素选择器</p>
+<ul>
+<li>利用CSS创建标签,不需要HTML;权重为1</li>
+<li>element::before / ::after {content : “”;}  在元素内部的前面/后面插入内容</li>
+<li>相当于创建了一个行内元素,必须要写content</li>
+<li>使用场景<ul>
+<li>① 伪元素字体图标</li>
+<li>② 清除浮动</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>box-sizing</p>
+<ul>
+<li>指定盒模型,我们计算盒子大小的方式发生了改变<ul>
+<li>content-box(默认)   —- 盒子大小为 width + padding +border</li>
+<li>border - box  —- 盒子大小为width</li>
+</ul>
+</li>
+</ul>
+<p>滤镜filter</p>
+<ul>
+<li>filter blur(5px); <ul>
+<li>blur模糊处理,数值越大越模糊</li>
+</ul>
+</li>
+</ul>
+<p>calc</p>
+<ul>
+<li>width: calc(100% - 80px);</li>
+<li>例题:让子盒子的宽度永远比父盒子小30px<ul>
+<li>子盒子 {</li>
+</ul>
+</li>
+</ul>
+<p>width: cale(100%-30px);</p>
+<p>}</p>
+<p>动画(animation)</p>
+<ul>
+<li>过渡<ul>
+<li>transition: property duration timing-function delay ;<ul>
+<li>transition-property<ul>
+<li>指定要执行过渡的属性<ul>
+<li>transition-property: width;</li>
+<li>所有属性都需要,则使用all关键字</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>transition-duration<ul>
+<li>指定过渡效果的持续时间</li>
+<li>单位:s和ms 1s=1000ms</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>transition-duration: 2s;</p>
+<ul>
+<li>transition-timing-function<ul>
+<li>过渡的时序函数</li>
+<li>指定过渡的执行的方式</li>
+<li>可选值<ul>
+<li>ease        默认值,慢速开始,先加速,再减速</li>
+<li>linear      匀速</li>
+<li>ease-in   加速运动</li>
+<li>ease-out 减速运动</li>
+<li>ease-in-out 先加速,后减速</li>
+<li>cubic- bezier () 贝塞尔曲线<ul>
+<li><a target="_blank" rel="noopener" href="https://cubic-bezier.com/">https://cubic-bezier.com</a></li>
+</ul>
+</li>
+<li>steps() 分步执行过渡效果<ul>
+<li>可以设置第二个值<ul>
+<li>end   在时间结束时执行过渡</li>
+<li>start  再时间开始时执行过渡</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>transition-delay<ul>
+<li>过渡效果的延迟</li>
+<li>transition-delay:2s;</li>
+</ul>
+</li>
+<li>transition<ul>
+<li>可以同时设置过渡相关的所有属性,有一个要求是,如果要写延迟,则两个时间中第一个是持续时间,第二个是延迟</li>
+</ul>
+</li>
+<li>动画<ul>
+<li>设置动画效果,必须先要设置一个关键帧.<ul>
+<li>关键帧设置了动画执行每一个步骤</li>
+<li>@keyframes 名字{</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>/* from表示动画的开始位置 也可以使用 0% */</p>
+<p>from()</p>
+<p>/* to表示动画的结束位置  也可以使用 100% */</p>
+<p>to()</p>
+<p>}</p>
+<ul>
+<li>animation<ul>
+<li>animation - name<ul>
+<li>要对当前元素的关键帧的名字</li>
+</ul>
+</li>
+<li>animation - duration<ul>
+<li>动画的执行时间</li>
+</ul>
+</li>
+<li>animation - delay</li>
+<li>animation - timing - function</li>
+<li>animation - iteration - count<ul>
+<li>动画执行的次数</li>
+<li>可选值<ul>
+<li>数值</li>
+<li>infinite   无限执行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>animation - direction<ul>
+<li>动画执行的方向</li>
+<li>可选值<ul>
+<li>normal                   默认值 , 从from到to</li>
+<li>reverse                   从 to 到from 执行</li>
+<li>alternate                 从 from到to  ,重复执行动画时反向逆行</li>
+<li>alternate - reverse  从 to到from  ,重复执行动画时反向逆行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>animation -play -state<ul>
+<li>动画执行的状态</li>
+<li>可选值<ul>
+<li>running      默认值,动画执行</li>
+<li>paused       动画暂停</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>animation - fill -mode<ul>
+<li>动画的填充模式</li>
+<li>可选值<ul>
+<li>none          默认值, 动画执行完毕,元素回到初始位置</li>
+<li>forwards    执行完毕,元素停止再动画结束的位置</li>
+<li>backwards 动画延迟等待时,元素就会处于开始位置,其他无区别</li>
+<li>both           结合forwards 和 backwards</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>animation<ul>
+<li>同过渡</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>广义的HTML5</p>
+<ul>
+<li>HTML5 + CSS3 + JavaScript</li>
+</ul>
+<p><strong>第一次更新时间: 忘了</strong></p>
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/10/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml5%E5%92%8Ccss3%E4%B8%80/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/20/hello-world/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/08/20/The-first-article/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          The first article
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">踩坑: class类名问题</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -316,14 +472,2467 @@
 
 
 
-  
-  
-  
 
   
-
+    <article id="post-分享墙是什么gfw是什么" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/06/%E5%88%86%E4%BA%AB%E5%A2%99%E6%98%AF%E4%BB%80%E4%B9%88gfw%E6%98%AF%E4%BB%80%E4%B9%88/">分享:墙是什么?了解翻墙.</a>
+    </h1>
   
 
+        
+        <a href="/2020/07/06/%E5%88%86%E4%BA%AB%E5%A2%99%E6%98%AF%E4%BB%80%E4%B9%88gfw%E6%98%AF%E4%BB%80%E4%B9%88/" class="archive-article-date">
+  	<time datetime="2020-07-06T14:04:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[hermit autoplay=”false” mode=”auto” preload=”auto” ]netease_playlist#:5098928671[/hermit]</p>
+<p>前言</p>
+<p>闲暇之余整理的关于翻墙的笔记.视频是YouTube上的电玩科技总共9期,能翻墙的同学不要来我这看了直接去YouTube多好.</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-5-1024x412.png"></p>
+<p><strong>以下笔记都是根据视频所做,但图和文字都是本人敲击键盘慢慢打出来的,所以不要随意转载,转载前请咨询.</strong></p>
+<p>墙是什么</p>
+<ul>
+<li>GFW - Great Fire Wall</li>
+<li>08年以前网络制度还不是很健全,YouTube,谷歌等还是能够访问,后来因为一些政治原因,国家逐步建立并完善审查制度,部署了GFW.</li>
+<li>GFW是来阻挡大陆互联网用户访问某些境外网站和服务</li>
+<li>导火索<ul>
+<li>08年奥运会前夕恐怖组织在Facebook上策划协调实施了对我国西部地区的一个恐怖袭击,国家要求Facebook配合审查,但Facebook以尊重保护用户隐私的理由拒绝了.同时Google也以同样的理由拒绝.</li>
+</ul>
+</li>
+</ul>
+<p>所以国家就不让这些不愿意配合的外国公司在中国开展业务.</p>
+<p>搜索引擎,Gmail,YouTube,Facebook,推特等等这些都被封了</p>
+<p>随着时间推移,一些本不涉及到政治和国民安全的互联网服务也被封了</p>
+<ul>
+<li>总结一下就是GFW因政治原因而建立,同时连累了一些不相关网站.</li>
+</ul>
+<p>GFW工作原理</p>
+<ul>
+<li>在没有GFW的情况下</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/9c537a7a0a35e-1024x608.png"></p>
+<ul>
+<li>有GFW的情况下<ul>
+<li>① DNS污染<ul>
+<li>因为数据包发送的方式是http,一种明文的流量,GFW能够检测到部分流量,一看到你访问的是YouTube类似的网站就会解析出错误的服务器地址或者不解析,导致访问直白</li>
+</ul>
+</li>
+<li>② 关键字阻断<ul>
+<li>传输的数据流包含一些敏感词就会被中断连接</li>
+</ul>
+</li>
+<li>③ 端口阻断<ul>
+<li>GFW在某些特定的IP服务器的主机的特定端口进行端口(比如443,22)阻断,切断VPN或者是SSL的链接</li>
+</ul>
+</li>
+<li>④ 批量封锁IP地址</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://qny.chaochao.info/2020/07/06/dccce30c176de.png"></p>
+<ul>
+<li>还有更多……</li>
+</ul>
+<p>目前主流的翻墙手段和方式的工作原理</p>
+<ul>
+<li>只要GFW不探明我数据包的真实意图,可以通过连接符合GFW认为合理的服务器作为中转<ul>
+<li>初期 VPN,SSH</li>
+<li>SSH为例</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-33-1024x330.png"></p>
+<ul>
+<li><p>但GFW发现越来越多的流量都是这种模式(察觉到了这种特征)</p>
+<ul>
+<li>做了两件事</li>
+<li>① VPN端口被封锁,政企用户需要申报审核,个人用户无法使用</li>
+<li>② 屏蔽到这些有特征的IP</li>
+</ul>
+</li>
+<li><p>Shadowsocks</p>
+<ul>
+<li>把代理服务器拆分成本地和远程两个<ul>
+<li>衍生出 SSR v2ray</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-34-1024x460.png"></p>
+<p>翻墙方式</p>
+<p>软件翻墙</p>
+<ul>
+<li>VPN - Virtual Private Network(虚拟专用网)<ul>
+<li>早些年直到现在都是一种很知名的翻墙方式</li>
+</ul>
+</li>
+</ul>
+<p>最早应用在大公司的私密沟通,安全防止商业机密被泄露</p>
+<ul>
+<li>恰好这种流量加密方式GFW无法探测但随着越来越流行且特征明显,能够被GFW完美探测并且封锁</li>
+<li>现在VPN作为翻墙方式已经非常不安全且VNP供应商会跑路,咱们的钱很容易打水漂,然后供应商会改个名字再来圈钱.</li>
+<li>Shadowsocks及其衍生品(SSR V2ray Trojan)<ul>
+<li>我目前用的是 v2ray,自己部署的服务器.</li>
+<li>全局代理模式<ul>
+<li>作为翻墙软件本身所接管到的所有流量全部转发到代理服务器,但有些软件(UWP应用/银行)在系统层,权限更高,这些应用就没法用软件翻墙实现</li>
+<li>但有些翻墙软件更加全面可以实现</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>路由器翻墙</p>
+<ul>
+<li>路由器是本地网络接入互联网的最后一个环节且独立于你的电脑能强制接管所有的网络流量,也就是 真·全局代理模式 .</li>
+<li>特点<ul>
+<li>把翻墙软件部署到了路由器上,连接路由器的设备可以通过路由器翻墙</li>
+<li>相较于软件翻墙,可以应用于无法安装翻墙软件的网络设备(Apple TV / VR设备 / Switch)</li>
+<li>缺点,算力不足,带宽跑不满,存在性能瓶颈问题.当家里多个设备翻墙观看流媒体的时候,路由器的CPU占用情况×</li>
+</ul>
+</li>
+</ul>
+<p>高端路由器算力还是可以的,但……</p>
+<ul>
+<li>软路由<ul>
+<li>改造过的路由器,改善上面所说的性能瓶颈问题.</li>
+<li>性能极佳.</li>
+<li>贵,配置繁琐.日常维护相对繁琐</li>
+</ul>
+</li>
+</ul>
+<p>网关模式翻墙</p>
+<ul>
+<li>在专属的局域网通过一台计算机上跑的软件来实现路由器的功能.Window下的Clash / Mac操作系统下的Surge</li>
+<li>在本地局域网里面部署了一台运行了Surge或者是Clash的电脑当作网关,可以接管局域网里面其它所有网络设备的所有流量同时翻墙</li>
+</ul>
+<p>更软的软路由?</p>
+<ul>
+<li>优点:① 能够解决上面所说的出现过的问题.</li>
+</ul>
+<p>② 调试方便,性能碾压</p>
+<p>③ 在于集中管理</p>
+<ul>
+<li>缺点:一台电脑需要长期开机来保证网关模式的运行</li>
+</ul>
+<p>线路</p>
+<p>CN2</p>
+<ul>
+<li>Chinatelecom Next Carrier Network (CNCN)</li>
+</ul>
+<p>中国电信下一代承载网络</p>
+<p>主要面向政企大客户,来保证高质量的国际访问</p>
+<ul>
+<li>价格非常高</li>
+<li>线路类型<ul>
+<li>CN2GT - Global Transit</li>
+<li>CN2GIA - Global Internet Access</li>
+</ul>
+</li>
+</ul>
+<p>QoS</p>
+<ul>
+<li>Quality of Service</li>
+</ul>
+<p>服务质量</p>
+<ul>
+<li>能够识别网络中的流量的需求</li>
+<li>一般163骨干网络,连接外服打游戏会很卡掉包</li>
+<li>被QoS<ul>
+<li>描述自己翻墙之后网络出现卡慢断线的情况(青年大学习403?)</li>
+</ul>
+</li>
+<li>游戏加速器原理<ul>
+<li>使用了有QoS的CN2线路</li>
+</ul>
+</li>
+</ul>
+<p>BGP</p>
+<ul>
+<li>Border Gateway Protocol</li>
+</ul>
+<p>边界网关协议</p>
+<p>GCP</p>
+<ul>
+<li>Google Cloud Platform</li>
+</ul>
+<p>谷歌云平台</p>
+<p>AWS</p>
+<ul>
+<li>Amazon Web Service</li>
+</ul>
+<p>亚马逊Web服务</p>
+<p>Azure</p>
+<p>-微软的</p>
+<p>PCCW(优选,推荐)</p>
+<ul>
+<li>香港电讯盈科</li>
+<li>很多供应商都在香港这个地方租售主机</li>
+</ul>
+<p>IPLC</p>
+<ul>
+<li>International Private Leased Circuit</li>
+</ul>
+<p>国际私有租用线路(专线)</p>
+<ul>
+<li>价格贼贵(上万一个月)</li>
+<li>不过GFW审查!</li>
+<li>IPLC线路游戏加速器加速效果是最好的也是最贵的</li>
+</ul>
+<p>机场</p>
+<ul>
+<li>我第一次翻墙就是用的机场</li>
+<li>购买机场遵循的原则<ul>
+<li>① 从大机场开始选(不告诉你们哪些是大机场)</li>
+<li>② 大机场里面选择免费试用的先体验或者一个月的试用(说的就是我)</li>
+</ul>
+</li>
+</ul>
+<p>VPS - Virtual Private Server(虚拟专用服务器)</p>
+<ul>
+<li>小姐姐用的这种,V2ray.</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-40.png"></p>
+<ul>
+<li>选择vps主机<ul>
+<li>Linode Vultr</li>
+<li>Bandwagon</li>
+</ul>
+</li>
+<li>选择线路<ul>
+<li>伪装方式,购买域名,改A记录</li>
+</ul>
+</li>
+<li>问题<ul>
+<li>服务器老断连……🤯</li>
+<li>不稳定</li>
+<li>IP被封的问题</li>
+<li>敏感时期不能使用的问题</li>
+</ul>
+</li>
+<li>问题这么多是谁还在用VPS<ul>
+<li>写代码的/搞网络的/经常调试程序的/建站的</li>
+<li>发烧友<ul>
+<li>一边折腾一边学习Linux</li>
+</ul>
+</li>
+<li>自建VPS搭机场<ul>
+<li>有人租我的服务器吗…….5块钱一个月贼便宜(开个玩笑)</li>
+</ul>
+</li>
+<li>上网搜索翻墙跟着教程走的VPS<ul>
+<li>绝大多数人(包括我)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>有关协议特点分析及选择</p>
+<p>shadowsocks(SS)</p>
+<ul>
+<li>简单粗暴,直捣黄龙,体验最好,最简单,最快速</li>
+<li>翻墙主流方式</li>
+</ul>
+<p>shadowsocksR(SSR)</p>
+<ul>
+<li>不赘述</li>
+</ul>
+<p>v2ray</p>
+<ul>
+<li>安全性更高,但部署更复杂</li>
+<li>流量的目的没有任何一个网站</li>
+</ul>
+<p>伪装流量:配置一个真实网站(可以是自己的个人网站)</p>
+<ul>
+<li>特征:整天都上一个网站看(这个网站不是自己的),这肯定有问题</li>
+</ul>
+<p>trojan</p>
+<ul>
+<li>解决了一些v2ray的缺点(部署难度大),但核心原理还是借鉴的websocket+tls</li>
+</ul>
+<p>VPN</p>
+<ul>
+<li>中国绝大多数翻墙用户还是用的VPN</li>
+<li>例子(谷歌搜索关键字)<ul>
+<li>① 打开浏览器 输入关键字:chaochao很好看 (第7层 应用层 )</li>
+<li>② 通过http协议发送 第6层:表示层, 表示层把收到的数据翻译成机器语言</li>
+<li>③ 把翻译好的机器语言发送到第5层会话层</li>
+<li>④ 确定要使用的传输协议和添加对应的google服务器的通讯端口(第4层: 传输层)</li>
+<li>⑤ 到了第3层:网络层 ,数据到这里添加了Google的IP地址</li>
+<li>⑥ 第2层: 数据链路层, 添加路由MAC地址,通讯对象的MAC地址</li>
+<li>⑦ 第1层: 物理层,数据以比特流的形式,通过搜索用户的网络硬件传输到Google</li>
+<li>⑧ Google返回查询结果之后发回数据,数据被接受后从第1层流向第7层</li>
+</ul>
+</li>
+<li>浏览器 / 邮件 / 文件传输 是跑在第7层: 应用层的</li>
+</ul>
+<p>shadowsocks / v2ray /trojan 的代理  是泡在第5层:会话层的</p>
+<p>游戏数据是 通过 第4层: 传输层的协议TCP/UDP进行通讯,所有上面的第5层代理是不能加速游戏的,但有特殊的工具可以.</p>
+<p>VPN 是跑在 第2层: 数据链路层 和 第3层: 网络层,所以VPN的优点是真·全局代理</p>
+<ul>
+<li>VPN已经能被GFW完美探测了,只不过是人家想不想封你要看你在外网做了什么</li>
+<li>WireGuard<ul>
+<li>对抗美国的棱镜计划</li>
+<li>小众,不推荐</li>
+</ul>
+</li>
+</ul>
+<p>翻墙被抓</p>
+<p>严格来说翻墙是违法的,但具体处罚是要看你做了什么</p>
+<ul>
+<li>① 浏览信息,没有散布行为 —–&gt; 只是违法但不处罚</li>
+<li>② 提供翻墙服务(开机场的) ,翻墙教程,教授和销售翻墙服务和工具,扩大了翻墙的圈子—–&gt;违法犯罪(emm….)</li>
+<li>③ 散播恐怖主义,反国家(季子越)  —–&gt; 等着去喝茶吧</li>
+</ul>
+<p>国家态度</p>
+<ul>
+<li>其实 外交部 /官媒 /地方卫视(比如说湖南卫视)/CCTV(崔永元) / 个人博主(敬汉卿) 都在YouTube发布视频</li>
+<li>GFW现在的主要目的依然是过滤国外反动信息,维护国家统一稳定</li>
+<li>只会对那些做到行业顶尖的人实施执法(杀鸡儆猴)<ul>
+<li>比如 shadowsocks的作者</li>
+</ul>
+</li>
+<li>但顶级的学术研究是一定要查看 Google Scholar 和各个国家的顶级期刊</li>
+</ul>
+<p>专线用户,所属的公司或者机构甚至部分的政府机关(警察局/监管部门/大学研究所/外贸生意的公司/阿里巴巴)</p>
+<ul>
+<li>国内搜索引擎的占用率<ul>
+<li>① 百度</li>
+<li>② 搜狗</li>
+<li>③ 谷歌  (只占不到10%,前面的①②占了将近80%)</li>
+<li>④ 好搜</li>
+<li>⑤ bing</li>
+</ul>
+</li>
+<li>GFW还是在进化,只有突破了这道坎才能翻墙,意思是想翻墙可以但你得稍微有点能力才能翻墙不管是按网上翻墙教程做的还是同学朋友推荐帮你弄的还是在能翻墙的大学/公司.</li>
+<li>敏感时期(比如两会时期)GFW会有人工介入,大批IP会被封锁,但也可能不会封,只是发现了你翻墙但没实际危害懒得管你罢了</li>
+</ul>
+<p>敏感时期</p>
+<ul>
+<li>国家利益和稳定会受到来自外部包括很多西方国家的以及内部国内的一些别有用心的组织内外夹击.</li>
+<li>GFW会加大力度并且会有人工干预的情况</li>
+<li>大批量的机场/VPN的IP/VPS的IP会遭到大力度的封锁</li>
+<li>这个时候大量的小机场会跑路,在7月份会换个名字接着回来.大机场情况会好很多.</li>
+<li>买年付的机场最好是7月开始买</li>
+</ul>
+<p>最后</p>
+<p>到此结束了,这也算是翻墙的一些知识吧,边看边学.其实翻墙这件事看起来很新鲜但也就那样了,不可置否的墙外有很多资源,但对于想访问YouTube和Facebook以及推特看喜欢的明星名人的人翻了墙也不一定能够注册.B站其实就很好,当然对于访问GitHub/国外的素材网站/一些国内没有的教程都可以迅速访问到.下面就是我的浏览器的部分书签.</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-41.png"></p>
+<p><strong>最后更新时间: 2020.7.8 上午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/06/%E5%88%86%E4%BA%AB%E5%A2%99%E6%98%AF%E4%BB%80%E4%B9%88gfw%E6%98%AF%E4%BB%80%E4%B9%88/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下css四" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/06/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E5%9B%9B/">笔记:温习了一下CSS(四)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/06/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E5%9B%9B/" class="archive-article-date">
+  	<time datetime="2020-07-06T11:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>CSS3新增的样式</strong></p>
+<ul>
+<li><p>圆角边框</p>
+<ul>
+<li>border-radius:length;</li>
+<li>圆形<ul>
+<li>radius为正方形高度的一半</li>
+<li>radius: 50%;</li>
+</ul>
+</li>
+<li>圆角矩形<ul>
+<li>radius为矩形高度的一半</li>
+</ul>
+</li>
+<li>可以设置4个值,顺时针</li>
+</ul>
+</li>
+<li><p>盒子阴影</p>
+<ul>
+<li>box-shadow: 水平阴影位置{右} 垂直阴影位置{下} ( 模糊距离) (阴影尺寸) (阴影颜色) (将外部阴影改成内部阴影)</li>
+<li><strong>不占空间</strong></li>
+</ul>
+</li>
+<li><p>文字阴影</p>
+<ul>
+<li>text-shadow: 水平阴影位置 垂直阴影位置 (模糊距离) (阴影颜色)</li>
+</ul>
+</li>
+</ul>
+<p><strong>浮动</strong></p>
+<ul>
+<li><p>传统网页布局的三种方式</p>
+<ul>
+<li>标准</li>
+<li>浮动</li>
+<li>定位</li>
+</ul>
+</li>
+<li><p>什么是浮动?</p>
+<ul>
+<li>float<ul>
+<li>none (默认)</li>
+<li>left</li>
+<li>right</li>
+</ul>
+</li>
+<li>移动直至另一个浮动元素</li>
+</ul>
+</li>
+<li><p>为什么需要浮动?</p>
+<ul>
+<li>标准 实现以下效果并不方便<ul>
+<li>块级盒子水平排列<ul>
+<li>display:inline-block 但是有一些空白间隙</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实现左右对齐</p>
+</li>
+<li><p>浮动最典型的应用就是<strong>让多个块级元素水平排列</strong></p>
+</li>
+<li><p><strong>网页布局第一准则</strong></p>
+<ul>
+<li><strong>块级元素纵向排列找标准**</strong>,<strong>**水平排列找浮动</strong></li>
+</ul>
+</li>
+<li><p>浮动特性</p>
+<ul>
+<li>① 会脱离标准流(原标准流的位置会被其它元素补充)</li>
+<li>② 一行显示且按顶端对齐(不同高度的元素会按最上边对齐)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-32.png"></p>
+<p>③ 浮动的元素具有行内块特性</p>
+<p>有float就不需要display了</p>
+<ul>
+<li>浮动元素经常和标准流父级搭配使用<ul>
+<li>先用标准流的父元素排列上下位置,只有内部子元素采取浮动排列左右位置,符合网页布局第一准则</li>
+<li>小练习1</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-35-1024x421.png"></p>
+<p><strong>常见网页布局</strong></p>
+<ul>
+<li>标准格式(自上而下排列)</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-36.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-37.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-38.png"></p>
+<ul>
+<li>通栏的盒子(和浏览器一样宽),不需要指定宽度</li>
+<li>浮动布局注意点<ul>
+<li>① 浮动和标准流的父盒子搭配</li>
+<li>② 一个元素浮动了,理论上其余的兄弟也要浮动</li>
+</ul>
+</li>
+</ul>
+<p><strong>清除浮动</strong></p>
+<ul>
+<li>思考:所有的父盒子都必须要有高度吗?<ul>
+<li>有些时候我们不知道该给多少高度,希望子盒子撑开父亲,有多少孩子,父盒子就有多高</li>
+<li>有时候不给高度,子元素浮动后高度会变成0</li>
+</ul>
+</li>
+<li>由于父盒子很多情况下不方便给高度,但是盒子浮动又不占有位置,当不给高度时子元素浮动高度变为0,就会影响下面的标准流盒子.</li>
+<li><strong>清除浮动之后**</strong>,<strong><strong>父级就会根据浮动的子盒子自动检测高度</strong></strong>.<strong><strong>父盒子有了高度就不会影响下面的标准流</strong></strong>.**</li>
+<li>语法<ul>
+<li>选择器 {clear:属性值}<ul>
+<li>属性值:  left</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>     right</p>
+<p>     both</p>
+<ul>
+<li><p>在实际开发中,几乎只用clear:both;</p>
+</li>
+<li><p><strong>额外标签法</strong></p>
+<ul>
+<li><strong>在最后一个浮动的元素后添加一个空的标签**</strong>(<strong><strong>块级</strong></strong>),<strong><strong>比如是</strong></strong>&lt;****br****&gt;**</li>
+<li><strong>.**</strong>clear** <strong>{**</strong>clear**<strong>:**</strong>both**<strong>;}</strong> <strong>xx</strong> <strong>xx</strong> <strong>xx</strong> <strong>xx</strong> <strong>xx</strong> <strong>&lt;****div** **class** **=”****clear****”&gt;&lt;/****div****&gt;</strong></li>
+</ul>
+</li>
+<li><p>父盒子添加overflow属性</p>
+<ul>
+<li>属性值设置为 hidden/auto/scroll 都可以</li>
+<li>缺点:无法显示溢出的部分</li>
+</ul>
+</li>
+<li><p>父盒子添加after伪元素</p>
+<ul>
+<li>.clearfix(父元素class名):after {</li>
+</ul>
+</li>
+</ul>
+<p>content:””;</p>
+<p>display:block;</p>
+<p>height:0;</p>
+<p>clear:both;</p>
+<p>visibility:hidden;</p>
+<p>}</p>
+<ul>
+<li>父盒子添加双伪元素<ul>
+<li>.clearfix:before,.clearfix:after{</li>
+</ul>
+</li>
+</ul>
+<p>content:””;</p>
+<p>display:table;</p>
+<p>}</p>
+<p>.cleatfiex:after {</p>
+<p>cleat:both;</p>
+<p>}</p>
+<p>PS切图</p>
+<p><strong>格式</strong></p>
+<ul>
+<li>原则<ul>
+<li>效果一样,用小的,效果不一样,效果用好的</li>
+</ul>
+</li>
+<li>jpg<ul>
+<li>支持颜色比较多,不支持透明效果,不支持动图</li>
+<li>一般显示照片</li>
+</ul>
+</li>
+<li>gif<ul>
+<li>支持颜色比较少,支持简单透明,支持动图</li>
+<li>颜色单一的图片;动图</li>
+</ul>
+</li>
+<li>png<ul>
+<li>支持的颜色丰富,支持复杂透明,不支持动图</li>
+<li>颜色丰富;复杂透明图片(<strong>专为网页而生</strong>)</li>
+</ul>
+</li>
+<li>psd<ul>
+<li>Photoshop专用格式,里面可以存放图层/通道/遮罩等多种<strong>设计稿</strong>.<strong>我们可以直接从上面复制文字**</strong>,<strong><strong>获得图片</strong></strong>,<strong>**还可以测量大小和距离</strong></li>
+</ul>
+</li>
+<li>webp<ul>
+<li>谷歌新推出的专门用来表示网页中图片的一种格式</li>
+<li>具备其他图片格式的所有优点.而且文件还小</li>
+<li>缺点:兼容性不好,IE啥的老浏览器不能用</li>
+</ul>
+</li>
+<li>base64<ul>
+<li>将图片使用base64编码,将图片转换为字符,通过字符的形式来引入图片</li>
+<li>一般都是一些需要和网页一起加载的图片才使用base64</li>
+<li>转换<ul>
+<li>网上随便找”图片转换base64”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>PS切图</strong></p>
+<ul>
+<li>我电脑自从打开ps就崩了…….🙂</li>
+<li>图层切图/切片切图/ps插件切图</li>
+<li>图层切图<ul>
+<li>最简单的切图方式: <strong>鼠标选中图片 –&gt; 右击图层 –&gt; 快速导出为png</strong></li>
+<li><strong>合并图层</strong><ul>
+<li><strong>背景图片和文字合成一个图层好导出操作</strong></li>
+<li><strong>选中两个,选图层菜单 –&gt; 合并图层(Ctrl + E)</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>切片切图<ul>
+<li>步骤<ul>
+<li>利用切片工具选中图片</li>
+<li>导出选中的图片<ul>
+<li>文件菜单 –&gt; 导出 –&gt; 存储为web设备所用格式 –&gt; 选择我们要的图片格式 –&gt; 存储</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ps插件切图<ul>
+<li>Cutterman</li>
+</ul>
+</li>
+</ul>
+<p><strong>CSS属性书写顺序</strong></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-39.png"></p>
+<p><strong>定位</strong></p>
+<p>为什么需要定位</p>
+<ul>
+<li>某些情况无法用标准流和浮动来实现</li>
+<li>比如说某个元素可以自由的在一个盒子内移动位置,<strong>并且压住其它盒子</strong></li>
+<li>定位可以让盒子自由的在某个盒子内移动位置或者固定屏幕中某个位置,并且可以压住其它盒子.</li>
+</ul>
+<p><strong>定位组成</strong></p>
+<ul>
+<li>定位:根据位置摆放盒子(更精确)</li>
+<li>定位 = 定位模式 + 边偏移</li>
+<li>定位模式<ul>
+<li>position<ul>
+<li>static(默认)</li>
+<li>relative<ul>
+<li>相对它原来的位置来说的(以自我为中心)</li>
+<li><strong>原来位置会保留</strong></li>
+<li>应用<ul>
+<li>给绝对定位当爸爸</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>absolute<ul>
+<li>相对于它的祖先元素(爸爸/爷爷/曾爷爷)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>祖先元素没有定位或者没有祖先元素,则相对以浏览器定位</p>
+<ul>
+<li><p><strong>原来位置不再保留</strong></p>
+</li>
+<li><p>父相子绝的由来</p>
+<ul>
+<li>子元素不占有位置</li>
+<li>父元素限制子元素</li>
+</ul>
+</li>
+<li><p>fixed(固定定位)</p>
+<ul>
+<li>在浏览器页面滚动时元素的位置不会改变</li>
+<li>参照于浏览器的可视窗口</li>
+<li><strong>原来位置不再保留</strong></li>
+<li><strong>小技巧</strong><ul>
+<li><strong>固定在版心右侧位置</strong></li>
+<li><strong>left : 50% + margin -left : 版心宽度的一半</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>sticky</p>
+<ul>
+<li>粘性定位,相对定位和固定定位的混合</li>
+<li>参照于浏览器的可视窗口</li>
+<li><strong>原来位置会保留</strong></li>
+<li>必须添加top, left, right, bootom 其中一个才有效</li>
+</ul>
+</li>
+<li><p>边偏移</p>
+<ul>
+<li>top</li>
+<li>bottom</li>
+<li>left</li>
+<li>right</li>
+</ul>
+</li>
+</ul>
+<p>z- index</p>
+<ul>
+<li>z轴,控制盒子的前后次序</li>
+<li>默认auto,数值越大,盒子越靠上</li>
+</ul>
+<p><strong>如何让绝对定位的盒子居中</strong></p>
+<ul>
+<li><strong>不能通过margin**</strong>: 0** <strong>auto</strong> <strong>水平居中</strong></li>
+<li><strong>left**</strong>: 50% +** <strong>margin**</strong>-<strong><strong>right</strong></strong>:** <strong>该盒子宽度的一半</strong></li>
+</ul>
+<p>行内元素添加绝对或者固定定位,可以直接设置高度和宽度</p>
+<p>块级元素添加绝对或者是固定定位,如果不给宽度或高度,默认大小是内容的大小</p>
+<p>绝对定位和固定定位会完全压住盒子</p>
+<ul>
+<li>浮动只会压住下面标准流的盒子,但不会压住标准流里面的文字/图片</li>
+<li>绝对定位和固定定位会压住所有的内容</li>
+</ul>
+<p><strong>元素的显示和隐藏</strong></p>
+<p>让一个元素在页面中隐藏或者显示出来</p>
+<ul>
+<li>display: none/block;<ul>
+<li>隐藏元素后**,不再占有原来的位置**</li>
+</ul>
+</li>
+<li>visibility<ul>
+<li>visible</li>
+<li>hidden<ul>
+<li><strong>原来位置会保留</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>overflow — 对<strong>溢出的部分</strong>进行显示和隐藏<ul>
+<li>hidden</li>
+<li>scroll— 显示滚动条</li>
+<li>auto— 在需要的时候添加滚动条</li>
+</ul>
+</li>
+</ul>
+<p><strong>高级技巧</strong></p>
+<p>精灵图(雪碧图)</p>
+<ul>
+<li>为了减少服务器接收和回应请求的次数,提高页面的加载速度</li>
+<li>主要用于背景图片<ul>
+<li>background-position</li>
+<li>一半都是负值</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-6-1024x242.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-7-1024x538.png"></p>
+<p><strong>字体图标</strong></p>
+<p>iconfont</p>
+<ul>
+<li>① iconfont.cn</li>
+<li>② 把fonts放在页面的根目录</li>
+<li>③ 把style.css中到block;之前的复制到style</li>
+<li>④ 把demo中的代码复制到响应标签内</li>
+<li>⑤ 在css相应的标签内设置字体 比如说 font-family: ‘icomoon’;</li>
+</ul>
+<p>iconfont的增加</p>
+<ul>
+<li>把selection.json上传到相应网站再选择重新下载.zip即可</li>
+</ul>
+<p>三角</p>
+<ul>
+<li>4个border其实是4个三角</li>
+<li>其余三个边变成透明色即可</li>
+<li>width: 0;</li>
+<li>height: 0;</li>
+<li>border: 10px solid transparent;</li>
+<li>border-xxx(某个边)-color: pink;</li>
+</ul>
+<p>三角应用</p>
+<ul>
+<li>大盒子放小盒子</li>
+<li>小盒子绝对定位,根据top和left等移动</li>
+</ul>
+<p>用户界面</p>
+<ul>
+<li>更改一些用户操作样式,以便提高用户体验</li>
+<li>更改用户的鼠标样式<ul>
+<li>cursor<ul>
+<li>default<ul>
+<li>默认,普通</li>
+</ul>
+</li>
+<li>pointer<ul>
+<li>手(超链接)</li>
+</ul>
+</li>
+<li>move<ul>
+<li>移动(pc淘宝查看商品的照片,类似于十字架)</li>
+</ul>
+</li>
+<li>text<ul>
+<li>文本(类似于”I”)</li>
+</ul>
+</li>
+<li>not-allowed<ul>
+<li>禁止</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>表单轮廓<ul>
+<li>outline<ul>
+<li>0 / none  — 去掉默认的蓝色边框</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>防止文本域拖拽<ul>
+<li>resize<ul>
+<li>none</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>vertical-align</p>
+<ul>
+<li>设置<strong>图片/表单(行内块)和文字垂直对齐</strong></li>
+<li>baseline — 默认,放在父元素的基线</li>
+<li>top</li>
+<li>middle</li>
+<li>bottom</li>
+<li>图片底测空白缝隙解决方案<ul>
+<li>bug:图片底测会有一个空白缝隙,<strong>原因是行内块元素会和文字的基线对齐</strong></li>
+<li>给图片添加 vertical-align :middle / top / bottom</li>
+<li>把图片转换为块级元素 display: block;</li>
+</ul>
+</li>
+</ul>
+<p>单行文本溢出显示省略号</p>
+<ul>
+<li>满足条件<ul>
+<li>① 强制一行内显示文本<ul>
+<li>white- space: nowrap; (默认 normal 自动换行)</li>
+</ul>
+</li>
+<li>② 溢出的部分隐藏<ul>
+<li>overflow: hidden;</li>
+</ul>
+</li>
+<li>③ 用省略号代替溢出的部分<ul>
+<li>text-overflow: ellipsis;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>多行文本溢出显示省略号</p>
+<ul>
+<li>复制代码即可</li>
+</ul>
+<p>常用布局技巧</p>
+<p>margin负值的运用</p>
+<ul>
+<li> 让每个盒子margin移动能正好压住相邻盒子边框</li>
+<li>鼠标经过某个盒子的时候,提高当前盒子的层级(没定位+相对定位,有定位+z-index)</li>
+</ul>
+<p>文字环绕浮动元素</p>
+<ul>
+<li>巧用浮动元素不会压住文字的特性</li>
+</ul>
+<p>行内块的巧妙运用</p>
+<ul>
+<li>转换页面的超链接使用</li>
+</ul>
+<p>CSS三角强化</p>
+<ul>
+<li>矩形+三角 = 梯形<ul>
+<li>左边和下边的边框宽度设置为0</li>
+<li>上边框宽度调大</li>
+</ul>
+</li>
+</ul>
+<p>初始化</p>
+<ul>
+<li>不同浏览器对于某些标签的默认值是不同的,为了消除这种差异,需要对CSS初始化</li>
+<li>每个网页都必须首先进行CSS初始化</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.6 傍晚</strong></p>
+<p><strong>第二次更新时间: 2020.7.7 下午</strong></p>
+<p><strong>第三次更新时间: 2020.7.9 傍晚</strong></p>
+<p><strong>最后更新时间: 2020.7.10 上午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/06/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E5%9B%9B/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-分享来教一下怎么租梯子翻墙" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/04/%E5%88%86%E4%BA%AB%E6%9D%A5%E6%95%99%E4%B8%80%E4%B8%8B%E6%80%8E%E4%B9%88%E7%A7%9F%E6%A2%AF%E5%AD%90%E7%BF%BB%E5%A2%99/">分享:来教一下怎么租梯子翻墙</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/04/%E5%88%86%E4%BA%AB%E6%9D%A5%E6%95%99%E4%B8%80%E4%B8%8B%E6%80%8E%E4%B9%88%E7%A7%9F%E6%A2%AF%E5%AD%90%E7%BF%BB%E5%A2%99/" class="archive-article-date">
+  	<time datetime="2020-07-04T12:20:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[hermit autoplay=”false” mode=”auto” preload=”auto” ]netease_playlist#:5096909399[/hermit]</p>
+<p>6月份是我第一次租梯子翻墙,正好7月结束,在此就把租梯子也就是找飞机场的翻墙手段分享一下,这个很简单,如果想要试一个月或者去上YouTube,推特,p站什么的都可以.</p>
+<p>翻墙有很多种,这里介绍非常非常非常简单的.</p>
+<p>希望用chrome游览器且能上网最好有个小插件.比如说下图的小红框的东西.🤭</p>
+<p>因为其他浏览器我不太清楚可能会出错而且chrome用起来很厉害的.</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/5abea0e83dca8.png"></p>
+<p>首先登陆这里的网址.</p>
+<p><a target="_blank" rel="noopener" href="https://justmysocks2.net/members/index.php">https://justmysocks2.net/members/index.php</a></p>
+<p>进来后会是这个样子</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/51188129ec67e.png"></p>
+<p>进来后,我们点击注册选项</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/adebe3499f18d.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/04/aec8cb3df9d04.png"></p>
+<p>然后如实填写就行,你的e-mail,国家</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/48780b2e8bbe0.png"></p>
+<p>下面的图是我填的</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/6182800e9f4d7.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/04/d48fc092ff4ad.png"></p>
+<p>最后 你的邮箱会收到这样的一个东西</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/b93dab29517a6.png"></p>
+<p>点击链接就行.然后我们就完成了注册.</p>
+<p>接下来登陆,就是这个页面.</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/8192d06aba0ed.png"></p>
+<p>接下来我们点 服务选项,就是下图的东西.点击订购新服务</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/902e6b81b4a82.png"></p>
+<p>然后我们就来到了这个页面</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/dcc1a4d2381fb.png"></p>
+<p>选择服务即可,最便宜的就行5.88$,但注意哟,这是美元符号,实际上是40块钱左右.如果你想体验很好的,那就选贵的即可.</p>
+<p>点击”立即购买”后,到了这里</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/10494c7e6beed.png"></p>
+<p>我们选择继续,还有图中的, 500GB/mo on 2.5Gbps | 5 devices 说的是 总共500GB,速度是 2.5 同时支持5个设备. 就是说不仅仅是电脑还有手机也可以翻墙.</p>
+<p>接下来点击 check out</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/3d24a03854cf4.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/04/1ef7338070a47.png"></p>
+<p>然后来到了付款界面,如下</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/422f594f381c7.png"></p>
+<p>扫码就行,这里我就不买了哈.</p>
+<p>当你支付完成后,你的邮箱会收到两封邮件,也就是</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/a7003db1d45a0.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/04/15525f07e61f5.png"></p>
+<p>付完款后我们点击服务,然后查看服务就看看到这些(下面的图是开了翻译的.)别删掉这个页面.</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/b829559f12174.png"></p>
+<p>同时我们开始下载客户端.</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fbf-xC62TPKDGqm4ymy1Bg">https://pan.baidu.com/s/1fbf-xC62TPKDGqm4ymy1Bg</a><br>提取码：emfa</p>
+<p>下载好后,会出现这个.</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/ea2c7edd7f073.png"></p>
+<p>名字不一样,因为重命名了</p>
+<p>打开后,将服务页面的响应端口服务名字等复制进来就行</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/aebb5d63cae12.png"></p>
+<p>然后还有注意就是网页给了5个ip,填一个就行.</p>
+<p>最后右键系统代理点击PAC模式即可</p>
+<p>然后就有了哟,点击YouTube</p>
+<p><img src="http://qny.chaochao.info/2020/07/04/ca0053fd4a63b.png"></p>
+<p>就出现了,嘿嘿.</p>
+<p>如果有问题随时来问我.</p>
+<p>还有既然能翻墙就要遵守一些规则哟.不要跟季子越一样.这是违法的,还有多上YouTube找找GFW的原理.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/04/%E5%88%86%E4%BA%AB%E6%9D%A5%E6%95%99%E4%B8%80%E4%B8%8B%E6%80%8E%E4%B9%88%E7%A7%9F%E6%A2%AF%E5%AD%90%E7%BF%BB%E5%A2%99/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下css三" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/01/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%89/">笔记:温习了一下CSS(三)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/01/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%89/" class="archive-article-date">
+  	<time datetime="2020-07-01T13:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>前言</strong></p>
+<p>盒子模型应该是CSS最重要也比较难的一部分了,所以新写一篇.</p>
+<p>盒子模型</p>
+<ul>
+<li><strong>网页布局三大核心</strong><ul>
+<li><strong>盒子模型</strong></li>
+<li><strong>浮动</strong></li>
+<li><strong>定位</strong></li>
+</ul>
+</li>
+<li>本质:利用CSS摆盒子</li>
+<li>组成<ul>
+<li>border<ul>
+<li>组成<ul>
+<li>style</li>
+<li>width</li>
+<li>color</li>
+</ul>
+</li>
+<li>复合写法<ul>
+<li>border: 1px solid red; 没有顺序</li>
+</ul>
+</li>
+<li>border可以分开写<ul>
+<li>border - top: 1px solid red;</li>
+</ul>
+</li>
+<li><strong>border-collapse</strong><ul>
+<li><strong>控制浏览器绘制**</strong>table**<strong>边框的方式**</strong>.** <strong>它控制相邻**</strong>td**<strong>的边框**</strong>.**</li>
+<li>border-collapse: collapse;</li>
+</ul>
+</li>
+<li>border影响盒子的实际大小</li>
+</ul>
+</li>
+<li>content</li>
+<li>padding<ul>
+<li>组成<ul>
+<li>left</li>
+<li>right</li>
+<li>top</li>
+<li>bottom</li>
+</ul>
+</li>
+<li>复合写法<ul>
+<li>padding<ul>
+<li>1个值, 上下左右</li>
+<li>2个值, 上下,左右</li>
+<li>3个值, 上,左右,下</li>
+<li>4个值, 上,右,下,左</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>padding会影响盒子的实际大小<ul>
+<li>导航栏的应用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>margin</li>
+</ul>
+</li>
+</ul>
+<p><strong>小练习</strong>: padding导航栏</p>
+<p>初始样式</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-26-1024x59.png"></p>
+<p>鼠标移入后</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-27-1024x58.png"></p>
+<p>部分代码</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-12.png"></p>
+<ul>
+<li>margin<ul>
+<li>盒子和盒子之间的距离</li>
+<li>组成<ul>
+<li>left</li>
+<li>right</li>
+<li>top</li>
+<li>bottom</li>
+</ul>
+</li>
+<li>水平居中<ul>
+<li>margin可以让<strong>块级盒子水平居中</strong>,需满足两个条件<ul>
+<li>盒子指定了width</li>
+<li>左右margin设置为auto<ul>
+<li>margin: 0 auto;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>行内元素或者行内块元素水平居中给其父元素添加text-align**</strong>:** <strong>center</strong> <strong>即可</strong></li>
+</ul>
+</li>
+<li><strong>垂直外边距合并</strong><ul>
+<li><strong>一个盒子有margin**</strong>-<strong>**top</strong> <strong>,**</strong>一个盒子有margin**<strong>-**</strong>bottom**<strong>,**</strong>则它们之间的垂直间距不是二者之和**<strong>,**</strong>而是取二者的最大值**</li>
+<li><strong>解决方案</strong><ul>
+<li><strong>尽量只给一个盒子添加margin值</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>塌陷问题</strong><ul>
+<li><strong>父子管旭的块元素**</strong>,<strong><strong>父元素有上边距同时子元素也有上边距</strong></strong>,<strong>**此时父元素会塌陷较大的外边距值</strong></li>
+<li><strong>解决方案</strong><ul>
+<li><strong>①</strong> <strong>为父元素定义上border</strong></li>
+<li><strong>②</strong> <strong>为父元素定义上padding</strong></li>
+<li><strong>③</strong> <strong>为父元素添加</strong> <strong>overflow**</strong>:<strong>**hidden</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>消除默认margin和padding<ul>
+<li>css的第一行代码</li>
+</ul>
+</li>
+</ul>
+<p>*{</p>
+<p>padding:0;</p>
+<p>margin:0;</p>
+<p>}</p>
+<ul>
+<li>行内元素为了照顾兼容性,尽量只设置左右内外边距,不设置上下内外边距</li>
+</ul>
+<p><strong>PS基本操作</strong></p>
+<p>photoshop</p>
+<ul>
+<li>我们用来切图</li>
+<li>快捷键<ul>
+<li>标尺: Ctrl + R </li>
+<li>放大缩小: Ctrl + 加号 /减号</li>
+<li>抓手工具: 空格</li>
+<li>选区<ul>
+<li>Ctrl + D/旁边空白点击: 取消选区</li>
+</ul>
+</li>
+<li>小练习</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-28-1024x456.png"></p>
+<p>部分代码</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-29.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-30-1024x318.png"></p>
+<p>鼠标移入后</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-31.png"></p>
+<p><strong>小总结</strong></p>
+<p>布局为啥用不同的盒子,而我只想到div?</p>
+<ul>
+<li>学的少…只知道div…</li>
+</ul>
+<p>其实还有h,p,span</p>
+<p>class怎么这么多</p>
+<ul>
+<li>名字我都不知道起啥,想用拼音但显得我很low,可是英语水平又那么菜</li>
+</ul>
+<p>到底用margin还是padding</p>
+<ul>
+<li>不知道,我是想到哪就用哪个</li>
+</ul>
+<p>自己做没有思路?</p>
+<ul>
+<li>抄,就是抄,抄小米官网的,F12一按,就有了</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.1 晚上</strong></p>
+<p><strong>最后更新时间: 2020.7.6 下午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/01/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下css二" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/30/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%BA%8C/">笔记:温习了一下CSS(二)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/30/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%BA%8C/" class="archive-article-date">
+  	<time datetime="2020-06-30T02:47:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>元素显示模式</p>
+<ul>
+<li>元素(标签) 以什么方式进行显示</li>
+</ul>
+<p>比如<div>自己占一行,一行可以放多个<span></p>
+<ul>
+<li><p><strong>块元素</strong></p>
+<ul>
+<li><strong>h**</strong>1 ~<strong><strong>h</strong></strong>6,<strong><strong>p</strong></strong>,<strong><strong>div</strong></strong>,<strong><strong>ul</strong></strong>,<strong><strong>ol</strong></strong>,<strong>**li</strong></li>
+<li><strong>特点</strong><ul>
+<li><strong>①</strong> <strong>一个容器**</strong>,<strong>**可以放行内或块元素</strong></li>
+<li><strong>②</strong> <strong>独占一行</strong></li>
+<li><strong>③</strong> <strong>高度**</strong>,<strong><strong>宽度</strong></strong>,<strong><strong>外边距</strong></strong>,<strong>**内边距都可以控制</strong></li>
+<li><strong>④</strong> <strong>宽度默认是容器的**</strong>100%**</li>
+</ul>
+</li>
+<li><strong>注意</strong><ul>
+<li><strong>文字类的元素内不能使用块元素</strong><ul>
+<li><strong>p</strong> <strong>主要用来存放文字**</strong>,<strong><strong>因此不能放块级元素</strong></strong>,<strong><strong>h</strong></strong>1~<strong><strong>h</strong></strong>6**<strong>同理</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>行内元素</strong></p>
+<ul>
+<li><strong>a ,strong ,b ,em ,I,del ,s, u ,span</strong></li>
+<li><strong>特点</strong><ul>
+<li><strong>一行显示多个</strong></li>
+<li><strong>宽度,高度直接设置无效</strong></li>
+<li><strong>默认宽度是其内容的宽度</strong></li>
+<li><strong>只能容纳文本或其它行内元素</strong></li>
+</ul>
+</li>
+<li><strong>注意</strong><ul>
+<li><strong>链接里不能再放链接</strong></li>
+<li><strong>a比较特殊,a可以块级元素,但给a转换称块级模式最安全</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>行内块元素</strong></p>
+<ul>
+<li><strong>img , input , td</strong></li>
+<li><strong>同时具有块元素和行内元素的特点</strong></li>
+<li><strong>特点</strong><ul>
+<li><strong>和相邻行内元素在一行上,但会有空白缝隙.</strong></li>
+<li><strong>默认宽度是其内容宽度</strong></li>
+<li><strong>宽度,高度,行高,外边距,内边距可以控制</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>显示模式的转换</p>
+<ul>
+<li>转换为块元素<ul>
+<li>display:block;</li>
+</ul>
+</li>
+<li>转换为行内元素<ul>
+<li>display:inline;</li>
+</ul>
+</li>
+<li>转换为行内块元素<ul>
+<li>display:inline-block;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>snipaste</strong> – 小工具分享</p>
+<p>因为有时候电脑没必要联网登陆QQ,但有时候是需要截图功能,而且我有时候也是经常使用,取色,看RGB值等,所以就有了下面这个小工具.我用着挺方便的,设置为开机启动,以下是截图,网上随便搜一下就能下载</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-21-1.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-22-1.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-23-1.png"></p>
+<p>小技巧</p>
+<ul>
+<li>line-height = height</li>
+<li><strong>原理</strong><ul>
+<li><strong>行高的上空隙和下空隙把文字挤到中间取了**</strong>,**</li>
+</ul>
+</li>
+</ul>
+<p><strong>如果行高小于盒子高度,文字会偏上</strong></p>
+<p><strong>如果行高大于盒子高度,文字偏下</strong></p>
+<p><strong>背景</strong></p>
+<p>背景颜色</p>
+<ul>
+<li>默认值:transparent</li>
+</ul>
+<p>背景图片</p>
+<ul>
+<li><p>常见于logo或者装饰性的小图片或者是超大的背景图片</p>
+</li>
+<li><p>不要忘记url()</p>
+</li>
+<li><p><strong>背景图片位置</strong></p>
+<ul>
+<li><strong>background-position: x y;</strong></li>
+<li><strong>方位名词</strong><ul>
+<li><strong>顺序无关</strong></li>
+</ul>
+</li>
+<li><strong>精确单位</strong><ul>
+<li><strong>x**</strong>坐标** <strong>y**</strong>坐标**</li>
+<li><strong>如果只有一个参数**</strong>,<strong><strong>那一定是</strong></strong>x,y**<strong>值默认垂直居中</strong></li>
+</ul>
+</li>
+<li><strong>混合单位</strong><ul>
+<li><strong>x**</strong>坐标** <strong>y**</strong>坐标**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>背景图像固定</p>
+<ul>
+<li>background - attachment</li>
+<li>设置背景图像是否固定或者随着页面的其余部分滚动</li>
+</ul>
+</li>
+</ul>
+<p><strong>视差滚动效果</strong></p>
+<ul>
+<li>scroll   fixed</li>
+</ul>
+<p>背景平铺</p>
+<ul>
+<li>background - repeat</li>
+<li>默认值是 平铺</li>
+</ul>
+<p>背景颜色半透明</p>
+<ul>
+<li>background: rgba(0,0,0,0.3)</li>
+<li>a 是 alpha 透明度, 取值范围在 0~1之间</li>
+</ul>
+<p><strong>既可以添加背景杨色又可以添加背景图片**</strong>,<strong>**只不过背景图片会压住背景颜色</strong></p>
+<p>背景复合写法</p>
+<ul>
+<li>background</li>
+<li>没有书写顺序,习惯为 :颜色 图片  平铺  图像滚动 图片位置</li>
+</ul>
+<p>五彩导航栏练习</p>
+<ul>
+<li>shift + alt 不松开 可以一起弄</li>
+</ul>
+<p><strong>小练习</strong></p>
+<p>(1) 王者荣耀+小米官网左侧导航栏+雪碧图</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-16-1024x486.png"></p>
+<p>(2) 五彩导航栏</p>
+<p>这是初始样式</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-17-1024x280.png"></p>
+<p>当鼠标移入后</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-18-1024x143.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-4.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-19-1024x143.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-24.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-25.png"></p>
+<p><strong>三大特性</strong></p>
+<p><strong>层叠性</strong></p>
+<ul>
+<li>选择器同时给一个样式设置了不同的属性值</li>
+<li><strong>就近原则</strong>(后来居上)<ul>
+<li><strong>哪个样式离结构近**</strong>,<strong>**就执行哪个样式</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>继承性</strong></p>
+<ul>
+<li>子承父业,子标签会继承父标签的<strong>某些样式**</strong>(<strong><strong>文字类型的样式</strong></strong>)**,如文本颜色和字号</li>
+<li>行高的继承<ul>
+<li>行高可以跟单位也不可以不跟单位<ul>
+<li>不跟单位时,是当前行高是文字大小的几点几倍</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>优先级</strong></p>
+<ul>
+<li>同一个元素的不同选择器来修改相同的样式</li>
+<li>选择器相同,则执行层叠性</li>
+<li>选择器不同,则根据<strong>选择器权重</strong>执行<ul>
+<li><strong>继承</strong> <strong>/ * &gt;**</strong>标签选择器** <strong>&gt;</strong> <strong>类**</strong>/<strong>**伪类选择器</strong> <strong>&gt; id**</strong>选择器** <strong>&gt;</strong> <strong>行内样式**</strong>&gt; !important**</li>
+</ul>
+</li>
+<li>注意<ul>
+<li>a链接浏览器默认指定了一个样式: 蓝色,有下划线</li>
+</ul>
+</li>
+</ul>
+<p><strong>权重叠加</strong></p>
+<ul>
+<li>使用复合选择器,则会有权重叠加,需要计算权重.</li>
+<li>例如<ul>
+<li>li 的权重是 0,0,0,1 ;ul li 的权重则是 0,0,0,1 + 0,0,0,1 = 0,0,0,2</li>
+<li>.nav li 的权重则是 0,0,1,0 + 0,0,0,1 = 0,0,1,1</li>
+</ul>
+</li>
+<li><strong>权重不会有进位</strong></li>
+</ul>
+<p><strong>小问题</strong></p>
+<p> <ul class = "nav"></p>
+<li class = "red">< /li>
+
+<li></li>
+
+<li></li>
+
+</ul>
+
+<p>. nav li {}</p>
+<p>.pink {}</p>
+<p>这里容易出现一个错误, 在 .nav li {} 这个选择器中, .nav虽然是继承的,单独一个权重是0,但是到了复合选择器中,它就是类选择器10了,然后10+01 = 11</p>
+<p>我第一次算的时候把.nav当成了继承也就是0. 然后 0+01 =01  理所当然的认为第二个选择器有效.</p>
+<p>.pink的权重是 10 </p>
+<p>11&gt;10  所以是第一个选择器有效</p>
+<p><strong>第一次更新时间: 2020.6.30 上午</strong></p>
+<p><strong>最后更新时间: 2020.7.1 下午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/30/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%BA%8C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-你们去追求吧那不是我想要的。" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/28/%E4%BD%A0%E4%BB%AC%E5%8E%BB%E8%BF%BD%E6%B1%82%E5%90%A7%E9%82%A3%E4%B8%8D%E6%98%AF%E6%88%91%E6%83%B3%E8%A6%81%E7%9A%84%E3%80%82/">你们去追求吧,那不是我想要的。</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/28/%E4%BD%A0%E4%BB%AC%E5%8E%BB%E8%BF%BD%E6%B1%82%E5%90%A7%E9%82%A3%E4%B8%8D%E6%98%AF%E6%88%91%E6%83%B3%E8%A6%81%E7%9A%84%E3%80%82/" class="archive-article-date">
+  	<time datetime="2020-06-28T12:25:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>厌倦了刻意追求奖学金，厌倦了刻意追求学校的好成绩，厌倦了老师说要好好学习的话，厌倦了很多东西。</p>
+<p>半天能复习完的东西,我不会为了那高分而花费一周或者好几天的时间精力在上面,在我的学校,考试成绩就是考前复习一周就能拿80甚至90分的事情,我觉得这不值得我去追求.如果考试成绩门门70多分那我也不会在意，但可能跟那些门门90多分的同学相比，在你们眼里我会差很多吧</p>
+<p>感觉特别烦,我宁愿当学渣.</p>
+<p>以后可能在别人的嘴里我成了比较堕落的人.</p>
+<p>我不是很同意班主任的话.</p>
+<p>如果我专门花几个星期去研究这些题库可能结果是我得到了高分,但内心一定空荡荡的.</p>
+<p>概率论我花了两个小时时间就随便看完了，因为四套卷子能有什么看的，数据库一上午的事情就弄完了，考试前几天我在摆弄其他东西，组成原理考试一个星期前一天就看完了，通信原理整理了例题就打算直接去考，不管是死记的还是理解的，明明一天之内就能搞完能过，我不想花费几个星期的时间去追求那高分，我考得不好是因为我忘了很多而且也不想再去看.对我而言这时间花费在操场上都要值很多.</p>
+<p>成绩的高分就像眼前的蛋糕一样,明明知道这些不是很重要但还是想伸手去拿去吃,因为这并不费劲,因为其他人会这么做,好学生更应该这么做,自己觉得也应该这么做,很简单,多花时间研究题库就行就能得高分,然后成绩就会高很多,以后的成绩单就会很耀眼吧.</p>
+<p>这很吸引人,我也想去这么做,但心中所想不允许.</p>
+<p>我也想成为那种各种荣誉加身,学习成绩优秀,比赛获奖能手,长得好看的同学,但现实是不允许的,不论是我的性格还是其它,很多东西仅仅是表面光鲜亮丽.</p>
+<p>可能那些学习成绩很好，科科90多分，各种班委，各种跟老师混的很熟，各种入党积极分子，预备党员，各种名誉加身的人会是公认的好学生吧.我不喜欢跟那好学生在一起过分交流，因为一点都不有趣所以只跟他们讨论学习，那些平凡默默无闻的人才更有趣好吧，会努力会不在乎其他人的眼光，会有闪光点，跟他们交流感觉自在。</p>
+<p>我觉得我的大学生活应该是我象牙塔里想的那样,绝不会为了是全追求各种成绩绩点.总是说让我们努力努力再努力为了就业或者考研,如果一个人真的是一天和一天很努力去追求成绩,去成为人们眼中的好学生,我觉得很无趣,我想成为一个有趣的人,而不是一个可能是别人眼中的好学生,但实际上什么东西也没有,内心空虚,觉得有点虚度校园时光的人.</p>
+<p>冗余的信息只会让我感觉压力,不会有动力,我会屏蔽掉这些的.</p>
+<p>我对chaochao.info 挺满意的,因为这是我自己的,而且我总共花了16块钱,备案花了10天左右服务器,word press,端口一天就差不多弄完了,虽然它样式比较丑.</p>
+<p>我只想每天中午去吃一食堂的牛肉汤，在操场玩能玩的开心点，走在路上耳机里放的好听的歌，在课上能够认真听讲，课下学习前端，做个漂亮的网页,在自习的时候能听见现教外面的蝉鸣,能够在我的网站上说一些事情。</p>
+<p>当个默默无闻的,自由的,有趣的死肥宅,当我毕业时回首我的大学生活,可以说”我的大学生活还可以.”</p>
+<p>这就够了.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/28/%E4%BD%A0%E4%BB%AC%E5%8E%BB%E8%BF%BD%E6%B1%82%E5%90%A7%E9%82%A3%E4%B8%8D%E6%98%AF%E6%88%91%E6%83%B3%E8%A6%81%E7%9A%84%E3%80%82/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下css一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/28/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%80/">笔记:温习了一下CSS(一)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/28/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2020-06-28T02:44:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>CSS</strong></p>
+<ul>
+<li><p>让 丑 变 美</p>
+</li>
+<li><p>语法规范 —- <strong>选择器以及一条或多条声明</strong></p>
+<ul>
+<li><strong>选择器 { 属性1:属性值1;  属性2:属性值2; }</strong></li>
+<li>给谁改样式 { 改什么样式 }</li>
+</ul>
+</li>
+<li><p>样式风格</p>
+<ul>
+<li>样式格式书写<ul>
+<li>展开型</li>
+</ul>
+</li>
+<li>样式大小写<ul>
+<li>小写</li>
+</ul>
+</li>
+<li>空格规范<ul>
+<li><strong>属性值前面,冒号后面,保留一个空格</strong></li>
+<li><strong>选择器于大括号之间保留空格</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>选择器</p>
+<ul>
+<li>把标签选出来</li>
+<li>选对人,做对事</li>
+</ul>
+</li>
+<li><p><strong>基础选择器</strong></p>
+<ul>
+<li>标签选择器<ul>
+<li>标签名</li>
+</ul>
+</li>
+<li>类选择器<ul>
+<li>class</li>
+<li>.类名 { }</li>
+<li><strong>单独一个或几个</strong></li>
+<li>web前端开发规范手册</li>
+<li><strong>多类名一个标签可以有多个类名</strong></li>
+<li><strong>空格分隔</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>id选择器id</p>
+<ul>
+<li>#id名</li>
+<li><strong>单独一个</strong></li>
+</ul>
+</li>
+<li><p>通配符选择器</p>
+<ul>
+<li>*</li>
+<li><strong>选取所有的标签</strong></li>
+<li><strong>特殊情况使用</strong><ul>
+<li><strong>消除默认样式</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>复合选择器</strong></p>
+</li>
+</ul>
+<p><strong>字体属性</strong></p>
+<p>微软雅黑</p>
+<ul>
+<li>Microsoft YaHei</li>
+</ul>
+<p>文字大小</p>
+<ul>
+<li>标题标签比较特殊,需要单独指定文字大小</li>
+</ul>
+<p><strong>字体复合属性</strong></p>
+<ul>
+<li><strong>font : style  weight   size/line-height  family</strong></li>
+<li><strong>文本样式综合来写,节省代码</strong></li>
+<li><strong>必须保留 size 和 family</strong></li>
+</ul>
+<p><strong>文本属性</strong></p>
+<p>颜色</p>
+<ul>
+<li><strong>开发中最常用的是十六进制</strong></li>
+</ul>
+<p>对齐</p>
+<ul>
+<li>text - align</li>
+</ul>
+<p>文本内容的水平对齐方式(左,右,居中)</p>
+<ul>
+<li>默认值为 <strong>左对齐</strong></li>
+</ul>
+<p>装饰</p>
+<ul>
+<li>text - decoration</li>
+<li>下划线</li>
+<li>删除线</li>
+<li><strong>上划线</strong></li>
+</ul>
+<p>缩进</p>
+<ul>
+<li><strong>文本第一行的缩进</strong></li>
+<li><strong>text</strong> <strong>-</strong> <strong>indent</strong></li>
+<li>text - indent : 2<strong>em</strong>;</li>
+</ul>
+<p>行间距</p>
+<ul>
+<li>行高,行与行之间的距离</li>
+<li>line - height</li>
+<li><strong>行间距组成</strong></li>
+</ul>
+<p><strong>引入方式</strong></p>
+<p>引入方式</p>
+<ul>
+<li>行内<ul>
+<li>style 本身就是标签的属性</li>
+</ul>
+</li>
+<li>嵌入</li>
+<li><strong>链接</strong><ul>
+<li><strong>.css后缀名文件</strong></li>
+<li><strong><link rel = "stylesheet" href = "css文件路径"></strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>小练习</strong></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/06/FireShot-Capture-030-News-127.0.0.1-1024x714.png"></p>
+<p><strong>chrome 调试工具</strong></p>
+<ul>
+<li>① 左边是HMTL元素结构,右边是CSS样式</li>
+<li>② CSS样式可以改动数值和查看颜色,<strong>但只是调试不能修改</strong></li>
+<li>③ Ctrl + 0 复原浏览器大小</li>
+<li><strong>④</strong> <strong>单击元素**</strong>,<strong><strong>发现右侧没有样式引入</strong></strong>,<strong>**极有可能是类名或者样式引入错误</strong></li>
+<li><strong>⑤</strong> <strong>如果有样式**</strong>,<strong><strong>但样式前面有黄色叹号提示</strong></strong>,<strong>**则是样式属性书写错误</strong></li>
+</ul>
+<p><strong>Emmet</strong></p>
+<ul>
+<li><p>使用缩写,提高html/css的编写速度</p>
+</li>
+<li><p>快速HTML结构语法</p>
+</li>
+<li><p><strong>5</strong> <strong>标签名**</strong>.<strong>**class</strong> <strong>/</strong> <strong>标签名**</strong>#<strong>**id</strong></p>
+</li>
+<li><p><strong>.**</strong>demo*<strong><em>$\</em>5</strong></p>
+</li>
+</ul>
+<p><strong>div{$}*5</strong></p>
+<ul>
+<li><strong>快速**</strong>CSS**<strong>样式语法</strong><ul>
+<li><strong>简写</strong></li>
+</ul>
+</li>
+<li>快速格式化代码<ul>
+<li>Shift + Alt +F</li>
+<li>自动格式化代码</li>
+</ul>
+</li>
+</ul>
+<p><strong>复合选择器</strong></p>
+<ul>
+<li>由两个或多个基础选择器,通过不同的方式组合而成的</li>
+<li>后代选择器<ul>
+<li>父 后代 { }</li>
+<li>父 ,后代可以是class或id</li>
+</ul>
+</li>
+<li>子选择器<ul>
+<li>选择最近一级子元素,理解为选亲儿子元素</li>
+<li>父 &gt; 亲儿子 {}</li>
+</ul>
+</li>
+<li>并集选择器<ul>
+<li>用于集体声明</li>
+<li>元素1 , 元素 2 { }</li>
+<li><strong>语法规范</strong><ul>
+<li><strong>并集选择器喜欢竖着写</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>伪类选择器<ul>
+<li>向某些选择器添加特殊的效果,比如超链接,或选择第1个,第哪个元素</li>
+<li>用冒号表示</li>
+<li>链接伪类选择器<ul>
+<li>a : link</li>
+<li>a : visited</li>
+<li><strong>a</strong> <strong>:</strong> <strong>hover</strong></li>
+<li>a : active</li>
+<li><strong>注意事项</strong><ul>
+<li><strong>为确保生效**</strong>,<strong>**按照</strong> <strong>link</strong> <strong>-</strong> <strong>visited</strong> <strong>-</strong> <strong>hover</strong> <strong>-</strong> <strong>active</strong> <strong>顺序声明</strong></li>
+<li><strong>需要给链接单独指定样式</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>:focus 伪类选择器<ul>
+<li>获取焦点的表单元素</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>一般情况<input>类表单元素才能获取</p>
+<ul>
+<li>input:focus{</li>
+</ul>
+<p>backgound - color : yellow;</p>
+<p>}</p>
+<p><strong>第一次更新时间: 2020.6.28 上午</strong></p>
+<p><strong>第二次更新时间 : 2020.6.29 晚上</strong></p>
+<p><strong>最后更新时间:2020.6.30 早上</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/28/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下html三" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/28/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml%E4%B8%89/">笔记:温习了一下HTML(三)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/28/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml%E4%B8%89/" class="archive-article-date">
+  	<time datetime="2020-06-28T00:29:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>前言</strong></p>
+<p>HTML到此结束了,这是抽零散的时间温习了一下,<strong>结构永远是最重要的</strong>.</p>
+<p><strong>如果对你有所帮助那我会感到很荣幸.</strong></p>
+<ul>
+<li><strong>列表</strong><ul>
+<li><strong>用来布局的</strong></li>
+<li>无序列表<ul>
+<li><ul> <li> </li> </ul></li>
+<li><strong>ul</strong> <strong>中只能嵌套li**</strong>,<strong>**其他标签或文字是不被允许的</strong></li>
+<li><strong>li</strong> <strong>可以放任何标签</strong></li>
+</ul>
+</li>
+<li>自定义列表<ul>
+<li>经常是一个 dt 对应多个 dd</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>表单<ul>
+<li>收集用户信息,与用户进行交互</li>
+<li>组成<ul>
+<li><strong>表单域</strong><ul>
+<li>包含表单元素的区域</li>
+<li><form action ="url地址" method = "提交方式" name = "表单域名称">
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>各种表单元素控件</p>
+</form>
+
+<ul>
+<li><p><strong>表单控件</strong></p>
+<ul>
+<li><strong>允许用户在表单中输入或选择的内容控件</strong></li>
+<li><strong>input 输入表单元素</strong><ul>
+<li><strong><input type = "属性值" /></strong><ul>
+<li><strong>type 属性值不同来指定不同的控件类型</strong><ul>
+<li><strong>button</strong></li>
+<li><strong>checkbox</strong></li>
+<li><strong>file</strong><ul>
+<li>上传文件,文件域</li>
+<li>比如上传头像,图片</li>
+</ul>
+</li>
+<li><strong>hidden</strong></li>
+<li><strong>image</strong></li>
+<li><strong>password</strong></li>
+<li><strong>radio</strong><ul>
+<li><strong>必须有相同的name才能实现多选一</strong></li>
+</ul>
+</li>
+<li><strong>reset</strong></li>
+<li><strong>submit</strong></li>
+<li><strong>text</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><label>
+*   用于绑定一个表单元素,当点击<label>标签内的文本时,浏览器会自动将光标转到对uing的表单元素,增加用户体验
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><label for = "sex"> 男 </label></p>
+</li>
+</ul>
+<input type = "radio" name = "sex" id = "sex">
+
+<ul>
+<li><strong>name</strong><ul>
+<li>要求单选按钮和复选框要有相同的name值</li>
+</ul>
+</li>
+<li><strong>value</strong></li>
+<li><strong>checked</strong></li>
+<li><strong>maxlength</strong></li>
+<li><strong>select</strong> <strong>下拉表单元素</strong><ul>
+<li>多个选项供用户选择,并且想要节约页面空间</li>
+<li><select>
+
+</li>
+</ul>
+</li>
+</ul>
+<option>选项1</option>
+
+<option>选项2</option>
+
+<option>选项3</option>
+
+<option>选项4</option>
+
+</select>
+
+<ul>
+<li>selected = “selected”</li>
+<li><strong>textarea</strong> <strong>文本域表单元素</strong><ul>
+<li>用户要输入的内容较多时</li>
+<li><textarea >
+
+</li>
+</ul>
+</li>
+</ul>
+<p>文本内容</p>
+</textarea>
+
+<p><strong>小练习</strong></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-15-1024x494.png"></p>
+<p><strong>查阅文档</strong></p>
+<p>推荐网址</p>
+<ul>
+<li>百度</li>
+<li><strong>W3C</strong><ul>
+<li><a target="_blank" rel="noopener" href="http://www.w3school.com.cn/">http://www.w3school.com.cn/</a></li>
+</ul>
+</li>
+<li>MDN(这个没用过)<ul>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/">https://developer.mozilla.org/zh-CN/</a></li>
+</ul>
+</li>
+</ul>
+<p>离线文档</p>
+<ul>
+<li><strong>Z**</strong>eal**</li>
+</ul>
+<p><strong>最后更新时间: 2020.6.28 早上</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/28/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml%E4%B8%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下html二" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/27/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml%E4%BA%8C/">笔记:温习了一下HTML(二)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/27/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml%E4%BA%8C/" class="archive-article-date">
+  	<time datetime="2020-06-27T02:39:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>标签语义</p>
+<ul>
+<li>标签是用来干嘛的</li>
+<li><strong>根据标签的语义**</strong>,<strong><strong>在合适的地方放一个合理的标签</strong></strong>,<strong>**让页面结构更清晰</strong></li>
+</ul>
+<p><strong>常用标签</strong></p>
+<ul>
+<li><p><strong>标题标签</strong> <strong>&lt;****h****1&gt; - &lt;****h****6&gt;</strong></p>
+<ul>
+<li><strong>根据重要性递减</strong></li>
+<li><strong>特点</strong> <strong>:</strong> <strong>文字会变粗**</strong>,<strong>**字号依次变大</strong></li>
+</ul>
+<p><strong>一个标题独占一行</strong></p>
+</li>
+</ul>
+<p><strong>也会有空隙</strong></p>
+<ul>
+<li><strong>段落标签 <p> </p></strong><ul>
+<li><strong>分段落</strong></li>
+<li><strong>一个段落会根据浏览器窗口大小自动换行</strong></li>
+<li><strong>段落和段落之间保有一定的空隙</strong></li>
+</ul>
+</li>
+<li><strong>换行标签 <br />   (break)</strong><ul>
+<li><strong>强制换行</strong></li>
+<li><strong>跟段落不一样,段落之间会有一些垂直的间隙</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-3-1024x422.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-4-1024x813.png"></p>
+<ul>
+<li><p><strong>加粗**</strong>/<strong><strong>倾斜</strong></strong>/<strong><strong>删除线</strong></strong>/<strong>**下划线</strong></p>
+<ul>
+<li><strong>&lt;****strong****&gt;&lt;/****strong****&gt;</strong></li>
+<li><strong>&lt;****em****&gt;&lt;/****em****&gt;</strong></li>
+<li><strong>&lt;****del****&gt;&lt;/****del****&gt;</strong></li>
+<li><strong>&lt;****ins****&gt;&lt;/****ins****&gt;</strong></li>
+</ul>
+</li>
+<li><p><strong>盒子</strong> <strong>&lt;****div****&gt; &lt;****span****&gt;</strong></p>
+<ul>
+<li><strong>装内容的</strong></li>
+<li><strong>&lt;****div****&gt;</strong> <strong>独占一行</strong> <strong>.**</strong>大盒子**</li>
+<li><strong>&lt;****span****&gt;</strong> <strong>一行可以多个</strong> <strong>&lt;****span****&gt;  .**</strong>小盒子**</li>
+</ul>
+</li>
+<li><p><strong>图像</strong></p>
+<ul>
+<li><strong>src</strong> <strong>—–&gt;</strong> <strong>必须属性**</strong>,<strong>**用于指定路径或名字</strong></li>
+<li><strong>一般修改大小**</strong>,<strong><strong>只修改width或height一个即可</strong></strong>,<strong>**会等比例缩放</strong></li>
+<li><strong>键值对</strong> <strong>—-&gt;</strong> <strong>key</strong> <strong>= “**</strong>value**<strong>“</strong></li>
+</ul>
+</li>
+<li><p><strong>根目录: 打开目录文件夹的第一层就是根目录</strong></p>
+</li>
+<li><p><strong>相对路径</strong></p>
+<ul>
+<li><strong>以引用文件所在位置为参考</strong><ul>
+<li><strong>同一级</strong></li>
+<li><strong>下一级 /</strong></li>
+<li><strong>上一级 ../</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>绝对路径</p>
+<ul>
+<li>从 盘符或完整的网络地址 开始的路径</li>
+</ul>
+</li>
+<li><p><strong>超链接</strong></p>
+<ul>
+<li><strong>anchor</strong></li>
+<li><strong>target</strong><ul>
+<li><strong>默认值   _self  —-&gt; 当前页面</strong></li>
+<li><strong>_blank  —-&gt; 新窗口打开</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>链接分类</strong></p>
+<ul>
+<li><strong>空链接</strong><ul>
+<li><strong>href</strong> <strong>= “#”</strong></li>
+</ul>
+</li>
+<li><strong>下载链接</strong><ul>
+<li><strong>href</strong> <strong>=”**</strong>一个文件或者压缩包**<strong>“</strong></li>
+</ul>
+</li>
+<li><strong>锚点链接</strong><ul>
+<li><strong>点击链接定位到</strong> <strong>页面中的某个位置</strong></li>
+<li><strong>步骤</strong><ul>
+<li><strong>href</strong> <strong>= “#**</strong>名字**<strong>“</strong><ul>
+<li><strong>&lt;****a** **href** **= “#****two****”&gt;</strong> <strong>第**</strong>2**<strong>集</strong> <strong>&lt;/****a****&gt;</strong></li>
+</ul>
+</li>
+<li><strong>id</strong> <strong>=</strong> <strong>刚才的名字</strong><ul>
+<li><strong>&lt;****h****3** **id** **= “****two****”&gt;**</strong>第二集介绍**<strong>&lt;/****h****3&gt;</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>文本**</strong>,<strong><strong>图像</strong></strong>,<strong><strong>表格</strong></strong>,<strong><strong>音频</strong></strong>,<strong>**视频都可以添加超链接</strong></p>
+</li>
+<li><p><strong>表格</strong></p>
+<ul>
+<li><strong>展示数据,可读性很好</strong></li>
+<li><strong>表 —&gt; 行 —&gt; 单元格</strong><ul>
+<li><strong>表头单元格标签</strong><ul>
+<li><strong><th> </th></strong></li>
+<li><strong>文本内容会加粗居中</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>&lt;****thead****&gt;</strong></p>
+</li>
+</ul>
+<p><strong>&lt;****tbody****&gt;</strong></p>
+<ul>
+<li><strong>合并单元格</strong><ul>
+<li><strong>跨行合并</strong><ul>
+<li><strong>rowspan = “合并单元格的个数”</strong></li>
+</ul>
+</li>
+<li><strong>跨列合并</strong><ul>
+<li><strong>colspan = “合并单元格的个数”</strong></li>
+</ul>
+</li>
+<li><strong>目标单元格</strong><ul>
+<li><strong>跨行:最上侧单元格为目标单元格</strong></li>
+<li><strong>跨列:最左侧单元格为目标单元格</strong></li>
+</ul>
+</li>
+<li><strong>方法</strong><ul>
+<li><strong>① 确定 跨行还是跨列</strong></li>
+<li><strong>② 找到目标单元格,<td colspan = "2"></td></strong></li>
+<li><strong>③ 删除多余的单元格</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>注释</strong></p>
+<ul>
+<li><strong>快捷键</strong><ul>
+<li><strong>Ct**</strong>rl** <strong>+ /</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>特殊字符</strong></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-14.png"></p>
+<p><strong>最后更新日期 - 2020.6.27 下午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/27/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml%E4%BA%8C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
+    </nav>
   
 
 
@@ -346,8 +2955,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

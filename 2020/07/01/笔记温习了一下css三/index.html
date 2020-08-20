@@ -6,19 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>笔记:温习了一下CSS(三) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="前言 盒子模型应该是CSS最重要也比较难的一部分了,所以新写一篇. 盒子模型  网页布局三大核心 盒子模型 浮动 定位   本质:利用CSS摆盒子 组成 border 组成 style width color   复合写法 border: 1px solid red; 没有顺序   border可以分开写 border - top: 1px solid red;   border-collapse">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/08/20/hello-world/index.html">
+<meta property="og:title" content="笔记:温习了一下CSS(三)">
+<meta property="og:url" content="http://yoursite.com/2020/07/01/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言 盒子模型应该是CSS最重要也比较难的一部分了,所以新写一篇. 盒子模型  网页布局三大核心 盒子模型 浮动 定位   本质:利用CSS摆盒子 组成 border 组成 style width color   复合写法 border: 1px solid red; 没有顺序   border可以分开写 border - top: 1px solid red;   border-collapse">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-20T04:53:50.242Z">
-<meta property="article:modified_time" content="2020-08-20T04:53:50.243Z">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-26-1024x59.png">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-27-1024x58.png">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-12.png">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-28-1024x456.png">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-29.png">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-30-1024x318.png">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-31.png">
+<meta property="article:published_time" content="2020-07-01T13:12:57.000Z">
+<meta property="article:modified_time" content="2020-08-20T07:51:17.998Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chaochao.info/wp-content/uploads/2020/07/image-26-1024x59.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,39 +162,193 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-笔记温习了一下css三" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      笔记:温习了一下CSS(三)
     </h1>
   
 
         
-        <a href="/2020/08/20/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-20T04:53:50.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/01/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%89/" class="archive-article-date">
+  	<time datetime="2020-07-01T13:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p><strong>前言</strong></p>
+<p>盒子模型应该是CSS最重要也比较难的一部分了,所以新写一篇.</p>
+<p>盒子模型</p>
+<ul>
+<li><strong>网页布局三大核心</strong><ul>
+<li><strong>盒子模型</strong></li>
+<li><strong>浮动</strong></li>
+<li><strong>定位</strong></li>
+</ul>
+</li>
+<li>本质:利用CSS摆盒子</li>
+<li>组成<ul>
+<li>border<ul>
+<li>组成<ul>
+<li>style</li>
+<li>width</li>
+<li>color</li>
+</ul>
+</li>
+<li>复合写法<ul>
+<li>border: 1px solid red; 没有顺序</li>
+</ul>
+</li>
+<li>border可以分开写<ul>
+<li>border - top: 1px solid red;</li>
+</ul>
+</li>
+<li><strong>border-collapse</strong><ul>
+<li><strong>控制浏览器绘制**</strong>table**<strong>边框的方式**</strong>.** <strong>它控制相邻**</strong>td**<strong>的边框**</strong>.**</li>
+<li>border-collapse: collapse;</li>
+</ul>
+</li>
+<li>border影响盒子的实际大小</li>
+</ul>
+</li>
+<li>content</li>
+<li>padding<ul>
+<li>组成<ul>
+<li>left</li>
+<li>right</li>
+<li>top</li>
+<li>bottom</li>
+</ul>
+</li>
+<li>复合写法<ul>
+<li>padding<ul>
+<li>1个值, 上下左右</li>
+<li>2个值, 上下,左右</li>
+<li>3个值, 上,左右,下</li>
+<li>4个值, 上,右,下,左</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>padding会影响盒子的实际大小<ul>
+<li>导航栏的应用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>margin</li>
+</ul>
+</li>
+</ul>
+<p><strong>小练习</strong>: padding导航栏</p>
+<p>初始样式</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-26-1024x59.png"></p>
+<p>鼠标移入后</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-27-1024x58.png"></p>
+<p>部分代码</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-12.png"></p>
+<ul>
+<li>margin<ul>
+<li>盒子和盒子之间的距离</li>
+<li>组成<ul>
+<li>left</li>
+<li>right</li>
+<li>top</li>
+<li>bottom</li>
+</ul>
+</li>
+<li>水平居中<ul>
+<li>margin可以让<strong>块级盒子水平居中</strong>,需满足两个条件<ul>
+<li>盒子指定了width</li>
+<li>左右margin设置为auto<ul>
+<li>margin: 0 auto;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>行内元素或者行内块元素水平居中给其父元素添加text-align**</strong>:** <strong>center</strong> <strong>即可</strong></li>
+</ul>
+</li>
+<li><strong>垂直外边距合并</strong><ul>
+<li><strong>一个盒子有margin**</strong>-<strong>**top</strong> <strong>,**</strong>一个盒子有margin**<strong>-**</strong>bottom**<strong>,**</strong>则它们之间的垂直间距不是二者之和**<strong>,**</strong>而是取二者的最大值**</li>
+<li><strong>解决方案</strong><ul>
+<li><strong>尽量只给一个盒子添加margin值</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>塌陷问题</strong><ul>
+<li><strong>父子管旭的块元素**</strong>,<strong><strong>父元素有上边距同时子元素也有上边距</strong></strong>,<strong>**此时父元素会塌陷较大的外边距值</strong></li>
+<li><strong>解决方案</strong><ul>
+<li><strong>①</strong> <strong>为父元素定义上border</strong></li>
+<li><strong>②</strong> <strong>为父元素定义上padding</strong></li>
+<li><strong>③</strong> <strong>为父元素添加</strong> <strong>overflow**</strong>:<strong>**hidden</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>消除默认margin和padding<ul>
+<li>css的第一行代码</li>
+</ul>
+</li>
+</ul>
+<p>*{</p>
+<p>padding:0;</p>
+<p>margin:0;</p>
+<p>}</p>
+<ul>
+<li>行内元素为了照顾兼容性,尽量只设置左右内外边距,不设置上下内外边距</li>
+</ul>
+<p><strong>PS基本操作</strong></p>
+<p>photoshop</p>
+<ul>
+<li>我们用来切图</li>
+<li>快捷键<ul>
+<li>标尺: Ctrl + R </li>
+<li>放大缩小: Ctrl + 加号 /减号</li>
+<li>抓手工具: 空格</li>
+<li>选区<ul>
+<li>Ctrl + D/旁边空白点击: 取消选区</li>
+</ul>
+</li>
+<li>小练习</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-28-1024x456.png"></p>
+<p>部分代码</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-29.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-30-1024x318.png"></p>
+<p>鼠标移入后</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-31.png"></p>
+<p><strong>小总结</strong></p>
+<p>布局为啥用不同的盒子,而我只想到div?</p>
+<ul>
+<li>学的少…只知道div…</li>
+</ul>
+<p>其实还有h,p,span</p>
+<p>class怎么这么多</p>
+<ul>
+<li>名字我都不知道起啥,想用拼音但显得我很low,可是英语水平又那么菜</li>
+</ul>
+<p>到底用margin还是padding</p>
+<ul>
+<li>不知道,我是想到哪就用哪个</li>
+</ul>
+<p>自己做没有思路?</p>
+<ul>
+<li>抄,就是抄,抄小米官网的,F12一按,就有了</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.1 晚上</strong></p>
+<p><strong>最后更新时间: 2020.7.6 下午</strong></p>
 
       
 
@@ -217,6 +379,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -266,7 +439,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/20/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/01/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%B8%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +453,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/08/20/The-first-article/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/04/%E5%88%86%E4%BA%AB%E6%9D%A5%E6%95%99%E4%B8%80%E4%B8%8B%E6%80%8E%E4%B9%88%E7%A7%9F%E6%A2%AF%E5%AD%90%E7%BF%BB%E5%A2%99/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          The first article
+          分享:来教一下怎么租梯子翻墙
         
       </div>
     </a>
   
   
-    <a href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">踩坑: class类名问题</div>
+    <a href="/2020/06/30/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bcss%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">笔记:温习了一下CSS(二)</div>
       <i class="icon-circle-right"></i>
     </a>
   

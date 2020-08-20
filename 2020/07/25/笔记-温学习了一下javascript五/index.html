@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>笔记: 温(学)习了一下JavaScript(五) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="DOM  API - Document Object Model  通过DOM改变网页的内容,结构,样式  Node(节点) — 网页中的所有内容(标签&#x2F;属性&#x2F;文本&#x2F;注释)  文档节点 -document 一个页面文档   元素节点 -element 各个标签   属性节点 标签的属性   文本节点 标签的文本内容     document  浏览器已经为我们提供 文档节点 对象,这个对象是win">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/08/20/hello-world/index.html">
+<meta property="og:title" content="笔记: 温(学)习了一下JavaScript(五)">
+<meta property="og:url" content="http://yoursite.com/2020/07/25/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%94/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="DOM  API - Document Object Model  通过DOM改变网页的内容,结构,样式  Node(节点) — 网页中的所有内容(标签&#x2F;属性&#x2F;文本&#x2F;注释)  文档节点 -document 一个页面文档   元素节点 -element 各个标签   属性节点 标签的属性   文本节点 标签的文本内容     document  浏览器已经为我们提供 文档节点 对象,这个对象是win">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-20T04:53:50.242Z">
-<meta property="article:modified_time" content="2020-08-20T04:53:50.243Z">
+<meta property="article:published_time" content="2020-07-25T08:38:36.000Z">
+<meta property="article:modified_time" content="2020-08-20T07:51:18.246Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,39 +154,682 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-笔记-温学习了一下javascript五" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      笔记: 温(学)习了一下JavaScript(五)
     </h1>
   
 
         
-        <a href="/2020/08/20/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-20T04:53:50.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/25/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%94/" class="archive-article-date">
+  	<time datetime="2020-07-25T08:38:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>DOM</p>
+<ul>
+<li><p>API - Document Object Model</p>
+</li>
+<li><p>通过DOM改变网页的内容,结构,样式</p>
+</li>
+<li><p>Node(节点) — 网页中的所有内容(标签/属性/文本/注释)</p>
+<ul>
+<li>文档节点 -document<ul>
+<li>一个页面文档</li>
+</ul>
+</li>
+<li>元素节点 -element<ul>
+<li>各个标签</li>
+</ul>
+</li>
+<li>属性节点<ul>
+<li>标签的属性</li>
+</ul>
+</li>
+<li>文本节点<ul>
+<li>标签的文本内容</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>document</p>
+<ul>
+<li>浏览器已经为我们提供 文档节点 对象,这个对象是window的属性<ul>
+<li>可以在页面中直接使用</li>
+</ul>
+</li>
+<li>console.dir()<ul>
+<li>打印我们返回的元素对象,能查看对象的属性和方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>获取页面元素</strong></p>
+<ul>
+<li><strong>根据</strong> <strong>id</strong> <strong>获取</strong><ul>
+<li><strong>get**</strong>EL**<strong>ement**</strong>B**<strong>y**</strong>I**<strong>d**</strong>(‘id’)**<ul>
+<li><strong>document.getElementById(‘id**</strong>名**<strong>‘);</strong></li>
+<li><strong>返回的是一个元素**</strong>Object**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>根据</strong> <strong>标签名获取</strong><ul>
+<li><strong>get**</strong>E**<strong>lements**</strong>B**<strong>y**</strong>T**<strong>ag**</strong>N**<strong>ame**</strong>(‘<strong><strong>标签名</strong></strong>‘)**<ul>
+<li><strong>返回的是对象的集合**</strong>(<strong><strong>即使没有这个元素</strong></strong>),<strong>**以伪数组的形式存储</strong></li>
+</ul>
+</li>
+<li><strong>element(**</strong>父元素**<strong>).**</strong>get**<strong>EL**</strong>ements**<strong>B**</strong>y**<strong>T**</strong>ag**<strong>N**</strong>ame**<strong>(‘**</strong>子标签名**<strong>‘)</strong><ul>
+<li><strong>返回当前节点的指定标签名后代节点</strong></li>
+<li><strong>父元素必须是单个对象</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>根据HTML5 新增方法获取</strong></p>
+<ul>
+<li><strong>getElementsByClassName(‘class名’);</strong><ul>
+<li><strong>返回的是对象的集合.与上面类似</strong></li>
+</ul>
+</li>
+<li><strong>querySelector(‘选择器’)</strong><ul>
+<li><strong>需要一个选择器的字符串作为参数</strong></li>
+<li><strong>可以根据一个CSS选择器来查询一个元素节点对象</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>document**</strong>.<strong><strong>querySelector</strong></strong>(“.<strong><strong>box</strong></strong>1** <strong>div**</strong>“);**</p>
+</li>
+<li><p><strong>使用该方法总会返回唯一的元素**</strong>,<strong><strong>如果满足条件的元素有多个</strong></strong>,<strong><strong>则只会返回第一个</strong></strong>.**</p>
+</li>
+<li><p><strong>document**</strong>.<strong><strong>querySelectorAll</strong></strong>()**</p>
+<ul>
+<li><strong>方法**</strong>.<strong><strong>类似于querySelector</strong></strong>()<strong><strong>但会返回多个</strong></strong>,<strong><strong>满足条件有多少个元素就返回多少个</strong></strong>,<strong>**即使符合条件的的元素只有一个也会返回伪数组</strong></li>
+</ul>
+</li>
+<li><p><strong>特殊元素获取</strong></p>
+<ul>
+<li><strong>获取**</strong>body**<strong>元素</strong><ul>
+<li><strong>document**</strong>.<strong>**body</strong></li>
+</ul>
+</li>
+<li><strong>获取**</strong>html**<strong>元素</strong><ul>
+<li><strong>document.**</strong>document**<strong>E**</strong>lement**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>get**</strong>E**<strong>lements**</strong>B**<strong>y**</strong>N**<strong>ame**</strong>()**</p>
+<ul>
+<li><strong>通过name属性</strong></li>
+</ul>
+</li>
+<li><p><strong>元素**</strong>.<strong>**属性名</strong></p>
+<ul>
+<li><strong>class属性不能采用这种方式</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>读取class需要使用元素**</strong>.<strong><strong>class</strong></strong>N**<strong>ame</strong></p>
+<ul>
+<li><strong>DOM**</strong>查询的其它方法**<ul>
+<li><strong>all</strong><ul>
+<li><strong>属性**</strong>,<strong>**页面中所有的元素</strong></li>
+</ul>
+</li>
+<li><strong>ge**</strong>tElementsByTagName(“*“)**<ul>
+<li><strong>获取页面中所有元素</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>事件</p>
+<ul>
+<li>可以被JavaScript侦测到的行为</li>
+<li>事件三要素<ul>
+<li>事件源<ul>
+<li>触发事件的对象</li>
+</ul>
+</li>
+<li>事件类型<ul>
+<li>如何触发 —&gt; 鼠标点击(onclick),滚轮,鼠标经过,键盘按下</li>
+</ul>
+</li>
+<li>事件处理程序<ul>
+<li>通过一个函数赋值的方式完成</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>案例: btn.onclick = function() {}</li>
+<li>事件执行的步骤<ul>
+<li>① 获取事件源  —- &gt; var div = document.querySelector(‘div’);</li>
+<li>② 绑定事件 —&gt; div.onclick</li>
+<li>③ 添加事件处理程序(函数赋值)   —&gt; div.onclick = function() {}</li>
+</ul>
+</li>
+</ul>
+<p>排他思想</p>
+<ul>
+<li>如果有一组元素,我们想要某一个元素实现某种样式,需要用到循环的排他思想算法<ul>
+<li>① 所有元素全部清除样式</li>
+<li>② 给当前元素设置样式</li>
+</ul>
+</li>
+</ul>
+<p>DOM操作</p>
+<p>修改元素文本内容</p>
+<ul>
+<li><p>element.innerText</p>
+<ul>
+<li>var btn = document.querySelector(‘button’);</li>
+<li>var div = document.querySelector(‘div’);</li>
+<li>btn.onclick = function() {<ul>
+<li>div.innerText = getDate();</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><p>innerText不识别html标签,去除空格和换行</p>
+</li>
+<li><p>element.innerHTML</p>
+<ul>
+<li>innerHTML识别html标签,保留空格和换行</li>
+</ul>
+</li>
+<li><p>这两个属性是可读写的,可以获取元素里面的内容</p>
+</li>
+</ul>
+<p>修改元素属性</p>
+<ul>
+<li>获取到的元素.属性名 = ‘要修改的内容’;</li>
+<li>案例: 分时显示不同图片,显示不同的问候语<ul>
+<li>① 根据事件来判断,需要用到日期内置对象</li>
+<li>② 利用多分支语句来设置不同的图片</li>
+<li>③ 修改图片,要修改元素src属性</li>
+<li>④ 需要一个容器,来显示不同问候语,修改元素内容即可</li>
+</ul>
+</li>
+<li>表单元素的属性操作<ul>
+<li>type,value,checked,selected,disabled</li>
+<li>input.value = ‘表单中value代替了innerHTML’;</li>
+<li>表单禁用<ul>
+<li>事件源.disabled = true;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>修改样式属性</p>
+<ul>
+<li><p>方法① 元素.style.样式名 = ‘样式值’;</p>
+<ul>
+<li>注意如果CSS的样式名中含有 -<ul>
+<li>这种名称在JS中是不合法的,比如background - color</li>
+<li>这种样式名需要修改为驼峰命名法, 去掉 -   然后将 - 后的字母大写 backgroundColor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>通过 style属性设置的样式都是内联样式</p>
+<ul>
+<li>而内联样式有较高的优先级,在通过JS修改的样式往往会立即显示</li>
+<li>如果样式中写了 !important,则此时样式会有最高的优先级,即使通过JS也不能覆盖该样式</li>
+</ul>
+</li>
+<li><p>注意, 通过style属性读取和设置的都是内联样式,无法读取样式表中的样式.</p>
+</li>
+<li><p>方法② 元素.className = ‘class名’</p>
+<ul>
+<li>让我们当前元素的class = ‘class名’,会覆盖原来的class名</li>
+<li>如果想要保留原来的class名,可以设为 .className = ‘原来的class名 新class名’;</li>
+</ul>
+</li>
+</ul>
+<p>自定义属性(开发人员自己定义的属性)</p>
+<ul>
+<li>获得属性值<ul>
+<li>element.属性名</li>
+<li>element.getAttribute(‘属性名’);</li>
+<li><strong>区别**</strong>:** <strong>前者获取元素本身自带的属性**</strong>,<strong>**后者获取自定义属性</strong></li>
+</ul>
+</li>
+<li>设置属性值<ul>
+<li>element.属性名 = ‘属性值’  –&gt; 设置内置属性值</li>
+<li>element.setAttribute(‘属性名’,’属性值’); –&gt; 主要针对于自定义属性,也能修改内置属性</li>
+</ul>
+</li>
+<li>删除属性<ul>
+<li>element.removeAttribute(‘属性名’);</li>
+</ul>
+</li>
+<li>H5自定义属性<ul>
+<li>有些自定义属性很容易引起歧义,不容易判断是元素的内置属性还是自定义属性</li>
+<li><strong>H**</strong>5**<strong>规定自定义属性都以**</strong>data-<strong>**为开头</strong></li>
+<li>H5新增 element.dataset.属性名 或者element.dataset[‘属性名’]<ul>
+<li>只能获取data-开头的属性,但写的时候属性名开头就不要有data- 了</li>
+<li>如果自定义属性有多个-,我们获取的时候采取驼峰命名法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>节点操作</p>
+<ul>
+<li>获取元素的方法<ul>
+<li>① 利用DOM提供的方法<ul>
+<li>document.getElementById()</li>
+</ul>
+</li>
+<li>② 利用父子兄节点关系获取元素</li>
+</ul>
+</li>
+<li>节点概述<ul>
+<li>节点基本属性<ul>
+<li>node Type<ul>
+<li>元素节点 node Type 为1</li>
+<li>属性节点 node Type 为2</li>
+<li>文本节点 node Type 为3(文本包括空格,换行,文字)</li>
+</ul>
+</li>
+<li>node Name</li>
+<li>node Value</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>父级节点<ul>
+<li>node.parentNode<ul>
+<li>得到的是离元素最近的父级节点,找不到返回null</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>子节点<ul>
+<li>node.childNodes<ul>
+<li>当前节点的所有子节点</li>
+<li>这个属性会获取包括文本节点在内的所有节点,不推荐使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>DOM间的标签空白(换行)也会被包括进去</p>
+<ul>
+<li><p>node.children</p>
+<ul>
+<li>属性,获取当前元素的所有子元素节点<ul>
+<li>不会包括空白部分</li>
+</ul>
+</li>
+<li>node.children[0]<ul>
+<li>返回第一个子节点,不会有兼容性问题</li>
+</ul>
+</li>
+<li>node.children[node.children.length-1]<ul>
+<li>返回最后一个节点,不会有兼容性问题</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>node.firstChild</p>
+<ul>
+<li>表示当前节点的第一个子节点</li>
+<li>也会包括空白</li>
+</ul>
+</li>
+<li><p>node.firstElementChild</p>
+<ul>
+<li>当前节点的第一个子元素</li>
+</ul>
+</li>
+<li><p>node.lastChild</p>
+<ul>
+<li>当前节点的最后一个子节点</li>
+<li>也会包括空白</li>
+</ul>
+</li>
+<li><p>node.lastElementChild</p>
+<ul>
+<li>当前节点的第一个子元素节点</li>
+</ul>
+</li>
+<li><p>兄弟节点</p>
+<ul>
+<li>node.previousSibling<ul>
+<li>当前节点的上一个兄弟节点</li>
+<li>也会获取空白的文本</li>
+</ul>
+</li>
+<li>node.previousElementSibling<ul>
+<li>当前节点的上一个兄弟元素</li>
+<li>不包括空白部分</li>
+</ul>
+</li>
+<li>node.nextSibling<ul>
+<li>当前节点的下一个兄弟节点</li>
+<li>也可能获取空白的文本,找不到返回null</li>
+</ul>
+</li>
+<li>node.nextElementSibling<ul>
+<li>当前节点的下一个兄弟元素节点</li>
+<li>不包括空白部分</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>创建/放置/删除/复制节点</p>
+<ul>
+<li>document.createElement(‘标签名’);<ul>
+<li>用于创建一个元素节点</li>
+<li>var li = document.createElement(“li”);</li>
+</ul>
+</li>
+<li>element.innerHTML<ul>
+<li>效率低,但创建多个元素效率高(不是拼接字符串,而是采取数组形式拼接),结果稍复杂</li>
+</ul>
+</li>
+<li>document.write(‘&lt;标签名&gt;&lt;/标签名&gt;’)     —了解<ul>
+<li>当文档流执行完毕,会导致页面全部重绘(相当于重新创建了一个新文件)</li>
+</ul>
+</li>
+<li>document.TextNode()<ul>
+<li>创建一个文本节点</li>
+<li>需要一个文本内容作为参数,将会根据该内容创建文本节点,并将新的节点返回</li>
+<li>var gzText = document.createTextNode(“广州”);</li>
+</ul>
+</li>
+<li>node(父节点).appendChild(child);<ul>
+<li>向父节点中添加一个新的子节点到末尾,类似于after伪元素</li>
+<li>ul.appendChild(li);</li>
+</ul>
+</li>
+<li>node.insertBefore(child,指定节点)<ul>
+<li>在指定的子节点前插入新的子节点,类似于before伪元素</li>
+</ul>
+</li>
+<li>node.removeChild(child)<ul>
+<li>删除子节点</li>
+</ul>
+</li>
+<li>node.cloneNode()<ul>
+<li>复制该节点</li>
+<li>参数为空或者false称为浅拷贝,只会复制节点本身,不复制里面的子节点</li>
+<li>参数为true为深拷贝,复制该节点也会复制里面的子节点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>注册事件</p>
+<ul>
+<li>给元素添加事件</li>
+<li>传统方式<ul>
+<li>以on开头的事件<ul>
+<li>onclick/onmouseover</li>
+</ul>
+</li>
+<li>同一个元素同一个事件只能设置一个处理函数</li>
+</ul>
+</li>
+<li>方法监听注册方式<ul>
+<li>W3C标准,推荐方式</li>
+<li>对象.addEventListener(‘事件类型字符串’, 事件处理函数, 可选参数)<ul>
+<li>事件类型字符串: click,mouseover登这里不要带on</li>
+<li>事件处理函数:事件发生时,就会调用该监听函数</li>
+<li>可选参数: 布尔值,默认为false</li>
+<li>对象.addEventListener(‘click’, function() {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>函数语句</p>
+<ul>
+<li><p>})</p>
+<ul>
+<li>当里面有函数名时,不需要加()</li>
+</ul>
+</li>
+<li><p>同一个元素同一个事件可以注册多个监听器,按注册顺序依次执行</p>
+</li>
+<li><p>对象.attachEvent(‘事件类型字符串’,事件处理函数)  —-&gt; IE9之前的了解即可</p>
+<ul>
+<li>事件类型字符串:这里要带on</li>
+</ul>
+</li>
+</ul>
+<p>删除事件</p>
+<ul>
+<li>传统注册方式删除<ul>
+<li>对象.onclick = null;</li>
+</ul>
+</li>
+<li>方法监听注册方式删除<ul>
+<li>对象.removeEventListenner(‘事件类型字符串’, 事件处理函数,可选参数)</li>
+</ul>
+</li>
+</ul>
+<p>注册事件</p>
+<ul>
+<li>给元素添加事件</li>
+<li>传统方式<ul>
+<li>以on开头的事件<ul>
+<li>onclick/onmouseover</li>
+</ul>
+</li>
+<li>同一个元素同一个事件只能设置一个处理函数</li>
+</ul>
+</li>
+<li>方法监听注册方式<ul>
+<li>W3C标准,推荐方式</li>
+<li>对象.addEventListener(‘事件类型字符串’, 事件处理函数, 可选参数)<ul>
+<li>事件类型字符串: click,mouseover登这里不要带on</li>
+<li>事件处理函数:事件发生时,就会调用该监听函数</li>
+<li>可选参数: 布尔值,默认为false</li>
+<li>对象.addEventListener(‘click’, function() {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>函数语句</p>
+<ul>
+<li><p>})</p>
+<ul>
+<li>当里面有函数名时,不需要加()</li>
+</ul>
+</li>
+<li><p>同一个元素同一个事件可以注册多个监听器,按注册顺序依次执行</p>
+</li>
+<li><p>对象.attachEvent(‘事件类型字符串’,事件处理函数)  —-&gt; IE9之前的了解即可</p>
+<ul>
+<li>事件类型字符串:这里要带on</li>
+</ul>
+</li>
+</ul>
+<p>删除事件</p>
+<ul>
+<li>传统注册方式删除<ul>
+<li>对象.onclick = null;</li>
+</ul>
+</li>
+<li>方法监听注册方式删除<ul>
+<li>对象.removeEventListenner(‘事件类型字符串’, 事件处理函数,可选参数)</li>
+</ul>
+</li>
+</ul>
+<p>事件对象</p>
+<ul>
+<li>function(e)</li>
+<li>写到我们监听函数的()里面的就是事件对象,当形参来看.它是系统为我们自动创建的,不需要我们传递参数</li>
+<li>事件对象是我们事件的一系列相关数据的集合<ul>
+<li>鼠标点击包含了鼠标的相关信息,鼠标坐标登</li>
+<li>键盘事件就包含了键盘的信息,判断用户按下了哪个键</li>
+</ul>
+</li>
+<li>常见属性和方法<ul>
+<li>e.target  —-标准<ul>
+<li>返回触发事件的对象(指向点击的对象)</li>
+<li>this 返回的是绑定事件的对象</li>
+</ul>
+</li>
+<li>e.srcElement   —-非标准(ie6-8)<ul>
+<li>返回触发事件的对象</li>
+</ul>
+</li>
+<li>e.type<ul>
+<li>返回事件类型</li>
+</ul>
+</li>
+<li>e.preventDefault()<ul>
+<li>阻止默认行为,让链接不跳转让提交按钮不提交</li>
+<li>return false 也能阻止默认行为但只限于传统注册方式</li>
+</ul>
+</li>
+<li>e.stopPropagation()<ul>
+<li>阻止冒泡,一般是在孩子调用</li>
+<li>兼容性: window.e.cancelBubble = true;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>事件的冒泡(Bubble)</p>
+<ul>
+<li><p>指事件的向上传导,当后代元素上的事件被触发时,其祖先元素的相同事件也会被触发</p>
+</li>
+<li><p>(我亲了小女孩了一下,小女孩打了我一顿,她爸爸又打了我一顿,她爷爷又又打了我一顿,只亲了一下却挨了三顿打.)</p>
+</li>
+<li><p>事件的委派</p>
+<ul>
+<li>我们希望只绑定一次事件,即可应用到多个元素上,即使元素是后添加的.</li>
+<li>尝试将其绑定给元素的共同的祖先元素</li>
+<li>原理:不给每个子节点单独设置事件监听器,而是把事件监听器设置在其父节点上,然后利用冒泡原理设置子节点<ul>
+<li>给ul注册点击事件,利用事件对象的target来找到当前点击的li,因为点击li,事件会冒泡到ul上,ul有注册事件就会触发事件</li>
+</ul>
+</li>
+<li><strong>指将事件统一绑定给共同的祖先元素**</strong>,<strong><strong>这样当后代元素上的事件触发时</strong></strong>,<strong><strong>会一直冒泡到祖先元素</strong></strong>,<strong>**从而通过祖先元素的响应函数来处理事件</strong></li>
+<li>事件委派是利用了冒泡,通过委派可以减少事件绑定的次数,提高程序的性能</li>
+</ul>
+</li>
+</ul>
+<p>鼠标事件</p>
+<ul>
+<li>onclick</li>
+<li>onmouseover</li>
+<li>onmouseout</li>
+<li>onfocus</li>
+<li>onblur</li>
+<li>onmousemove<ul>
+<li>鼠标移动触发</li>
+</ul>
+</li>
+<li>onmouseup<ul>
+<li>鼠标弹起触发</li>
+</ul>
+</li>
+<li>onmousedown<ul>
+<li>鼠标按下触发</li>
+</ul>
+</li>
+<li>contextmenu<ul>
+<li>禁止鼠标右键菜单,e.preventDefault();</li>
+</ul>
+</li>
+<li>selectstart<ul>
+<li>禁止选中文字,e.preventDefault();</li>
+</ul>
+</li>
+</ul>
+<p>鼠标事件对象(MouseEvent)</p>
+<ul>
+<li>e.clientX<ul>
+<li>返回浏览器窗口可视区X坐标</li>
+</ul>
+</li>
+<li>e.clientY<ul>
+<li>返回浏览器窗口可视区Y坐标</li>
+</ul>
+</li>
+<li>e.pageX<ul>
+<li>返回文档页面X坐标</li>
+</ul>
+</li>
+<li>e.pageY<ul>
+<li>返回文档页面Y坐标</li>
+</ul>
+</li>
+<li>e.screenX<ul>
+<li>返回电脑屏幕X坐标</li>
+</ul>
+</li>
+<li>e.screenY<ul>
+<li>返回电脑屏幕Y坐标</li>
+</ul>
+</li>
+</ul>
+<p>键盘事件</p>
+<ul>
+<li>一般绑定给一些可以获取到焦点的对象或者document</li>
+<li>onkeydown<ul>
+<li>按键被按下,不区分大小写(默认大写)</li>
+<li>如果某个键一直不松手则会一直触发<ul>
+<li>当onkeydown连续触发时,第一次和第二次会间隔稍微长一点,其它的会非常快,是为了防止误操作的发生</li>
+</ul>
+</li>
+<li>在文本框输入内容,属于onkeydown的默认行为,如果取消了默认行为,则输入的内容不会出现在文本框中</li>
+</ul>
+</li>
+<li>onkeyup<ul>
+<li>按键被松开</li>
+<li>不区分大小写</li>
+</ul>
+</li>
+<li>onkeypress<ul>
+<li>按键被按下但不包括功能键(ctrl shift 箭头等)</li>
+<li>区分大小写</li>
+</ul>
+</li>
+</ul>
+<p>键盘事件对象</p>
+<ul>
+<li>keyCode<ul>
+<li>通过keyCode来获取按键的ASCII,判断哪个按键被按下</li>
+<li>判断 Y 是否被按下<ul>
+<li>if(event.keyCode == Y的编码){<ul>
+<li>语法</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>判断Y 和Ctrl 是否同时被按下<ul>
+<li>if (event.keyCode == Y的编码 &amp;&amp; event.ctrlKey){<ul>
+<li>语法</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+<p><strong>第一次更新时间: 忘了</strong></p>
+<p><strong>最后一次更新时间: 2020.7.27 下午</strong></p>
 
       
 
@@ -217,6 +860,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -266,7 +920,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/20/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/25/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%94/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +934,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/08/20/The-first-article/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/27/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%85%AD/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          The first article
+          笔记: 温(学)习了一下JavaScript(六)
         
       </div>
     </a>
   
   
-    <a href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">踩坑: class类名问题</div>
+    <a href="/2020/07/25/%E8%B8%A9%E5%9D%91-javascript-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">踩坑: JavaScript - 自定义属性</div>
       <i class="icon-circle-right"></i>
     </a>
   

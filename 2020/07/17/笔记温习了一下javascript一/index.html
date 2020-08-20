@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>笔记:温习了一下JavaScript(一) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="前言 最近家里事情很多,加上自己又懒相当一条咸鱼,所有….. JavaScript  浏览器执行JS 渲染引擎 解析HTML和CSS,也叫内核 js引擎,js解释器.比如chrome的V8.js引擎会逐行解释每一句代码     ECMAScript 一个标准,是Javascript是标准 一个完整的JavaScript由三大部分构成 ECMAScript(JavaScript语法) DOM(接口)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/08/20/hello-world/index.html">
+<meta property="og:title" content="笔记:温习了一下JavaScript(一)">
+<meta property="og:url" content="http://yoursite.com/2020/07/17/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言 最近家里事情很多,加上自己又懒相当一条咸鱼,所有….. JavaScript  浏览器执行JS 渲染引擎 解析HTML和CSS,也叫内核 js引擎,js解释器.比如chrome的V8.js引擎会逐行解释每一句代码     ECMAScript 一个标准,是Javascript是标准 一个完整的JavaScript由三大部分构成 ECMAScript(JavaScript语法) DOM(接口)">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-20T04:53:50.242Z">
-<meta property="article:modified_time" content="2020-08-20T04:53:50.243Z">
+<meta property="article:published_time" content="2020-07-17T13:01:37.000Z">
+<meta property="article:modified_time" content="2020-08-20T07:51:18.107Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,39 +154,819 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-笔记温习了一下javascript一" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      笔记:温习了一下JavaScript(一)
     </h1>
   
 
         
-        <a href="/2020/08/20/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-20T04:53:50.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/17/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2020-07-17T13:01:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>前言</p>
+<p>最近家里事情很多,加上自己又懒相当一条咸鱼,所有…..</p>
+<p>JavaScript</p>
+<ul>
+<li>浏览器执行JS<ul>
+<li>渲染引擎<ul>
+<li>解析HTML和CSS,也叫内核</li>
+<li>js引擎,js解释器.比如chrome的V8.js引擎会逐行解释每一句代码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ECMAScript<ul>
+<li>一个标准,是Javascript是标准</li>
+<li>一个完整的JavaScript由三大部分构成<ul>
+<li>ECMAScript(JavaScript语法)</li>
+<li>DOM(接口)</li>
+<li>BOM</li>
+</ul>
+</li>
+<li>解释型语言<ul>
+<li>不用编译直接运行</li>
+</ul>
+</li>
+<li>动态语言</li>
+<li>基于原型的面向对象</li>
+</ul>
+</li>
+<li>JS代码需要编写到script标签中<ul>
+<li>type = “text/javascript”</li>
+</ul>
+</li>
+<li>输入输出语句<ul>
+<li>alert();<ul>
+<li>控制浏览器弹出一个警告框</li>
+</ul>
+</li>
+<li>document.write()<ul>
+<li>让计算机在页面中输出一个内容</li>
+</ul>
+</li>
+<li>console.log()<ul>
+<li>向控制台输出一个内容(程序员测试用)</li>
+</ul>
+</li>
+<li>prompt()<ul>
+<li>输入框</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>编写位置</p>
+<ul>
+<li>可以将js代码编写到标签的onclick属性中<ul>
+<li><button onclick = "alert('讨厌,点我干嘛')">点我一下</button></li>
+</ul>
+</li>
+<li>将js代码写在超链接的href属性中,当点击超链接会执行js代码<ul>
+<li><a href="JavaScript:alert(' 让你点就点! ');">你也点我一下</a></li>
+<li>href = “JavaScript:;”</li>
+</ul>
+</li>
+<li>以上属于结构和行为耦合,不推荐使用</li>
+<li>将js代码写在script标签</li>
+<li>将js代码写在外部js文件,然后通过script标签引入<ul>
+<li><script type="text/JavaScript" src="js文件所在地"></script></li>
+<li>script标签一旦引入外部文件了,就不能编写内部代码了,即使编写浏览器也会忽略.</li>
+</ul>
+</li>
+</ul>
+<p>基本语法</p>
+<ul>
+<li>注释<ul>
+<li>多行注释<ul>
+<li>/*    */   —- Shift + Alt + A (可以修改为 Ctrl + Shift + /)</li>
+</ul>
+</li>
+<li>单行注释<ul>
+<li>// —-    Ctrl + /</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>严格区分大小写</li>
+<li>每一条语句以分号;结尾<ul>
+<li>如果不写,浏览器会自动添加,但会消耗一些系统资源,而且浏览器会加错分号</li>
+</ul>
+</li>
+<li>会忽略多个空格和换行,利用这个可以对代码进行格式化</li>
+</ul>
+<p>变量</p>
+<ul>
+<li>本质:程序在内存中申请的一块用来存放数据的空间</li>
+<li>使用变量<ul>
+<li>var(variable)<ul>
+<li>var a;  —-&gt; 输出结果为undefined</li>
+</ul>
+</li>
+<li>变量赋值<ul>
+<li>a = 123;</li>
+</ul>
+</li>
+<li>初始化<ul>
+<li>var  a = 123</li>
+</ul>
+</li>
+<li>可以不声明直接使用但不推荐</li>
+</ul>
+</li>
+<li>命名规范<ul>
+<li>① 字母,数字,下划线,美元符号($)</li>
+<li>② 区分大小写</li>
+<li>③ 不能以数字开头</li>
+<li>④ 不能是关键字/保留字/name</li>
+<li>⑤ 名字有意义,遵循驼峰命名法<ul>
+<li>首字母小写,每个单词的开头字母大写,其余字母小写</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>数据类型</p>
+<ul>
+<li>不同的数据所占用的存储空间是不同的,根据占用空间的不同来定义不同的数据类型.</li>
+<li>在JS中一共有6种数据类型—-&gt;弱类型语言<ul>
+<li>String        字符串</li>
+<li>Number     数值</li>
+<li>Boolean     布尔值</li>
+<li>Null            空值</li>
+<li>Undefined 未定义</li>
+<li>Object        对象<ul>
+<li>其中 String  Number  Boolean  Null Undefined  属于基本数据类型</li>
+<li>Object 属于引用数据类型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>String<ul>
+<li>在JS中字符串需要使用引号引起来<ul>
+<li>如果嵌套,遵循 外双内单,外单内双</li>
+<li>推荐使用单引号,因为html使用的是双引号</li>
+</ul>
+</li>
+<li>转义符<ul>
+<li>\“ 表示 “</li>
+<li>\‘ 表示 ‘</li>
+<li>\n 表示换行  newline</li>
+<li>\t 表示缩进  tab</li>
+<li>\b 表示空格 blank</li>
+<li>\\ 表示 \</li>
+</ul>
+</li>
+<li>字符串长度<ul>
+<li>length 属性</li>
+</ul>
+</li>
+<li>拼接<ul>
+<li>字符串 + 任何类型 = 拼接之后的新字符串</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Number<ul>
+<li>在js中所有的数值都是Number类型<ul>
+<li>包括整数和浮点数</li>
+</ul>
+</li>
+<li>范围<ul>
+<li>Number.MAX_VALUE<ul>
+<li>JS中可以表示的数字的最大值</li>
+<li>1.7976931348623157e+308</li>
+<li>如果使用Number表示的数字超过了最大值,则会返回Infinity,表示正无穷</li>
+</ul>
+</li>
+<li>Number.MIN_VALUE<ul>
+<li>最小的正值</li>
+<li>5e-324</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特殊值<ul>
+<li>Infinity - 正无穷</li>
+<li>-Infinity - 负无穷</li>
+<li>NaN - Not a Number</li>
+</ul>
+</li>
+<li>验证是否为Number<ul>
+<li>isNaN()  —-方法,判断非数字,如果是数字返回false,如果非数字返回true</li>
+</ul>
+</li>
+<li>如果使用JS进行浮点计算,可能得到一个不精确的结果<ul>
+<li>0.1+0.2 = 0.300000000000000004</li>
+<li>千万不要使用JS进行对精确度要求比较高的运算</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Boolean<ul>
+<li>true/false</li>
+<li>参与加法运算分别当1/0看待</li>
+</ul>
+</li>
+<li>Null<ul>
+<li>null - 空值</li>
+<li>和数字相加 结果为 被加的数字</li>
+<li>特殊:使用typeof检查会返回object</li>
+</ul>
+</li>
+<li>Undefined<ul>
+<li>undefined</li>
+<li>当声明变量但未赋值时,它的值就是undefined</li>
+<li>和数字相加 结果为 NaN</li>
+</ul>
+</li>
+</ul>
+<p>typeof</p>
+<ul>
+<li>可以使用运算符typeof来检查变量的类型</li>
+<li>语法: typeof 变量<ul>
+<li>typeof a</li>
+<li>console.log(typeof a)</li>
+</ul>
+</li>
+<li>prompt() 取过来的值是 String的</li>
+</ul>
+<p>强制类型转换</p>
+<ul>
+<li><p>指将一个数据类型强制转换为其他的数据类型</p>
+</li>
+<li><p>转换为String</p>
+<ul>
+<li>方式1<ul>
+<li>调用被转换类型的toString()方法<ul>
+<li>a.toString();</li>
+</ul>
+</li>
+<li>该方法不会影响到原变量,它会将转换结果返回<ul>
+<li>a 不变</li>
+<li>b = a.toString();</li>
+<li>a = a.toString();</li>
+</ul>
+</li>
+<li>注意:null 和 undefined 这两个值没有toString()方法,如果调用则会报错</li>
+</ul>
+</li>
+<li>方式2<ul>
+<li>调用String()函数,并将被转换的数据作为参数</li>
+<li>a = String(a);</li>
+<li>使用String()函数做强制类型 转换时</li>
+<li>对于Number和Boolean实际上就是调用的toString()方法</li>
+<li>但对于null和undefined,就不会调用toString()方法</li>
+<li>它会将 null 直接转换为”null”</li>
+<li>   将undefined转换为” undefined “</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>方法3</p>
+<ul>
+<li>‘’ + 被转换</li>
+</ul>
+</li>
+<li><p>转换为Number</p>
+<ul>
+<li>方式1<ul>
+<li>使用Number()函数</li>
+<li>a = Number(a);</li>
+<li>String -&gt; Number<ul>
+<li>纯数字字符串,则转换为数字</li>
+<li>有非数字内容字符串,则转换为NaN</li>
+<li>空串或全为空格,则转换为0</li>
+</ul>
+</li>
+<li>Boolean -&gt; Number<ul>
+<li>ture -&gt; 1</li>
+<li>false -&gt; 0</li>
+</ul>
+</li>
+<li>Null -&gt; Number<ul>
+<li>null -&gt; 0</li>
+</ul>
+</li>
+<li>Undefined -&gt; Number<ul>
+<li>undefined - &gt; NaN</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>方式2<ul>
+<li>parseInt(String)<ul>
+<li>将字符串转换为整数,可以将字符串中有效的整数内容取出来然后转换为Number</li>
+<li>对非String使用该方法,会先将其转换为String,然后再操作</li>
+<li>a = “123px”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>a = parseInt(a);</p>
+<p>a == 123;</p>
+<ul>
+<li>a = “123x423”</li>
+</ul>
+<p>a = parseInt(a);</p>
+<p>a == 123;</p>
+<ul>
+<li>a = “123.423”</li>
+</ul>
+<p>a = parseInt(a);</p>
+<p>a == 123;</p>
+<ul>
+<li>a = “rem120px”;</li>
+</ul>
+<p>a = parseInt(a)</p>
+<p>a == NaN</p>
+<ul>
+<li><p>parseFloat(String)</p>
+<ul>
+<li>将字符串转换为浮点数</li>
+<li>类似于parseInt(),但能取小数</li>
+</ul>
+</li>
+<li><p>方法3</p>
+<ul>
+<li>利用 - * /</li>
+<li>-0  ,*1, /1</li>
+</ul>
+</li>
+<li><p>其它进制数字</p>
+<ul>
+<li>16进制数字<ul>
+<li>0x开头<ul>
+<li>a = 0x123;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>8进制数字<ul>
+<li>0开头<ul>
+<li>a = 070;</li>
+<li>类似于”070”字符串,有些浏览器会当成8进制,有些会当成10进制</li>
+<li>可以在parseInt()传递第2个参数,指定数字的进制<ul>
+<li>a = parseInt(a,10);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2进制数字<ul>
+<li>0b开头,不是所有浏览器都支持<ul>
+<li>a = 0b10;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>转换为Boolean</p>
+<ul>
+<li>Boolean()函数</li>
+<li>Number -&gt; Boolean<ul>
+<li>除了0和NaN,其余的都是true</li>
+</ul>
+</li>
+<li>String -&gt; Boolean<ul>
+<li>除了””(空串),其余都是true</li>
+</ul>
+</li>
+<li>Null -&gt; Boolean<ul>
+<li>null -&gt;false</li>
+</ul>
+</li>
+<li>Undefined -&gt; Boolean<ul>
+<li>undefined -&gt; false</li>
+</ul>
+</li>
+<li>Object -&gt; Boolean<ul>
+<li>都是true</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>运算符</p>
+<ul>
+<li><p>也叫操作符,通过运算符可以对一个或多个值进行运算,并获取运算结果</p>
+<ul>
+<li>比如: typeof 就是运算符,它会将某值类型以字符串的形式返回</li>
+</ul>
+</li>
+<li><p>算术运算符(二元运算符)</p>
+<ul>
+<li>+<ul>
+<li>加法,并将结果返回</li>
+<li>非Number类型进行运算时,会先将其先转换为Number类型,再进行计算(String 除外)</li>
+<li>任何值与NaN进行运算都是NaN</li>
+</ul>
+</li>
+<li>-</li>
+<li>*</li>
+<li>/</li>
+<li>%</li>
+<li>浮点数运算会有问题<ul>
+<li>0.1+0.2 = 0.300000000000000004</li>
+<li>不要使用JS进行对精确度要求比较高的运算</li>
+<li>不要直接判断两个浮点数是否相等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>一元运算符</p>
+<ul>
+<li>只需要一个操作数</li>
+<li>+<ul>
+<li>正号</li>
+<li>对于非Number值,会先转换为Number,应用这个原理和Number()一样</li>
+</ul>
+</li>
+<li>-<ul>
+<li>负号</li>
+<li>对于非Number值,会先转换为Number然后再进行取反</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>自增和自减</strong></p>
+<ul>
+<li><strong>自增 ++</strong><ul>
+<li><strong>使变量在自身的基础上增加1</strong></li>
+<li><strong>a++;</strong> <ul>
+<li><strong>a++ 的值等于原变量的值(自增前的值)</strong></li>
+</ul>
+</li>
+<li><strong>++a;</strong> <ul>
+<li><strong>++a 的值等于原变量自增后的值</strong></li>
+</ul>
+</li>
+<li><strong>无论是a++,还是++a,自增后,原变量的值会立即自增1</strong></li>
+</ul>
+</li>
+<li><strong>自减 –</strong><ul>
+<li><strong>使变量在自身的基础上减1</strong></li>
+<li><strong>a–;</strong><ul>
+<li><strong>a–的值 等于原变量的值(自减前的值)</strong></li>
+</ul>
+</li>
+<li><strong>--a;</strong> <ul>
+<li><strong>--a 的值 等于原变量自减后的值</strong></li>
+</ul>
+</li>
+<li><strong>无论是a–还是 –a 都会立即使原变量的值自减1</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>逻辑运算符</p>
+<ul>
+<li>!<ul>
+<li>非Boolean的情况</li>
+<li><strong>如果对Boolean值进行取反,则会先将其转换为Boolean值再进行取反操作.</strong><ul>
+<li><strong>利用该特点可以将其它类型转换为Boolean</strong></li>
+<li><strong>b = ! ! b;</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&amp;&amp;<ul>
+<li>JS中的”与”是短路的”与”,如果第一个值是false,则不会再判断下一个</li>
+<li>非Boolean的情况 -&gt; 表达式1 &amp;&amp; 表达式2<ul>
+<li>会先将其转换为Boolean,然后再运算,并且返回原值<ul>
+<li>如果表达式1为true,则返回表达式2</li>
+<li>如果表达式1为false,则返回表达式1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>||<ul>
+<li>或</li>
+<li>非Boolean的情况<ul>
+<li>会先将其转换为Boolean,然后再运算,并且返回原值<ul>
+<li>如果表达式1为true,则返回表达式1</li>
+<li>如果表达式1为false,则返回表达式2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>赋值运算符</p>
+<ul>
+<li>=<ul>
+<li>右 赋 左</li>
+</ul>
+</li>
+<li>+=<ul>
+<li>a +=5   等价于 a= a+5</li>
+</ul>
+</li>
+<li>-=<ul>
+<li>a-=5   等价于 a=a-5</li>
+</ul>
+</li>
+<li>*=</li>
+<li>/=</li>
+<li>%=</li>
+</ul>
+</li>
+<li><p>关系运算符</p>
+<ul>
+<li>比较两个值之间的大小关系,如果成立会返回true,不成立则会返回false</li>
+<li>&gt;</li>
+<li>&gt;= <ul>
+<li>大于或等于</li>
+</ul>
+</li>
+<li>&lt;</li>
+<li>&lt;=<ul>
+<li>小于或等于</li>
+</ul>
+</li>
+<li>==<ul>
+<li>使用 == 来比较两个值时,如果值的类型不同,则会自动进行类型转换,将其转换为相同类型,然后再做比较.</li>
+<li>null ==0   -&gt; false</li>
+<li>undefined  == null -&gt;rue</li>
+<li>NaN不和任何值相等包括它本身</li>
+</ul>
+</li>
+<li>!=<ul>
+<li>判断两个值是否不相等</li>
+<li>类似于 ==,也会对变量进行自动的类型转换</li>
+</ul>
+</li>
+<li>===<ul>
+<li>全等</li>
+<li>判断两个值是否全等,<strong>包括数据类型**</strong>,<strong>**不会进行类型转换</strong></li>
+</ul>
+</li>
+<li>!==<ul>
+<li>不全等</li>
+<li>类似于 ===,类型不同直接返回true</li>
+</ul>
+</li>
+<li>非Number的情况<ul>
+<li>会将非Number转化为Number,然后再做比较</li>
+<li>任何值和NaN作比较都是false</li>
+<li><strong>特殊**</strong>:**<ul>
+<li><strong>如果两侧的值都是**</strong>S**<strong>tring**</strong>,<strong><strong>不会将其转换为</strong></strong>N**<strong>umber作比较**</strong>,<strong><strong>而会比较</strong></strong>S**<strong>tring中字符的**</strong>U**<strong>nicode编码</strong></li>
+<li><strong>比较字符编码时是一位一位进行比较</strong><ul>
+<li><strong>两位一样则比较下一位**</strong>,<strong>**利用这个可以来给英文进行排序</strong></li>
+</ul>
+</li>
+<li><strong>比较两个字符串型的数字时**</strong>,<strong>**一定一定要转型</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>条件运算符(三元运算符)</p>
+<ul>
+<li>语法<ul>
+<li>条件表达式 ? 语句1 : 语句2;</li>
+</ul>
+</li>
+<li>流程<ul>
+<li>首先对条件表达式进行求值<ul>
+<li>如果为true,执行语句1,返回执行结果</li>
+<li>如果为false,执行语句2,返回执行结果</li>
+</ul>
+</li>
+<li>嵌套<ul>
+<li>(a&gt;b ?  a :b) &gt; c ?(a&gt;b ?  a :b) :c</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如果 条件表达式 是非Boolean 则会自动转换为Boolean</li>
+</ul>
+</li>
+</ul>
+<p>条件判断语句</p>
+<ul>
+<li>if语句<ul>
+<li>语法1:</li>
+</ul>
+</li>
+</ul>
+<p><strong>if**</strong>(<strong><strong>表达式</strong></strong>)**</p>
+<p><strong>语句**</strong>;**</p>
+<ul>
+<li>表达式为true,则执行if后语句,否则不执行.</li>
+<li>if语句只能控制紧随其后的语句,可以加{}形成代码块</li>
+<li>语法2:<ul>
+<li><strong>if</strong> <strong>(**</strong>表达式**<strong>) {</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>语句**</strong>1;**</p>
+<p><strong>语句**</strong>2;**</p>
+<p><strong>}**</strong>else**<strong>{</strong></p>
+<p><strong>语句**</strong>3;**</p>
+<p><strong>}</strong></p>
+<ul>
+<li>若表达式为true则执行if后语句,否则执行else后的语句</li>
+<li>语法3:<ul>
+<li>if (表达式1) {</li>
+</ul>
+</li>
+</ul>
+<p>语句1</p>
+<p>语句2</p>
+<p>}else if(表达式2){</p>
+<p>语句3</p>
+<p>}else if(表达式3){</p>
+<p>语句4</p>
+<p>}else{</p>
+<p>语句5</p>
+<p>}</p>
+<ul>
+<li>推荐按照从大到小判断</li>
+<li>赋值运算转换Boolean永远为true</li>
+<li>switch<ul>
+<li>语法:<ul>
+<li><strong>switch**</strong>(<strong><strong>条件表达式</strong></strong>){**</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>case</strong> <strong>表达式**</strong>1:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>2:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>3:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>4:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>5:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>default**</strong>:**</p>
+<p><strong>语句</strong></p>
+<p><strong>break**</strong>;**</p>
+<p><strong>}</strong></p>
+<ul>
+<li><strong>执行流程</strong><ul>
+<li><strong>①</strong> <strong>在执行时会依次将case后的表达式的值和switch后的条件表达式进行全等比较**</strong>(===)**</li>
+<li><strong>②</strong> <strong>比较结果为true**</strong>,<strong>**则从当前case处开始执行代码</strong><ul>
+<li><strong>当前case后的代码都会执行</strong></li>
+<li><strong>break</strong><ul>
+<li><strong>使用break可以退出switch语句</strong></li>
+</ul>
+</li>
+<li><strong>de**</strong>fault**<ul>
+<li><strong>如果所有比较结果都为false**</strong>,<strong><strong>则执行default语句</strong></strong>.**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>③</strong> <strong>比较结果为false**</strong>,<strong>**则继续向下比较</strong></li>
+</ul>
+</li>
+</ul>
+<p>循环语句</p>
+<ul>
+<li>反复执行一段代码多次</li>
+<li><strong>创建一个循环**</strong>,<strong>**往往需要三个步骤</strong><ol>
+<li><strong>初始化一个变量</strong></li>
+<li><strong>在循环中设置一个条件表达式</strong></li>
+<li><strong>定义一个更新表达式**</strong>,<strong>**每次更新初始化变量</strong></li>
+</ol>
+</li>
+<li>while<ul>
+<li>语法:</li>
+</ul>
+</li>
+</ul>
+<p>while(条件表达式){</p>
+<p>语句…</p>
+<p>}</p>
+<ul>
+<li>while语句在执行时,先对条件表达式进行求值判断<ul>
+<li>如果值为true,则执行一次循环体<ul>
+<li>循环体执行完毕后,继续对表达式进行判断<ul>
+<li>如果值位true,则继续执行循环体</li>
+<li>如果判断值为false,则终止循环</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>条件表达式为true时,叫做死循环<ul>
+<li>慎用!</li>
+</ul>
+</li>
+<li>终止循环<ul>
+<li>可以使用break;来终止循环</li>
+</ul>
+</li>
+<li>do….while<ul>
+<li>语法:</li>
+</ul>
+</li>
+</ul>
+<p>do{</p>
+<p>语句…</p>
+<p>}while(条件表达式)</p>
+<ul>
+<li>流程<ul>
+<li>do…while语句在执行时,会先执行循环体<ul>
+<li>循环体执行完毕以后,再对while后的条件表达式进行判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>如果表达式结果为true,则继续执行循环体…..</p>
+<p>如果结果为false,则终止</p>
+<ul>
+<li><p>不同于while,do…while 会先执行一次再判断</p>
+</li>
+<li><p>for</p>
+<ul>
+<li>提供了专门的位置来放三个表达式<ol>
+<li>初始化表达式</li>
+<li>条件表达式</li>
+<li>更新表达式</li>
+</ol>
+</li>
+<li>语法<ul>
+<li>for(初始化表达式;条件表达式;更新表达式){</li>
+<li>语句…</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>执行流程</p>
+<ol>
+<li><strong>执行初始化表达式**</strong>(<strong><strong>只会执行一次</strong></strong>)**</li>
+<li><strong>执行条件表达式**</strong>,<strong>**判断是否执行循环</strong><ol>
+<li><strong>如果为true**</strong>,<strong>**则执行循环语句</strong></li>
+<li><strong>如果为false**</strong>,<strong>**终止循环</strong></li>
+</ol>
+</li>
+<li><strong>执行更新表达式**</strong>,<strong><strong>更新完毕回到步骤</strong></strong>2**</li>
+</ol>
+</li>
+<li><p>for中的三部分都可以省略,也可以写在外面</p>
+<ul>
+<li>for( ;; ){</li>
+</ul>
+</li>
+</ul>
+<p>语句…</p>
+<p>}</p>
+<ul>
+<li>利用字符串来控制在一行<ul>
+<li>var str = ‘’;</li>
+<li>str = str + xx ;</li>
+</ul>
+</li>
+<li>双重for 循环<ul>
+<li>for (外层初始化变量; 外层条件表达式; 外层更新表达式){</li>
+</ul>
+</li>
+</ul>
+<p>for(里层初始化变量; 里层条件表达式; 里层更新表达式){</p>
+<p>//执行语句;</p>
+<p>}</p>
+<p>str = str + ‘\n’;</p>
+<ul>
+<li>}</li>
+<li>可以把里层的循环看作外层循环的语句</li>
+<li>外层循环循环一次,里层的循环执行全部</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.17 晚上</strong></p>
+<p><strong>第二次更新时间: 2020.7.18 上午</strong></p>
+<p><strong>最后一次更新时间: 2020.7.19 上午</strong></p>
 
       
 
@@ -217,6 +997,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -266,7 +1057,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/20/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/17/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +1071,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/08/20/The-first-article/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/19/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%8C/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          The first article
+          笔记:温习了一下JavaScript(二)
         
       </div>
     </a>
   
   
-    <a href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">踩坑: class类名问题</div>
+    <a href="/2020/07/10/%E8%AF%97%E6%AD%8C-%E5%88%AB%E4%B8%A2%E6%8E%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">诗歌: 别丢掉</div>
       <i class="icon-circle-right"></i>
     </a>
   

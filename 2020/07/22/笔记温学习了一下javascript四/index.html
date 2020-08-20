@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>笔记:温(学)习了一下JavaScript(四) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="数组  创建数组  方式① new 创建数组 Array构造函数 var arr &#x3D; new Array(); var arr2 &#x3D; new Array(2); arr2表示 数组长度为2,里面有两个空的数组元素 var arr3 &#x3D; new Array(2,3); arr3 表示 有两个数组元素,是2 和3   方式② 数字字面量创建数组 var 数组名 &#x3D; [‘值1’,’值2’,’值3’,……">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/08/20/hello-world/index.html">
+<meta property="og:title" content="笔记:温(学)习了一下JavaScript(四)">
+<meta property="og:url" content="http://yoursite.com/2020/07/22/%E7%AC%94%E8%AE%B0%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%9B%9B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="数组  创建数组  方式① new 创建数组 Array构造函数 var arr &#x3D; new Array(); var arr2 &#x3D; new Array(2); arr2表示 数组长度为2,里面有两个空的数组元素 var arr3 &#x3D; new Array(2,3); arr3 表示 有两个数组元素,是2 和3   方式② 数字字面量创建数组 var 数组名 &#x3D; [‘值1’,’值2’,’值3’,……">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-20T04:53:50.242Z">
-<meta property="article:modified_time" content="2020-08-20T04:53:50.243Z">
+<meta property="og:image" content="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-14.png">
+<meta property="article:published_time" content="2020-07-22T11:51:23.000Z">
+<meta property="article:modified_time" content="2020-08-20T07:51:18.194Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-14.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,39 +156,511 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-笔记温学习了一下javascript四" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      笔记:温(学)习了一下JavaScript(四)
     </h1>
   
 
         
-        <a href="/2020/08/20/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-20T04:53:50.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/22/%E7%AC%94%E8%AE%B0%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%9B%9B/" class="archive-article-date">
+  	<time datetime="2020-07-22T11:51:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>数组</p>
+<ul>
+<li><p>创建数组</p>
+<ul>
+<li>方式① new 创建数组<ul>
+<li>Array构造函数</li>
+<li>var arr = new Array();</li>
+<li>var arr2 = new Array(2);</li>
+<li>arr2表示 数组长度为2,里面有两个空的数组元素</li>
+<li>var arr3 = new Array(2,3);</li>
+<li>arr3 表示 有两个数组元素,是2 和3</li>
+</ul>
+</li>
+<li><strong>方式② 数字字面量创建数组</strong></li>
+<li><strong>var 数组名 = [‘值1’,’值2’,’值3’,……];</strong></li>
+</ul>
+</li>
+<li><p>检测是否为数组</p>
+<ul>
+<li>方法① instanceof 运算符<ul>
+<li>变量名 instanceof Array  —&gt; 返回true 和 false</li>
+</ul>
+</li>
+<li>方法② Array.isArray(被检验参数)    —&gt; 返回true和false</li>
+</ul>
+</li>
+<li><p>添加/删除数组的方法</p>
+<ul>
+<li>push()<ul>
+<li>该方法可以向数组的末尾添加一个或多个元素,并返回数组的新的长度</li>
+<li>将要添加的元素作为参数传递</li>
+<li>arr.push(“唐僧”);</li>
+<li>该方法会将数组新的长度作为返回值返回</li>
+</ul>
+</li>
+<li>pop()<ul>
+<li>删除数组的最后一个元素,并将被删除的元素作为返回值返回</li>
+<li>arr.pop()</li>
+</ul>
+</li>
+<li>unshift()<ul>
+<li>向数组的开头添加一个或多个元素,并返回新的数组长度</li>
+<li>向前面插入元素以后,其他元素的索引会依次调整</li>
+</ul>
+</li>
+<li>shift()<ul>
+<li>删除数组的第一个元素,并将被删除的元素作为返回值返回</li>
+</ul>
+</li>
+<li>案例: 选择满足某条件的数组元素并删除,剩下的组成一个新的数组<ul>
+<li>newAr.push(arr[i]); / newArr[newArr.length] = arr[i];</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数组排序</p>
+<ul>
+<li><p>reverse() —冒泡排序</p>
+<ul>
+<li>反转数组(前边的去后边,后边的去前边)</li>
+<li>会直接修改原数组</li>
+<li>arr.reverse();</li>
+</ul>
+</li>
+<li><p>sort()</p>
+<ul>
+<li><p>对数组中元素进行排序**,默认按照Unicode编码进行排序**</p>
+</li>
+<li><p>会影响原数组</p>
+</li>
+<li><p><strong>可以自己指定排序规则</strong></p>
+</li>
+<li><p><strong>在sort()添加回调函数参数,来指定排序规则回调函数需要定义两个形参</strong></p>
+</li>
+<li><p><strong>浏览器将会分别使用数组中的元素作为实参去调用回调函数</strong></p>
+</li>
+<li><p><strong>使用哪个元素调用不确定,但是肯定的是在数组中a一定在b前边</strong></p>
+</li>
+<li><p><strong>浏览器会根据回调函数的返回值来决定元素的顺序如果返回一个大于0的值,则元素会交换位置</strong></p>
+</li>
+<li><p><strong>如果返回一个小于等于0的值,则元素位置不变</strong></p>
+</li>
+<li><p><strong>arr.sort(function(a,b){</strong></p>
+</li>
+<li><p>if(a&gt;b){      </p>
+<ul>
+<li>return a-b; // 升序排列       </li>
+<li>return b-a; // 降序排列</li>
+<li>return 1;</li>
+<li>}else if(a&lt;b){<ul>
+<li>return -1;</li>
+<li>}else{<ul>
+<li>return 0;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><strong>})</strong>              </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数组索引方法</p>
+<ul>
+<li>indexOf()<ul>
+<li>根据元素值从前往后查找索引</li>
+<li>只返回第一个满足条件的索引号</li>
+<li>如果存在则返回索引号,不存在返回-1</li>
+</ul>
+</li>
+<li>lastIndexOf()<ul>
+<li>根据元素值从后往前查找索引号</li>
+<li>如果存在则返回索引号,不存在返回-1</li>
+</ul>
+</li>
+<li>数组去重案例<ul>
+<li>核心<ul>
+<li> 遍历旧数组, 根据旧数组的元素值去查询新数组,如果返回-1,则添加这个数组,否则不添加</li>
+</ul>
+</li>
+<li>functon unique(arr) {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>var newArr[];</p>
+<p>for (var i = 0; i&lt; arr.length; i++){</p>
+<p>if (newArr[].indexOf(arr[i]) === -1){</p>
+<p>newArr.push(arr[i]);</p>
+<p>}</p>
+<p>return newArr;</p>
+<p>}</p>
+<ul>
+<li>}</li>
+<li>数组转换为String<ul>
+<li>join(‘连接符’)<ul>
+<li>将数组转换为字符串,将转换后的字符串作为结果返回</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>该方法不会对原数组产生影响</p>
+<ul>
+<li><strong>在join**</strong>()<strong><strong>中可以指定一个字符串作为参数</strong></strong>,<strong>**这个字符串将会成为数组中元素的连接符</strong></li>
+</ul>
+<p><strong>默认为</strong> <strong>,</strong></p>
+<ul>
+<li>arr.join()</li>
+<li>toString()<ul>
+<li>转换为String,逗号分隔</li>
+</ul>
+</li>
+<li>其它<ul>
+<li>forEach<ul>
+<li>一般都是使用for循环去遍历数组,JS中还有forEach()方法来遍历数组</li>
+<li>forEach()方法需要作为一个函数作为参数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>数组中有几个元素,函数就会执行几次,每次执行时,浏览器会将遍历到的元素会以实参的形式传递进来,我们可以定义形参来读取这些内容</p>
+<p><strong>浏览器会在回调函数中传递**</strong>3**<strong>个参数</strong></p>
+<ol>
+<li><strong>数组元素</strong></li>
+<li><strong>数组索引</strong></li>
+<li><strong>数组对象</strong></li>
+</ol>
+<p>arr.forEach(function(){</p>
+<p>console.log()</p>
+<p>});</p>
+<p>这种由我们创建但不由我们调用的,我们称为回调函数</p>
+<ul>
+<li>slice()<ul>
+<li>可以从数组中提取指定元素</li>
+</ul>
+</li>
+</ul>
+<p>不会改变原数组,而是将截取到的元素封装到一个新数组中返回</p>
+<ul>
+<li>参数:<ul>
+<li>[start,end)</li>
+<li>start<ul>
+<li>开始位置索引</li>
+</ul>
+</li>
+<li>end<ul>
+<li>结束位置索引</li>
+<li>第二个参数可以不写,会截取开始索引以后的所有元素</li>
+</ul>
+</li>
+<li>索引可以传递负值,如果传递一个负值,则从后往前计算</li>
+</ul>
+</li>
+</ul>
+<p>-1 表示倒数第一个</p>
+<p>-2 倒数第二个</p>
+<ul>
+<li><p>arr.slice(0,2);</p>
+</li>
+<li><p>splice()</p>
+<ul>
+<li>可用于删除数组中的指定元素</li>
+</ul>
+</li>
+</ul>
+<p><strong>会改变原数组**</strong>,<strong>**会将指定元素从原数组中删除</strong></p>
+<p>并将被删除的元素作为返回值返回</p>
+<ul>
+<li>参数:<ul>
+<li>第一个:start<ul>
+<li>开始位置索引</li>
+</ul>
+</li>
+<li>第二个:删除数量n</li>
+<li>第三个及以后<ul>
+<li>可以传递一些新的元素,这些元素会自动插入到第一步开始位置索引的前边</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>arr.splice(0,2,”牛魔王”,”铁扇公主”);</li>
+<li>concat()<ul>
+<li>可以连接多个数组,并将新的数组返回</li>
+</ul>
+</li>
+</ul>
+<p>该方法不会对原数组产生影响</p>
+<ul>
+<li>不仅可以传数组,还可以传其他</li>
+<li>arr.concat(arr2);</li>
+</ul>
+<p>arr.concat(arr2,arr3);</p>
+<p><strong>String</strong></p>
+<ul>
+<li>三个特殊的引用类型: String , Number , Boolean.基本包装类型就是把简单数据类型包装成为复杂数据类型,这样基本数据类型就有了属性和方法.</li>
+<li>在底层字符串是以字符数组的形式保存的<ul>
+<li>[“I” “L” “o” “v” “e” “y” “o” “u”]</li>
+</ul>
+</li>
+<li>字符串的不可变<ul>
+<li>指具体的值不可变,虽然看起来可以改变内容, 但其实是地址变了,内存中新开辟了一个内存空间</li>
+<li>在大量拼接字符串的时候会有效率内存问题</li>
+</ul>
+</li>
+<li>length属性<ul>
+<li>可以获取字符串的长度</li>
+</ul>
+</li>
+<li>方法  — 所有的方法都不会修改字符串本身(字符串的不可变),而是返回一个新的字符串<ul>
+<li><strong>char**</strong>A**<strong>t**</strong>()**<ul>
+<li><strong>返回字符串中指定位置的字符</strong></li>
+<li><strong>根据索引获取指定字符</strong></li>
+<li><strong>str**</strong>.<strong><strong>char</strong></strong>A**<strong>t**</strong>()**</li>
+</ul>
+</li>
+<li><strong>char**</strong>C**<strong>ode**</strong>A**<strong>t**</strong>()**<ul>
+<li><strong>根据索引号返回字符串指定位置相应**</strong>ASCII**<strong>的编码</strong></li>
+<li><strong>目的**</strong>:<strong>**判断用户按下了哪个键</strong></li>
+</ul>
+</li>
+<li><strong>str[index]</strong><ul>
+<li><strong>获取指定索引处字符</strong></li>
+<li><strong>HTML5,**</strong>和**<strong>charAt()**</strong>等效**</li>
+</ul>
+</li>
+<li><strong>案例**</strong>:<strong><strong>判断一个字符串中出现次数最多的字符</strong></strong>,<strong>**并统计其次数</strong><ul>
+<li><strong>①</strong> <strong>利用**</strong>charAt()<strong>**遍历整个字符串</strong></li>
+<li><strong>②</strong> <strong>把每个字符存储给一个对象作为属性名**</strong>,<strong><strong>如果对象没有该字符</strong></strong>,<strong><strong>就让其属性值为</strong></strong>1,<strong><strong>如果存在了就让属性值</strong></strong>+1**</li>
+<li><strong>③</strong> <strong>遍历对象**</strong>,<strong>**得到最大值和该字符</strong></li>
+<li><strong>var o = {};</strong></li>
+<li><strong>for(var i = 0; i&lt;str.length;i++){</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>var chars = str.charAt(i);</p>
+<p>if(o[chars]) {</p>
+<p>o[chars]++;</p>
+<p>}else {</p>
+<p>o[chars] = 1;</p>
+<p>}</p>
+<ul>
+<li><strong>}</strong></li>
+<li><strong>var max = 0 ;var ch = ‘’;</strong></li>
+<li><strong>for (var k in o) {</strong></li>
+</ul>
+<p>if (o[k] &gt; max) {</p>
+<p>max = o[k];</p>
+<p>ch = k;</p>
+<p>}</p>
+<ul>
+<li><p><strong>}</strong></p>
+</li>
+<li><p>fromCharCode()</p>
+<ul>
+<li>可以根据字符编码去获取字符</li>
+<li>语法:<ul>
+<li>String.formCharCode()</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>indexOf()</p>
+<ul>
+<li><strong>可以检索一个字符串中是否含有指定内容**</strong>,**</li>
+</ul>
+</li>
+</ul>
+<p><strong>将第一次出现的索引作为返回值</strong></p>
+<p><strong>如果没有找到**</strong>,<strong><strong>则返回</strong></strong>-1**</p>
+<ul>
+<li>str.indexOf(“h”)</li>
+<li>可以第二个参数(索引号),指定开始查找位置</li>
+<li>案例题 : 查找字符串中某个具体值(x)的位置和出现的次数<ul>
+<li>① 先查找第一个x出现的位置</li>
+<li>② 只要indexOf返回的结果不是 -1,则继续往后查找</li>
+<li>③ 利用indexOf的的二哥参数,当前索引+1,从而继续查找<ul>
+<li>var str = ‘被查找的字符串’;</li>
+<li>var index = str.indexOf(‘x’);</li>
+<li>var i = 0;</li>
+<li>while(index !== -1) {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>console.log(index);</p>
+<p>i++;</p>
+<p>str.indexOf(‘x’,index + 1);</p>
+<ul>
+<li><p>}</p>
+</li>
+<li><p>console.log(‘x出现的次数是:’ + i )</p>
+</li>
+<li><p>lastIndexOf()</p>
+<ul>
+<li>类似于indexOf(),不同是从后往前找</li>
+<li>也可以指定第二参数</li>
+</ul>
+</li>
+<li><p>concat(str1,str2,str3……)</p>
+<ul>
+<li>可以连接多个字符串</li>
+</ul>
+</li>
+</ul>
+<p>作用和+一样</p>
+<ul>
+<li>str.concat()</li>
+<li>slice(start,end)<ul>
+<li>从字符串中截取指定内容</li>
+</ul>
+</li>
+</ul>
+<p>[  )</p>
+<ul>
+<li><p>str.slice(0,2)</p>
+</li>
+<li><p>参数:</p>
+<ul>
+<li>第一个: 开始位置索引</li>
+<li>第二个:结束位置参数<ul>
+<li>如果省略第二个参数,则会截取到后边所有的</li>
+<li>-1 表示倒数第一个</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>substr(start,length)</p>
+<ul>
+<li>从start(索引号)开始,length为取的个数.</li>
+</ul>
+</li>
+<li><p>subString()</p>
+<ul>
+<li>截取字符串,和slice()类似</li>
+<li>参数:<ul>
+<li>第一个,开始位置索引</li>
+<li>第二个:结束位置索引</li>
+</ul>
+</li>
+<li>不同的是不能接受负值,如果传递负值则默认使用0,而且会自动调整参数的位置,如果第一个参数大于第二个,则自动交换</li>
+</ul>
+</li>
+<li><p>split(分隔符)</p>
+<ul>
+<li>将字符串拆分为一个数组</li>
+<li>str.split(,)</li>
+<li>参数:<ul>
+<li>需要一个字符串作为参数,将会根据该字符串去拆分数组<ul>
+<li>该字符串会没了</li>
+<li>传递””空串则会将每个字符都拆分为数组中的一个元素</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>replace(‘被替换的字符’,’替换的字符’)</p>
+<ul>
+<li>只会替换第一个字符</li>
+</ul>
+</li>
+<li><p>替换案例</p>
+<ul>
+<li>var str1 = ‘被替换的字符串’;</li>
+<li>while (str1.indexOf(‘被替换字符’) !== -1){</li>
+</ul>
+</li>
+</ul>
+<p>str1 = str1.replace(‘被替换字符’,’替换的字符’);</p>
+<ul>
+<li><p>}</p>
+</li>
+<li><p>toUpperCase()</p>
+<ul>
+<li>转换成大写</li>
+<li>abcdefg = ABCDEFG</li>
+</ul>
+</li>
+<li><p>toLowerCse()</p>
+<ul>
+<li>转换成小写</li>
+</ul>
+</li>
+<li><p>基本数据类型/引用数据类型</p>
+<ul>
+<li>基本数据类型存放在栈 ;引用数据类型存放在堆</li>
+<li>值类型<ul>
+<li>基本数据类型在存储变量中存储的是值,因此叫做值类型</li>
+</ul>
+</li>
+<li>引用数据类型是把地址(十六进制)存放在了栈,这个地址指向了堆<ul>
+<li>如果有个变量打算存储为对象,暂时没想好放啥,这个时候给null</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-14.png" alt="计算机生成了可选文字:
+篙单掂类型漱到栈
+面存的是值
+18
+11“亡
+[1,2，3]：复杂
+掘窦型
+2
+3"></p>
+<ul>
+<li>每创建一个新对象,就会在堆内存中开辟初一个新的空间</li>
+</ul>
+<p>而变量保存的是对象的内存地址(对象的引用)</p>
+<ul>
+<li><p>如果两个变量保存的是同一个变量引用,当一个通过一个变量修改属性时命令一个也会受到影响</p>
+<ul>
+<li>(类似与 孤独娃娃)<ul>
+<li>扎娃娃就是扎本人.娃娃和本人建立了联系</li>
+<li>两个娃娃都指向本人,其中一个娃娃的腿没了,另一个也没有了.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>当比较两个基本数据类型时,就是比较值</p>
+</li>
+<li><p>而当比较两个引用数据类型时,比较的是内存地址.</p>
+</li>
+</ul>
+<p>API - Application Programming Interface  – 应用程序编程接口</p>
+<ul>
+<li>一些预先定义的函数,提供给程序员的一种工具,以便能更轻松的实现想要完成的功能.</li>
+</ul>
+<p>手机充电功能,不需要知道手机内部充电的原理,只需要把充电线插入充电接口就行,<strong>充电接口就是一个**</strong>API**</p>
+<p>Web API</p>
+<ul>
+<li>浏览器提供的一套操作浏览器功能和页面元素的API(BOM / DOM)</li>
+<li>是JS的应用,大量使用JS基础语法做交互效果</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.22 晚上</strong></p>
 
       
 
@@ -217,6 +691,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -266,7 +751,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/20/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/22/%E7%AC%94%E8%AE%B0%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%9B%9B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +765,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/08/20/The-first-article/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/24/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bgit/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          The first article
+          笔记: 学习了一下Git
         
       </div>
     </a>
   
   
-    <a href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">踩坑: class类名问题</div>
+    <a href="/2020/07/21/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">笔记:学习了一下微信小程序(一)</div>
       <i class="icon-circle-right"></i>
     </a>
   

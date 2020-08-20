@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -152,33 +152,682 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-The-first-article" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-笔记-温学习了一下javascript五" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/20/The-first-article/">The first article</a>
+      <a class="article-title" href="/2020/07/25/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%94/">笔记: 温(学)习了一下JavaScript(五)</a>
     </h1>
   
 
         
-        <a href="/2020/08/20/The-first-article/" class="archive-article-date">
-  	<time datetime="2020-08-20T07:04:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/25/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%94/" class="archive-article-date">
+  	<time datetime="2020-07-25T08:38:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="开学了-我大三了"><a href="#开学了-我大三了" class="headerlink" title="开学了,我大三了!"></a>开学了,我大三了!</h4><p>这两天学校开学,我该准备一下去学校了,并且意识到我已经大三了!时间过的很快呀.写下这篇文章也是想对大三上半学期做一些期望吧.</p>
-<p>开学对我来说是一件比较高兴的事情,因为我挺喜欢学校的,因为学校更自由一些,更有一群可爱的人吧,现教的教室,宿舍的室友,食堂的牛肉汤,新操场的大探照以及鸣飞湖的小鸭子.这些美好东西我会见证4年,而现在已经过了一半更要享受呀.</p>
-<p>当然也会有各种各样的问题会随之而来,学习成绩问题,人际交往问题,班级同学问题,时间规划问题,老师问题等等.但总得面对的.但这些问题也不算问题其实算起来,为什么,这就是写好一个美丽的程序的同时随之而来的bug,不可能不出现的,bug总会被修复但bug永远修复不完的.</p>
-<p>大三上个学期的目标之一是过6级吧,很无耻的说,大二的暑假我几乎一点都没复习英语,连手机背单词app都几乎没用过,我想9月份的6级考试我可以不去了直接去准备12月份的吧.真的很想过6级,这像是一种偏执,因为我的学校本身就不算好了,以后相比那些厉害学校肯定会或多或少受到轻视,我可以不受到重视但不想受到轻视,所有我想过6级的念想还是比较大的.当然暑假没复习英语我很惭愧没过也是应当的.</p>
-<p>当然还有专业课吧,我都想好了,有的专业课应该是和我室友一起上的,那些课我就跟着室友坐就行,还有专业课好像是我一个人上,那我就去后面坐,不去前面坐了.前面谁爱坐谁坐,不会和以前一样了.省的遇见不必要的麻烦而且对我听课影响不大.</p>
-<p>突然想起来刚放假我已经回家的时候为了帮我以及别人找别人要了两份JSP大作业,代价是一学期的作业答案.现在开学了只希望到时候我找那几个同学要作业抄的时候不嫌弃我.可一想到它们好像专业方向和我不同有些专业课我没办法抄它们的.</p>
-<p>心态变了很多,要不然我觉得我也敲不了这么多字的.放暑假的时候我为了减少冗余我特地把很多人的微信朋友圈屏蔽了,包括我的班主任以及学院老师,不能否定他们发的东西是他们的工作但他们的那些微信公众号文章对我一点用处也没有,我也没有兴趣去了解那些.学校的微信公众号,学院的微信公众号我都也已经取关了,要不是为了看青年大学习,津彩青春我也恨不得取关,共青团中央也取关了,一个人民日报就够了解最近的新闻了.</p>
+        <p>DOM</p>
+<ul>
+<li><p>API - Document Object Model</p>
+</li>
+<li><p>通过DOM改变网页的内容,结构,样式</p>
+</li>
+<li><p>Node(节点) — 网页中的所有内容(标签/属性/文本/注释)</p>
+<ul>
+<li>文档节点 -document<ul>
+<li>一个页面文档</li>
+</ul>
+</li>
+<li>元素节点 -element<ul>
+<li>各个标签</li>
+</ul>
+</li>
+<li>属性节点<ul>
+<li>标签的属性</li>
+</ul>
+</li>
+<li>文本节点<ul>
+<li>标签的文本内容</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>document</p>
+<ul>
+<li>浏览器已经为我们提供 文档节点 对象,这个对象是window的属性<ul>
+<li>可以在页面中直接使用</li>
+</ul>
+</li>
+<li>console.dir()<ul>
+<li>打印我们返回的元素对象,能查看对象的属性和方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>获取页面元素</strong></p>
+<ul>
+<li><strong>根据</strong> <strong>id</strong> <strong>获取</strong><ul>
+<li><strong>get**</strong>EL**<strong>ement**</strong>B**<strong>y**</strong>I**<strong>d**</strong>(‘id’)**<ul>
+<li><strong>document.getElementById(‘id**</strong>名**<strong>‘);</strong></li>
+<li><strong>返回的是一个元素**</strong>Object**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>根据</strong> <strong>标签名获取</strong><ul>
+<li><strong>get**</strong>E**<strong>lements**</strong>B**<strong>y**</strong>T**<strong>ag**</strong>N**<strong>ame**</strong>(‘<strong><strong>标签名</strong></strong>‘)**<ul>
+<li><strong>返回的是对象的集合**</strong>(<strong><strong>即使没有这个元素</strong></strong>),<strong>**以伪数组的形式存储</strong></li>
+</ul>
+</li>
+<li><strong>element(**</strong>父元素**<strong>).**</strong>get**<strong>EL**</strong>ements**<strong>B**</strong>y**<strong>T**</strong>ag**<strong>N**</strong>ame**<strong>(‘**</strong>子标签名**<strong>‘)</strong><ul>
+<li><strong>返回当前节点的指定标签名后代节点</strong></li>
+<li><strong>父元素必须是单个对象</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>根据HTML5 新增方法获取</strong></p>
+<ul>
+<li><strong>getElementsByClassName(‘class名’);</strong><ul>
+<li><strong>返回的是对象的集合.与上面类似</strong></li>
+</ul>
+</li>
+<li><strong>querySelector(‘选择器’)</strong><ul>
+<li><strong>需要一个选择器的字符串作为参数</strong></li>
+<li><strong>可以根据一个CSS选择器来查询一个元素节点对象</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>document**</strong>.<strong><strong>querySelector</strong></strong>(“.<strong><strong>box</strong></strong>1** <strong>div**</strong>“);**</p>
+</li>
+<li><p><strong>使用该方法总会返回唯一的元素**</strong>,<strong><strong>如果满足条件的元素有多个</strong></strong>,<strong><strong>则只会返回第一个</strong></strong>.**</p>
+</li>
+<li><p><strong>document**</strong>.<strong><strong>querySelectorAll</strong></strong>()**</p>
+<ul>
+<li><strong>方法**</strong>.<strong><strong>类似于querySelector</strong></strong>()<strong><strong>但会返回多个</strong></strong>,<strong><strong>满足条件有多少个元素就返回多少个</strong></strong>,<strong>**即使符合条件的的元素只有一个也会返回伪数组</strong></li>
+</ul>
+</li>
+<li><p><strong>特殊元素获取</strong></p>
+<ul>
+<li><strong>获取**</strong>body**<strong>元素</strong><ul>
+<li><strong>document**</strong>.<strong>**body</strong></li>
+</ul>
+</li>
+<li><strong>获取**</strong>html**<strong>元素</strong><ul>
+<li><strong>document.**</strong>document**<strong>E**</strong>lement**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>get**</strong>E**<strong>lements**</strong>B**<strong>y**</strong>N**<strong>ame**</strong>()**</p>
+<ul>
+<li><strong>通过name属性</strong></li>
+</ul>
+</li>
+<li><p><strong>元素**</strong>.<strong>**属性名</strong></p>
+<ul>
+<li><strong>class属性不能采用这种方式</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>读取class需要使用元素**</strong>.<strong><strong>class</strong></strong>N**<strong>ame</strong></p>
+<ul>
+<li><strong>DOM**</strong>查询的其它方法**<ul>
+<li><strong>all</strong><ul>
+<li><strong>属性**</strong>,<strong>**页面中所有的元素</strong></li>
+</ul>
+</li>
+<li><strong>ge**</strong>tElementsByTagName(“*“)**<ul>
+<li><strong>获取页面中所有元素</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>事件</p>
+<ul>
+<li>可以被JavaScript侦测到的行为</li>
+<li>事件三要素<ul>
+<li>事件源<ul>
+<li>触发事件的对象</li>
+</ul>
+</li>
+<li>事件类型<ul>
+<li>如何触发 —&gt; 鼠标点击(onclick),滚轮,鼠标经过,键盘按下</li>
+</ul>
+</li>
+<li>事件处理程序<ul>
+<li>通过一个函数赋值的方式完成</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>案例: btn.onclick = function() {}</li>
+<li>事件执行的步骤<ul>
+<li>① 获取事件源  —- &gt; var div = document.querySelector(‘div’);</li>
+<li>② 绑定事件 —&gt; div.onclick</li>
+<li>③ 添加事件处理程序(函数赋值)   —&gt; div.onclick = function() {}</li>
+</ul>
+</li>
+</ul>
+<p>排他思想</p>
+<ul>
+<li>如果有一组元素,我们想要某一个元素实现某种样式,需要用到循环的排他思想算法<ul>
+<li>① 所有元素全部清除样式</li>
+<li>② 给当前元素设置样式</li>
+</ul>
+</li>
+</ul>
+<p>DOM操作</p>
+<p>修改元素文本内容</p>
+<ul>
+<li><p>element.innerText</p>
+<ul>
+<li>var btn = document.querySelector(‘button’);</li>
+<li>var div = document.querySelector(‘div’);</li>
+<li>btn.onclick = function() {<ul>
+<li>div.innerText = getDate();</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><p>innerText不识别html标签,去除空格和换行</p>
+</li>
+<li><p>element.innerHTML</p>
+<ul>
+<li>innerHTML识别html标签,保留空格和换行</li>
+</ul>
+</li>
+<li><p>这两个属性是可读写的,可以获取元素里面的内容</p>
+</li>
+</ul>
+<p>修改元素属性</p>
+<ul>
+<li>获取到的元素.属性名 = ‘要修改的内容’;</li>
+<li>案例: 分时显示不同图片,显示不同的问候语<ul>
+<li>① 根据事件来判断,需要用到日期内置对象</li>
+<li>② 利用多分支语句来设置不同的图片</li>
+<li>③ 修改图片,要修改元素src属性</li>
+<li>④ 需要一个容器,来显示不同问候语,修改元素内容即可</li>
+</ul>
+</li>
+<li>表单元素的属性操作<ul>
+<li>type,value,checked,selected,disabled</li>
+<li>input.value = ‘表单中value代替了innerHTML’;</li>
+<li>表单禁用<ul>
+<li>事件源.disabled = true;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>修改样式属性</p>
+<ul>
+<li><p>方法① 元素.style.样式名 = ‘样式值’;</p>
+<ul>
+<li>注意如果CSS的样式名中含有 -<ul>
+<li>这种名称在JS中是不合法的,比如background - color</li>
+<li>这种样式名需要修改为驼峰命名法, 去掉 -   然后将 - 后的字母大写 backgroundColor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>通过 style属性设置的样式都是内联样式</p>
+<ul>
+<li>而内联样式有较高的优先级,在通过JS修改的样式往往会立即显示</li>
+<li>如果样式中写了 !important,则此时样式会有最高的优先级,即使通过JS也不能覆盖该样式</li>
+</ul>
+</li>
+<li><p>注意, 通过style属性读取和设置的都是内联样式,无法读取样式表中的样式.</p>
+</li>
+<li><p>方法② 元素.className = ‘class名’</p>
+<ul>
+<li>让我们当前元素的class = ‘class名’,会覆盖原来的class名</li>
+<li>如果想要保留原来的class名,可以设为 .className = ‘原来的class名 新class名’;</li>
+</ul>
+</li>
+</ul>
+<p>自定义属性(开发人员自己定义的属性)</p>
+<ul>
+<li>获得属性值<ul>
+<li>element.属性名</li>
+<li>element.getAttribute(‘属性名’);</li>
+<li><strong>区别**</strong>:** <strong>前者获取元素本身自带的属性**</strong>,<strong>**后者获取自定义属性</strong></li>
+</ul>
+</li>
+<li>设置属性值<ul>
+<li>element.属性名 = ‘属性值’  –&gt; 设置内置属性值</li>
+<li>element.setAttribute(‘属性名’,’属性值’); –&gt; 主要针对于自定义属性,也能修改内置属性</li>
+</ul>
+</li>
+<li>删除属性<ul>
+<li>element.removeAttribute(‘属性名’);</li>
+</ul>
+</li>
+<li>H5自定义属性<ul>
+<li>有些自定义属性很容易引起歧义,不容易判断是元素的内置属性还是自定义属性</li>
+<li><strong>H**</strong>5**<strong>规定自定义属性都以**</strong>data-<strong>**为开头</strong></li>
+<li>H5新增 element.dataset.属性名 或者element.dataset[‘属性名’]<ul>
+<li>只能获取data-开头的属性,但写的时候属性名开头就不要有data- 了</li>
+<li>如果自定义属性有多个-,我们获取的时候采取驼峰命名法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>节点操作</p>
+<ul>
+<li>获取元素的方法<ul>
+<li>① 利用DOM提供的方法<ul>
+<li>document.getElementById()</li>
+</ul>
+</li>
+<li>② 利用父子兄节点关系获取元素</li>
+</ul>
+</li>
+<li>节点概述<ul>
+<li>节点基本属性<ul>
+<li>node Type<ul>
+<li>元素节点 node Type 为1</li>
+<li>属性节点 node Type 为2</li>
+<li>文本节点 node Type 为3(文本包括空格,换行,文字)</li>
+</ul>
+</li>
+<li>node Name</li>
+<li>node Value</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>父级节点<ul>
+<li>node.parentNode<ul>
+<li>得到的是离元素最近的父级节点,找不到返回null</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>子节点<ul>
+<li>node.childNodes<ul>
+<li>当前节点的所有子节点</li>
+<li>这个属性会获取包括文本节点在内的所有节点,不推荐使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>DOM间的标签空白(换行)也会被包括进去</p>
+<ul>
+<li><p>node.children</p>
+<ul>
+<li>属性,获取当前元素的所有子元素节点<ul>
+<li>不会包括空白部分</li>
+</ul>
+</li>
+<li>node.children[0]<ul>
+<li>返回第一个子节点,不会有兼容性问题</li>
+</ul>
+</li>
+<li>node.children[node.children.length-1]<ul>
+<li>返回最后一个节点,不会有兼容性问题</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>node.firstChild</p>
+<ul>
+<li>表示当前节点的第一个子节点</li>
+<li>也会包括空白</li>
+</ul>
+</li>
+<li><p>node.firstElementChild</p>
+<ul>
+<li>当前节点的第一个子元素</li>
+</ul>
+</li>
+<li><p>node.lastChild</p>
+<ul>
+<li>当前节点的最后一个子节点</li>
+<li>也会包括空白</li>
+</ul>
+</li>
+<li><p>node.lastElementChild</p>
+<ul>
+<li>当前节点的第一个子元素节点</li>
+</ul>
+</li>
+<li><p>兄弟节点</p>
+<ul>
+<li>node.previousSibling<ul>
+<li>当前节点的上一个兄弟节点</li>
+<li>也会获取空白的文本</li>
+</ul>
+</li>
+<li>node.previousElementSibling<ul>
+<li>当前节点的上一个兄弟元素</li>
+<li>不包括空白部分</li>
+</ul>
+</li>
+<li>node.nextSibling<ul>
+<li>当前节点的下一个兄弟节点</li>
+<li>也可能获取空白的文本,找不到返回null</li>
+</ul>
+</li>
+<li>node.nextElementSibling<ul>
+<li>当前节点的下一个兄弟元素节点</li>
+<li>不包括空白部分</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>创建/放置/删除/复制节点</p>
+<ul>
+<li>document.createElement(‘标签名’);<ul>
+<li>用于创建一个元素节点</li>
+<li>var li = document.createElement(“li”);</li>
+</ul>
+</li>
+<li>element.innerHTML<ul>
+<li>效率低,但创建多个元素效率高(不是拼接字符串,而是采取数组形式拼接),结果稍复杂</li>
+</ul>
+</li>
+<li>document.write(‘&lt;标签名&gt;&lt;/标签名&gt;’)     —了解<ul>
+<li>当文档流执行完毕,会导致页面全部重绘(相当于重新创建了一个新文件)</li>
+</ul>
+</li>
+<li>document.TextNode()<ul>
+<li>创建一个文本节点</li>
+<li>需要一个文本内容作为参数,将会根据该内容创建文本节点,并将新的节点返回</li>
+<li>var gzText = document.createTextNode(“广州”);</li>
+</ul>
+</li>
+<li>node(父节点).appendChild(child);<ul>
+<li>向父节点中添加一个新的子节点到末尾,类似于after伪元素</li>
+<li>ul.appendChild(li);</li>
+</ul>
+</li>
+<li>node.insertBefore(child,指定节点)<ul>
+<li>在指定的子节点前插入新的子节点,类似于before伪元素</li>
+</ul>
+</li>
+<li>node.removeChild(child)<ul>
+<li>删除子节点</li>
+</ul>
+</li>
+<li>node.cloneNode()<ul>
+<li>复制该节点</li>
+<li>参数为空或者false称为浅拷贝,只会复制节点本身,不复制里面的子节点</li>
+<li>参数为true为深拷贝,复制该节点也会复制里面的子节点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>注册事件</p>
+<ul>
+<li>给元素添加事件</li>
+<li>传统方式<ul>
+<li>以on开头的事件<ul>
+<li>onclick/onmouseover</li>
+</ul>
+</li>
+<li>同一个元素同一个事件只能设置一个处理函数</li>
+</ul>
+</li>
+<li>方法监听注册方式<ul>
+<li>W3C标准,推荐方式</li>
+<li>对象.addEventListener(‘事件类型字符串’, 事件处理函数, 可选参数)<ul>
+<li>事件类型字符串: click,mouseover登这里不要带on</li>
+<li>事件处理函数:事件发生时,就会调用该监听函数</li>
+<li>可选参数: 布尔值,默认为false</li>
+<li>对象.addEventListener(‘click’, function() {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>函数语句</p>
+<ul>
+<li><p>})</p>
+<ul>
+<li>当里面有函数名时,不需要加()</li>
+</ul>
+</li>
+<li><p>同一个元素同一个事件可以注册多个监听器,按注册顺序依次执行</p>
+</li>
+<li><p>对象.attachEvent(‘事件类型字符串’,事件处理函数)  —-&gt; IE9之前的了解即可</p>
+<ul>
+<li>事件类型字符串:这里要带on</li>
+</ul>
+</li>
+</ul>
+<p>删除事件</p>
+<ul>
+<li>传统注册方式删除<ul>
+<li>对象.onclick = null;</li>
+</ul>
+</li>
+<li>方法监听注册方式删除<ul>
+<li>对象.removeEventListenner(‘事件类型字符串’, 事件处理函数,可选参数)</li>
+</ul>
+</li>
+</ul>
+<p>注册事件</p>
+<ul>
+<li>给元素添加事件</li>
+<li>传统方式<ul>
+<li>以on开头的事件<ul>
+<li>onclick/onmouseover</li>
+</ul>
+</li>
+<li>同一个元素同一个事件只能设置一个处理函数</li>
+</ul>
+</li>
+<li>方法监听注册方式<ul>
+<li>W3C标准,推荐方式</li>
+<li>对象.addEventListener(‘事件类型字符串’, 事件处理函数, 可选参数)<ul>
+<li>事件类型字符串: click,mouseover登这里不要带on</li>
+<li>事件处理函数:事件发生时,就会调用该监听函数</li>
+<li>可选参数: 布尔值,默认为false</li>
+<li>对象.addEventListener(‘click’, function() {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>函数语句</p>
+<ul>
+<li><p>})</p>
+<ul>
+<li>当里面有函数名时,不需要加()</li>
+</ul>
+</li>
+<li><p>同一个元素同一个事件可以注册多个监听器,按注册顺序依次执行</p>
+</li>
+<li><p>对象.attachEvent(‘事件类型字符串’,事件处理函数)  —-&gt; IE9之前的了解即可</p>
+<ul>
+<li>事件类型字符串:这里要带on</li>
+</ul>
+</li>
+</ul>
+<p>删除事件</p>
+<ul>
+<li>传统注册方式删除<ul>
+<li>对象.onclick = null;</li>
+</ul>
+</li>
+<li>方法监听注册方式删除<ul>
+<li>对象.removeEventListenner(‘事件类型字符串’, 事件处理函数,可选参数)</li>
+</ul>
+</li>
+</ul>
+<p>事件对象</p>
+<ul>
+<li>function(e)</li>
+<li>写到我们监听函数的()里面的就是事件对象,当形参来看.它是系统为我们自动创建的,不需要我们传递参数</li>
+<li>事件对象是我们事件的一系列相关数据的集合<ul>
+<li>鼠标点击包含了鼠标的相关信息,鼠标坐标登</li>
+<li>键盘事件就包含了键盘的信息,判断用户按下了哪个键</li>
+</ul>
+</li>
+<li>常见属性和方法<ul>
+<li>e.target  —-标准<ul>
+<li>返回触发事件的对象(指向点击的对象)</li>
+<li>this 返回的是绑定事件的对象</li>
+</ul>
+</li>
+<li>e.srcElement   —-非标准(ie6-8)<ul>
+<li>返回触发事件的对象</li>
+</ul>
+</li>
+<li>e.type<ul>
+<li>返回事件类型</li>
+</ul>
+</li>
+<li>e.preventDefault()<ul>
+<li>阻止默认行为,让链接不跳转让提交按钮不提交</li>
+<li>return false 也能阻止默认行为但只限于传统注册方式</li>
+</ul>
+</li>
+<li>e.stopPropagation()<ul>
+<li>阻止冒泡,一般是在孩子调用</li>
+<li>兼容性: window.e.cancelBubble = true;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>事件的冒泡(Bubble)</p>
+<ul>
+<li><p>指事件的向上传导,当后代元素上的事件被触发时,其祖先元素的相同事件也会被触发</p>
+</li>
+<li><p>(我亲了小女孩了一下,小女孩打了我一顿,她爸爸又打了我一顿,她爷爷又又打了我一顿,只亲了一下却挨了三顿打.)</p>
+</li>
+<li><p>事件的委派</p>
+<ul>
+<li>我们希望只绑定一次事件,即可应用到多个元素上,即使元素是后添加的.</li>
+<li>尝试将其绑定给元素的共同的祖先元素</li>
+<li>原理:不给每个子节点单独设置事件监听器,而是把事件监听器设置在其父节点上,然后利用冒泡原理设置子节点<ul>
+<li>给ul注册点击事件,利用事件对象的target来找到当前点击的li,因为点击li,事件会冒泡到ul上,ul有注册事件就会触发事件</li>
+</ul>
+</li>
+<li><strong>指将事件统一绑定给共同的祖先元素**</strong>,<strong><strong>这样当后代元素上的事件触发时</strong></strong>,<strong><strong>会一直冒泡到祖先元素</strong></strong>,<strong>**从而通过祖先元素的响应函数来处理事件</strong></li>
+<li>事件委派是利用了冒泡,通过委派可以减少事件绑定的次数,提高程序的性能</li>
+</ul>
+</li>
+</ul>
+<p>鼠标事件</p>
+<ul>
+<li>onclick</li>
+<li>onmouseover</li>
+<li>onmouseout</li>
+<li>onfocus</li>
+<li>onblur</li>
+<li>onmousemove<ul>
+<li>鼠标移动触发</li>
+</ul>
+</li>
+<li>onmouseup<ul>
+<li>鼠标弹起触发</li>
+</ul>
+</li>
+<li>onmousedown<ul>
+<li>鼠标按下触发</li>
+</ul>
+</li>
+<li>contextmenu<ul>
+<li>禁止鼠标右键菜单,e.preventDefault();</li>
+</ul>
+</li>
+<li>selectstart<ul>
+<li>禁止选中文字,e.preventDefault();</li>
+</ul>
+</li>
+</ul>
+<p>鼠标事件对象(MouseEvent)</p>
+<ul>
+<li>e.clientX<ul>
+<li>返回浏览器窗口可视区X坐标</li>
+</ul>
+</li>
+<li>e.clientY<ul>
+<li>返回浏览器窗口可视区Y坐标</li>
+</ul>
+</li>
+<li>e.pageX<ul>
+<li>返回文档页面X坐标</li>
+</ul>
+</li>
+<li>e.pageY<ul>
+<li>返回文档页面Y坐标</li>
+</ul>
+</li>
+<li>e.screenX<ul>
+<li>返回电脑屏幕X坐标</li>
+</ul>
+</li>
+<li>e.screenY<ul>
+<li>返回电脑屏幕Y坐标</li>
+</ul>
+</li>
+</ul>
+<p>键盘事件</p>
+<ul>
+<li>一般绑定给一些可以获取到焦点的对象或者document</li>
+<li>onkeydown<ul>
+<li>按键被按下,不区分大小写(默认大写)</li>
+<li>如果某个键一直不松手则会一直触发<ul>
+<li>当onkeydown连续触发时,第一次和第二次会间隔稍微长一点,其它的会非常快,是为了防止误操作的发生</li>
+</ul>
+</li>
+<li>在文本框输入内容,属于onkeydown的默认行为,如果取消了默认行为,则输入的内容不会出现在文本框中</li>
+</ul>
+</li>
+<li>onkeyup<ul>
+<li>按键被松开</li>
+<li>不区分大小写</li>
+</ul>
+</li>
+<li>onkeypress<ul>
+<li>按键被按下但不包括功能键(ctrl shift 箭头等)</li>
+<li>区分大小写</li>
+</ul>
+</li>
+</ul>
+<p>键盘事件对象</p>
+<ul>
+<li>keyCode<ul>
+<li>通过keyCode来获取按键的ASCII,判断哪个按键被按下</li>
+<li>判断 Y 是否被按下<ul>
+<li>if(event.keyCode == Y的编码){<ul>
+<li>语法</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>判断Y 和Ctrl 是否同时被按下<ul>
+<li>if (event.keyCode == Y的编码 &amp;&amp; event.ctrlKey){<ul>
+<li>语法</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+<p><strong>第一次更新时间: 忘了</strong></p>
+<p><strong>最后一次更新时间: 2020.7.27 下午</strong></p>
 
       
 
@@ -188,10 +837,21 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/20/The-first-article/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/07/25/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%94/">展开全文 >></a>
         </p>
       
 
@@ -221,39 +881,46 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-踩坑-javascript-自定义属性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/20/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/07/25/%E8%B8%A9%E5%9D%91-javascript-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7/">踩坑: JavaScript - 自定义属性</a>
     </h1>
   
 
         
-        <a href="/2020/08/20/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-20T04:53:50.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-20</time>
+        <a href="/2020/07/25/%E8%B8%A9%E5%9D%91-javascript-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7/" class="archive-article-date">
+  	<time datetime="2020-07-25T06:58:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>[hermit autoplay=”false” mode=”auto” preload=”auto” ]netease_playlist#:5140919618[/hermit]</p>
+<p><strong>var lis = document.querySelector(‘.tab_list’).getElementsByTagName(‘li’);         var items = document.querySelectorAll(‘.item’);<br>for(var i=0;i&lt;lis.length;i++) {<br>    // lis[i].setAttribute(‘index’,i);<br>    lis[i].onclick = function() {<br>       for(var i=0;i&lt;lis.length;i++) {<br>          lis[i].className = ‘’;<br>          items[i].style.display = ‘none’;<br>       }<br>       this.className = ‘current’;<br>       // var index = this.getAttribute(‘index’);<br>       items[i].style.display = ‘block’;<br>    }<br>}</strong> </p>
+<p>代码如上,上午在写JavaScript的tab栏切换小练习时,按照教程来说可以自定义一个class: index 来设置序号,方便切换相对应的区块.</p>
+<p>但我当时觉得不用设置这个class属性就可以,利用我们得到的是伪数组这个数据集来找,所以我把那两行自定义代码注释掉试了一试.</p>
+<p>但结果并非我想的那样,截图如下</p>
+<p><img src="http://qny.chaochao.info/2020/07/25/d24783e6bff81.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/25/f79ff35ab00db.png"></p>
+<p>后来就观察我这代码哪里有问题. 通过调试终于发现了问题!</p>
+<p><strong>items[i].style.display = ‘block’;</strong></p>
+<p>就是这一行代码的i出现了问题,这个i根本不是指的0-而是指的一个具体的数,首选判断这个i并不是指第一个for循环里的i,而是指函数里的for循环里的i,这是一个函数作用域,这点搞明白了接下来往下看,按理说,既然是函数里的i,那最起码这个i应该是一个具体的数值,肯定是一个点击事件是有效果的,但并没有,这个i到底是多少.</p>
+<p>回到函数里的for循环,我当初自以为的认为i=4,但并没有出现具体的效果,直到看到了i++,明白到,当i=4时,它还在执行完代码后还会进行i++操作,也就是i=5,然后再去判断i &lt; lis.length从而结束循环.</p>
+<p>至此问题解决,这个当初写的时候我真的感觉理论上没有问题,但现实打脸.还是自定义一个新的class属性来做吧,代码截图如下.</p>
+<hr>
+<p><strong>var lis = document.querySelector(‘.tab_list’).getElementsByTagName(‘li’);         var items = document.querySelectorAll(‘.item’);<br>for(var i=0;i&lt;lis.length;i++) {<br>    lis[i].setAttribute(‘index’,i);<br>    lis[i].onclick = function() {<br>       for(var i=0;i&lt;lis.length;i++) {<br>          lis[i].className = ‘’;<br>          items[i].style.display = ‘none’;<br>       }<br>       this.className = ‘current’;<br>       var index = this.getAttribute(‘index’);<br>       items[index].style.display = ‘block’;<br>    }<br>}</strong> </p>
+<hr>
+<p><img src="http://qny.chaochao.info/2020/07/25/e72633b72bdd3.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/25/601997d371a97.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/25/43194f0bcad29.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/25/b2ffabd56c24c.png"></p>
+<p><img src="http://qny.chaochao.info/2020/07/25/ea9bed7f8686c.png"></p>
 
       
 
@@ -263,10 +930,21 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/20/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/07/25/%E8%B8%A9%E5%9D%91-javascript-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7/">展开全文 >></a>
         </p>
       
 
@@ -296,765 +974,872 @@
 
 
   
-    <article id="post-踩坑-class类名问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-笔记-学习了一下git" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/">踩坑: class类名问题</a>
+      <a class="article-title" href="/2020/07/24/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bgit/">笔记: 学习了一下Git</a>
     </h1>
   
 
         
-        <a href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-08-17T12:38:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
+        <a href="/2020/07/24/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bgit/" class="archive-article-date">
+  	<time datetime="2020-07-24T02:58:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>.header-ads-holder, .header-ads-wrap, .header-adsense, .header-adv, .header-advert, .header-advert-container, .header-advert-wrapper, .header-advertisement, .header-article-ads, .header-banner-ad, .header-banner-ads, .header-bannerad, .header-google-ads, .header-google-adsense970, .header-menu-horizontal-ads, .header-menu-horizontal-ads-content, .header-sponsor, .header-taxonomy-image-sponsor, .header15-ad, .header3-advert, .header728-ad, .headerAd1, .headerAdArea, .headerAdCode, .headerAdContainer, .headerAdPosition, .headerAdSpacing, .headerAdWrapper, .headerAds, .headerAdspace, .headerAdvert, .headerTextAd, .headerTopAd, .headerTopAds, .header__ads, .header__advertisement, .header__weather__ad, .header_ad_2, .header_ad_div, .header_ad_space, .header_ads, .header_ads_box, .header_ads_promotional, .header_adsense_banner, .header_adv2, .header_adv3, .header_adv_optional, .header_advertisement, .header_advertisement_text, .header_advertisment, .header_classified_ads, .header_leaderboard_ad, .header_link_ad, .header_right_ad, .headerad-720, .headerad-placeholder, .headeradarea, .headeradhome, .headeradinfo, .headeradright, .heading-ad-space, .headline-adblock, .headline-ads, .headline_advert, .heavy_ad, .hero-ad-special, .hi5-ad, .hidden-ad, .hide-ad, .hideAdMessage, .hideIfEmptyAd, .hidePauseAdZone, .hideStartAdZone-container, .hide_ad, .hide_internal_ad, .highlight-news-ad, .highlights-ad, .highlightsAd, .hioxInternalAd, .hl-ad-row__mrec, .hl-ads-holder-0, .hl-post-center-ad, .hm-sec-ads, .hm_adlist, .hm_advertisment, .hm_top_right_google_ads, .hm_top_right_google_ads_budget, .hn-ads, .home-300x250-ad, .home-activity-ad, .home-ad–promo, .home-ad–top, .home-ad-container, .home-ad-links, .home-ad-region-1, .home-ad-section, .home-ad1, .home-ad2, .home-ad3, .home-ad4, .home-ad728, .home-ads-container, .home-ads-container1, .home-ads1, .home-adv-box, <strong>.home-advert</strong>, .home-area3-adv-text, .home-body-ads, .home-features-ad, .home-sidebar-ad, .home-sidebar-ad-300, .home-slider-ads, .home-sponsored-links, .home-sticky-ad, .home-top-ad, .home-top-of-page__top-box-ad, .homeAd1, .homeAd2, .homeAdBox, .homeAdBoxA, .homeAdBoxBetweenBlocks, .homeAdBoxInBignews, .homeAdFullBlock, .homeAdSection, .homeAddTopText, .homeCentreAd, .homeMainAd, .homeMediumAdGroup, .homePageAds, .homeSubAd, .homeTextAds, .home__ad-small, .home__ad-small-label, .home_ad, .home_ad300, .home_ad720_inner, .home_ad_300x100, .home_ad_300x250, .home_ad_bottom, .home_ad_large, .home_adblock, .home_adholder, .home_advert, .home_advertorial, .home_box_latest_ads, .home_mrec_ad, .home_offer_adv, .home_sidebar_ads, .home_sway_adv, .home_top_ad_slider, .home_top_ad_slides, .home_top_right_ad, .home_top_right_ad_label, .homeadnews, .homeadwrapper, .homefront468Ad, .homepage-300-250-ad, .homepage-ad-block, .homepage-ad-block-padding, .homepage-ad-buzz-col, .homepage-ad-module, .homepage-advertisement, .homepage-banner-ad, .homepage-footer-ad, .homepage-footer-ads, .homepage-right-rail-ad, .homepage-small-touts-ad, .homepage-sponsoredlinks-container, .homepage-square-ad, .homepage300ad, .homepageAd, .homepageFlexAdOuter, .homepageMPU, .homepage__ad, .homepage__ad–middle-leader-board, .homepage__ad–top-leader-board, .homepage__ad–top-mrec, .homepage_ad_half, .homepage_ad_lower_leaderboard, .homepage_ads_firstrow, .homepage_ads_fourthrow, .homepage_ads_secondrow, .homepage_ads_thirdrow, .homepage_ads_topspot, .homepage_block_ad, .homepage_middle_right_ad, .homepageinline_adverts, .homesmallad, .homestream-ad, .hor-ad, .hor_ad, .hori-play-page-adver, .horisont_ads, .horiz_adspace, .horizontal-ad-holder, .horizontal-ad2, .horizontal-advert-container, .horizontalAd, .horizontalAdvert, .horizontal_Fullad, .horizontal_adblock, .horizontal_ads, .horizontalbtad, .horizontaltextadbox, .horizsponsoredlinks, .hortad, .house-ad, .house-ads, .houseAd, .houseAd1, .houseAdsStyle, .housead, .hover_300ad, .hover_ads, .hoverad, .hp-ad-container, .hp-ad-grp, .hp-col4-ads, .hp-content__ad, .hp-inline-ss-service-ad, .hp-main__rail__footer__ad, .hp-slideshow-right-ad, .hp-ss-service-ad, .hp2-adtag, .hpPollQuestionSponsor, .hpPriceBoardSponsor, .hp_320-250-ad, .hp_ad_300, .hp_ad_box, .hp_ad_cont, .hp_ad_text, .hp_horizontal_ad, .hp_t_ad, .hp_textlink_ad, .hp_w_ad, .hpa-ad1, .hr-ads, .hr_ad, .hr_advt, .hrad, .hss-ad, .hss-ad-300x250_1, .hss_static_ad, .hst-contextualads, .html-advertisement, .html-block-ads, .html-component-ad-filler, .html5-ad-progress-list, .hwg-row-ad, .hyad, .hype_adrotate_widget, .i360ad, .i_ad, .iab300x250, .iab728x90, .ib-adv, .ib-figure-ad, .ibm_ad_bottom, .ibm_ad_text, .ibt-top-ad, .ic-ads, .icit-ch-advert, .ico-adv, .icon-advertise, .icon-myindependentad, .iconAdChoices, .icon_ad_choices, .icx_ad, .id-Advert, .id-Article-advert, .idGoogleAdsense, .idMultiAd, .id_footer_social, .idc-adContainer, .idc-adWrapper, .ident_right_ad, .idgGoogleAdTag, .ie-adtext, .ie-sponsoredbox, .iframe-ads, .iframeAds, .iframead, .iframeadflat, .im-topAds, .image-ad-336, .image-advertisement, .image-viewer-ad, .image-viewer-mpu, .imageAd, .imageAdBoxTitle, .imageAds, .imageGalleryAdHeadLine, .imagead, .imageads, .images-adv, .imagetable_ad, .img-advert, .img_ads, .imgur-ad, .impactAdv, .import_video_ad_bg, .in-ad, .in-article-ad, .in-article-adsense, .in-article-adx, .in-article-mpu, .in-between-ad, .in-content-ad–container, .in-node-ad-300x250, .in-page-ad, .in-story-ads, .in-story-text-ad, .inArticleAdInner, .inPageAd, .inStoryAd-news2, .in_ad, .in_article_ad, .in_content_ad_container, .in_content_advert, .in_up_ad_game, .incontentAd, .incontent_ads, .indEntrySquareAd, .indent-advertisement, .index-adv, .index-after-second-post-ad, .index-content-ad-wrapper, .index-long-ads, .index_728_ad, .index_ad, .index_ad_a2, .index_ad_a4, .index_ad_a5, .index_ad_a6, .index_ad_column2, .index_right_ad, .indexad, .indie-sidead, .indy_googleads, .inf-admedia, .inf-admediaiframe, .info-ads, .info-advert-160x600, .info-advert-300x250, .info-advert-728x90, .info-advert-728x90-inside, .infoBoxThreadPageRankAds, .ingameadbox, .ingameboxad, .ingridAd, .inhouseAdUnit, .inhousead, .injected-ad, .injectedAd, .inline-ad-card, .inline-ad-desktop, .inline-ad-placeholder, .inline-ad-text, .inline-ad-wrap, .inline-ad-wrapper, .inline-adblock, .inline-advert, .inline-display-ad, .inline-mpu, .inline-mpu-left, .inline-panorama-ad, .inlineAd, .inlineAdContainer, .inlineAdImage, .inlineAdInner, .inlineAdNotice, .inlineAdText, .inlineAdTour, .inlineAd_content, .inlineAdvert, .inlineAdvertisement, .inlinePageAds, .inlineSideAd, .inline_ad, .inline_ad_container, .inline_ad_title, .inline_ads, .inlinead-tagtop, .inlineadsense, .inlineadtitle, .inlist-ad, .inlistAd, .inner-ad, .inner-ad-disclaimer, .inner-adv, .inner-advert, .inner-advt-banner-3, .inner-post-ad, .inner468ad, .innerAd300, .innerAdWrapper, .innerContentAd, .inner_ad_advertise, .inner_adv, .inner_big_ad, .innerpostadspace, .inpostad, .ins_adwrap, .insert-advert-ver01, .insertAd_AdSlice, .insertAd_Rectangle, .insertAd_TextAdBreak, .insert_ad, .insert_advertisement, .insert_text_body_ad_prod, .insertad, .inside-article-ad-rectangle, .insideStoryAd, .inside_ad, .inside_ad_box, .insideads, .inslide-ad, .instructionAdvHeadline, .insurance-ad, .intad, .inteliusAd_image, .interAd, .interbody-ad-unit, .interest-based-ad, .internal-ad, .internalAd, .internalAdSection, .internalAdsContainer, .interstitial-ad600, .interstitial468x60, .interstitial__ad–wrapper, .interstitial_ad_wrapper, .ion-ad, .ione-widget-dart-ad, .ipm-sidebar-ad-middle, .iprom-ad, .ipsAdvertisement, .iqadlinebottom, .iqadmarker, .is-mpu, .is24-adplace, .isAd, .is_trackable_ad, .isad_box, .island-ad, .islandAd, .islandAdvert, .island_ad, .island_ad_right_top, .islandad, .isocket_ad_row, .item-ad, .item-ad-leaderboard, .item-advertising, .item-housead, .item-housead-last, .item-inline-ad, .itemAdvertise, .item_ads, .itinerary-index-advertising, .itw-ad, .j-ads-mrec, .jLinkSponsored, .j_ads, .ja-ads, .jalbum-ad-container, .jam-ad, .jc_ad_container, .jg-ad-5, .jg-ad-970, .jimdoAdDisclaimer, .jl-ads-leaderboard, .job-ads-container, .jobAds, .jobkeywordads, .jobs-ad-box, .jobs-ad-marker, .joead728, .jp-advertisment-promotional, .jquery-adi, .jquery-script-ads, .js-ad–comment, .js-ad-banner-container, .js-ad-container, .js-ad-doubleimu, .js-ad-dynamic, .js-ad-hideable, .js-ad-home, .js-ad-imu, .js-ad-konvento, .js-ad-loaded, .js-ad-loader-bottom, .js-ad-prepared, .js-ad-primary, .js-ad-space-container, .js-ad-unit-bottom, .js-ad-wrapper, .js-adExternalPage, .js-ad_iframe, .js-ad_iframe_wrap, .js-adfliction-iframe, .js-adfliction-standard, .js-ads, .js-ads-carousel, .js-adv-rotator-image, .js-advert, .js-advert–responsive, .js-advert–vc, .js-advert-container, .js-advert-upsell-popup, .js-advertising__placeholder1, .js-billboard-advert, .js-dfp-ad-bottom, .js-dfpAdPosSR, .js-googleAdSuperHeader-wrapper, .js-gptAd, .js-header-ad, .js-header-ad-wrapper, .js-no-sticky-ad, .js-react-simple-ad, .js-results-ads, .js-site-header-advert, .js-slide-right-ad, .js-slide-top-ad, .js-slim-nav-ad, .js-sticky-ads-bdp-desktop, .js-toggle-ad, .jsAdSlot, .jsOneAd, .js_adContainer, .js_slideshow-full-width-ad, .js_slideshow-sidebar-ad, .jsx-adcontainer, .juicyads_300x250, .jumboAd, .jw-ad-block, .jw-ad-label, .jw-ad-media-container, .jw-ad-visible, .kads-main, .kcAds, .kd_ads_block, .kdads-empty, .kdads-link, .keyword-ads-block, .kip-advertisement, .kip-banner-ad, .kitara-sponsored, .kl-ad, .knowledgehub_ad, .koadvt, .kopa-ads-widget, .ksAds, .kw_advert, .kw_advert_pair, .kwd_bloack, .l-350-250-ad-words, .l-ad, .l-ad-300, .l-ad-728, .l-adsense, .l-bottom-ads, .l-header-advertising, .l-region–ad, .l300x250ad, .l_ad_sub, .labelads, .labeled_ad, .ladbrokes_sbad, .landing-advertise, .landing-feed–ad-vertical, .landing-page-ads, .landingAdRail, .landing_adbanner, .large-ad-center, .large-advert, .large-btn-ad, .large-right-ad, .largeAd, .largeRecAdNewsContainerRight, .largeRectangleAd, .largeUnitAd, .large_ad, .large_add_container, .largesideadpane, .last-left-ad, .last-right-ad, .lastAdvertorial, .lastLiAdv, .lastRowAd, .lastads, .lastpost_advert, .latest-ad, .latest-articles-ad, .latest-news__ad–desktop, .latest-posts__sidebar-ad-container, .layer-ad-bottom, .layer-ad-top, .layer-xad, .layer_text_ad, .layeradinfo, .layout__content-ad, .layout__top-ad, .layout_communityad_right_ads, .lazy-ad, .lazy-adv, .lazyad, .lazyload_ad, .lazyload_ad_article, .lb-ad, .lb-adhesion-unit, .lb-advert-container, .lb-item-ad, .lbadtxt, .lbl-advertising, .lblAdvert, .lcontentbox_ad, .ld-ad, .ld-ad-inner, .lead-ad, .lead-ads, .lead-advert, .lead-board-ad-cont-home, .leadAd, .leader-ad-728, .leaderAd, .leaderAdSlot, .leaderAdTop, .leaderAdvert, .leaderBoardAdHolder, .leaderBoardAdvert, .leaderOverallAdArea, .leader_ad, .leader_aol, .leaderad, .leaderboard-ad-belt, .leaderboard-ad-component, .leaderboard-ad-dummy, .leaderboard-ad-green, .leaderboard-ad-grid, .leaderboard-ad-inner, .leaderboard-ad-main, .leaderboard-ad-pane, .leaderboard-ad-unit, .leaderboard-adblock, .leaderboard-advert, .leaderboard-advertisement, .leaderboardAd, .leaderboardAdContainer, .leaderboardAdContainerInner, .leaderboardFooter_ad, .leaderboard_ad_container, .leaderboard_ad_top_responsive, .leaderboard_ad_unit, .leaderboard_ad_unit_groups, .leaderboard_ads, .leaderboard_adv, .leaderboard_banner_ad, .leaderboard_text_ad_container, .leaderboardad, .leaderboardadmiddle, .leaderboardadtop, .leaderboardadwrap, .leadgenads, .left-ad180, .left-advert, .left-column-rectangular-ad, .left-column-virtical-ad, .left-rail-ad, .left-rail-ad__wrapper, .left-rail-horizontal-ads, .left-sidebar-box-ads, .left-sponser-ad, .left-takeover-ad, .left-takeover-ad-sticky, .left120X600AdHeaderText, .leftAdColumn, .leftAdContainer, .leftAd_bottom_fmt, .leftAd_top_fmt, .leftAds, .leftAdsFix, .leftAdsFix1, .leftAdvert, .leftCol_advert, .leftColumnAd, .leftPaneAd, .left_300_ad, .left_ad, .left_ad_160, .left_ad_areas, .left_ad_box, .left_ad_container, .left_add_block, .left_adlink, .left_ads, .left_adsense, .left_adv, .left_advertisement_block, .left_col_ad, .left_col_adv, .left_google_add, .left_sidebar_wide_ad, .leftadd, .leftadtag, .leftbar_ad_160_600, .leftbarads, .leftbottomads, .leftnavad, .leftrighttopad, .leftsidebar_ad, .lefttopad1, .legacy-ads, .legal-ad-choice-icon, .lextraleftmoreads, .lg-ads-160x90, .lg-ads-311x300-down, .lg-ads-311x300-up, .lg-ads-311x500, .lg-ads-635x100, .lgRecAd, .lg_ad, .liboxads, .lightad, .lijit-ad, .lineList_ad, .linead, .linelist-item-ad, .linkAD, .link_ad, .link_adslider, .link_advertise, .linkads, .linkedin-sponsor, .links_google_adx, .list-feature-ad, .listAdvertGenerator, .listicle–ad-rail, .listing-content-ad-container, .listing-inline-ad, .listing-item-ad, .listingAd, .listing__ads–right, .listings-ad-block, .listings-bottom-ad-w, .listings_ad, .lite-page-ad, .literatumAd, .little_vid_ads, .live-search-list-ad-container, .live_tv_sponsorship_ad, .liveads, .liveblog__highlights__ad, .livingsocial-ad, .ljad, .llsAdContainer, .ln-sidebar-ads, .lnad, .loadadlater, .local-ads, .localad, .location-ad, .log_ads, .logged_out_ad, .logoAd-hanging, .logoAds, .logo_AdChoices, .logoad, .logoutAd, .logoutAdContainer, .longAd, .longAdBox, .longAds, .longBannerAd, .long_ad, .longform-ad, .loop-ad, .loop_google_ad, .lottery-ad-container, .lower-ads, .lowerAd, .lowerAds, .lowerContentBannerAd, .lowerContentBannerAdInner, .lower_ad, .lp_az_billboard__via_content_header_ad_, .lpt_adsense_bottom_content, .lqm-ads, .lqm_ad, .lr-ad, .lr_skyad, .lsn-yahooAdBlock, .lt_ad, .lt_ad_call, .luma-ad, .luxeAd, .lv-Adunit, .lyad, .lyrics-inner-ad-wrap, .m-ContentAd, .m-ad–open, .m-ad-region, .m-ad-region-leaderboard, .m-ad-tvguide-box, .m-advert, .m-advertisement, .m-advertisement–container, .m-block-ad, .m-dfp-ad-text, .m-gallery-overlay–ad-top, .m-in-content-ad-row–bonus, .m-layout-advertisement, .m-mem–ad, .m-sidebar-ad, .m-sidebar-ad–slot, .m-sponsored, .m4-adsbygoogle, .mTopAd, .m_ad1, .m_ad300, .m_banner_ads, .macAd, .macad, .mad_adcontainer, .madison_ad, .mag21_fixed_ad, .magAd, .magad, .magazine_box_ad, .mailAdElem, .mailad, .main-ads, .main-advert, .main-advertising, .main-column-ad, .main-footer-ad, .main-google-ad-container, .main-news__ad, .main-right-ads, .main-tabs-ad-block, .main-top-ad-container, .mainAdContainer, .mainAds, .mainEcoAd, .mainLeftAd, .mainLinkAd, .mainRightAd, .main__top-ad, .main_ad, .main_ad_adzone_5_ad_0, .main_ad_adzone_6_ad_0, .main_ad_adzone_7_ad_0, .main_ad_adzone_7_ad_1, .main_ad_adzone_8_ad_0, .main_ad_adzone_8_ad_1, .main_ad_adzone_9_ad_0, .main_ad_adzone_9_ad_1, .main_ad_bg, .main_ad_bg_div, .main_ad_container, .main_adbox, .main_ads, .main_advert_section, .main_intro_ad, .main_right_ad, .main_wrapper_upper_ad_area, .mainadWrapper, .mainadbox, .mal-ad-unit, .mango_ads, .mantis-ad, .mantis__recommended__item–external, .mantis__recommended__item–sponsored, .manual-ad, .mapAdvertising, .map_google_ad, .map_media_banner_ad, .mapped-ad, .margin0-ads, .marginadsthin, .marginalContentAdvertAddition, .market-ad, .market-ad-small, .marketplace-ad, .marketplaceAd, .marketplaceAdShell, .markplace-ads, .marquee-ad, .masonry-tile-ad, .masonry__ad, .master_post_advert, .masthead-ad, .masthead-ad-control, .masthead-ads, .mastheadAds, .masthead_ad_banner, .masthead_ads_new, .masthead_topad, .matador_sidebar_ad_600, .match-ad, .match-results-cards-ad, .mb-advert, .mb-advert__leaderboard–large, .mb-advert__mpu, .mb-advert__tweeny, .mb-block–advert-side, .mb-list-ad, .mc-ad-chrome, .mc_floating_ad, .mc_text_ads_box, .mchadcont, .mcx-content-ad, .md-adv, .md-advertisement, .mdl-ad, .mdl-quigo, .me-rtm, .medColModAd, .medRecContainer, .medRect, .med_ad_box, .media–ad, .media-ad-rect, .media-advert, .media-network-ad, .media-temple-ad-wrapper-link, .mediaAd, .mediaAdContainer, .mediaResult_sponsoredSearch, .media_ad, .mediamotive-ad, .medianet-ad, .medium-google-ad-container, .medium-rectangle-ad, .medium-rectangle-advertisement, .medium-top-ad, .mediumRectagleAd, .mediumRectangleAdvert, .medium_ad, .medium_rectangle_ad_container, .mediumad, .medo-ad-section, .medo-ad-wideskyscraper, .medrec-ad, .medrect-ad, .medrect-ad2, .medrectAd, .medrect_ad, .medrectadv4, .mee-ad-detail-billboard, .memberAdsContainer, .member_ad_banner, .meme_adwrap, .memrise_ad, .menu-ad, .menuAd, .menuAds-cage, .menuItemBannerAd, .menuad, .menueadimg, .merchantAdsBoxColRight, .merkai_ads_wid, .mess_div_adv, .messageBoardAd, .message_ads, .metaRedirectWrapperBottomAds, .metaRedirectWrapperTopAds, .meta_ad, .metaboxType-sponsor, .mf-ad300-container, .mg_box_ads, .mgid-wrapper, .micro_ad, .mid-ad-wrapper, .mid-advert, .mid-page-2-advert, .mid-post-ad, .mid-section-ad, .midAdv-cont, .midAdv-cont2, .mid_4_ads, .mid_article_ad_label, .mid_banner_ad, .mid_page_ad, .mid_page_ad_big, .mid_right_ads, .mid_right_inner_id_ad, .midad, .midarticlead, .middle-ads, .middle-ads728, .middle-footer-ad, .middleAd, .middleAdLeft, .middleAdMid, .middleAdRight, .middleAds, .middleBannerAd, .middle_ad, .middle_ad_responsive, .middle_ads, .middleadouter, .midpost-ad, .min_navi_ad, .mini-ad, .mini-ads, .miniHeaderAd, .mini_ads, .mini_ads_bottom, .mini_ads_right, .miniad, .miniads, .misc-ad, .misc-ad-label, .miscAd, .mit-adv-comingsoon, .mj-floating-ad-wrapper, .mk_ads, .mks_ads_widget, .ml-advert, .ml-adverts-sidebar-1, .ml-adverts-sidebar-2, .ml-adverts-sidebar-4, .ml-adverts-sidebar-bottom-1 {</p>
+        <p>版本控制</p>
+<ul>
+<li>版本迭代,版本管理器<ul>
+<li>多人开发</li>
+<li>统计工作量</li>
+</ul>
+</li>
+<li>多人开发必须使用 版本控制</li>
+<li>主流的版本控制器<ul>
+<li>Git</li>
+<li>SVN</li>
+<li>CVS</li>
+<li>VSS</li>
+<li>TFS</li>
+</ul>
+</li>
+<li>版本控制分类<ul>
+<li>本地版本控制<ul>
+<li>适合个人用</li>
+</ul>
+</li>
+<li>集中版本控制<ul>
+<li>版本数据保存到服务器上,开发者要从服务器上同步更新</li>
+<li>代表产品: SVN</li>
+</ul>
+</li>
+<li>分布式版本控制<ul>
+<li>代表产品: Git</li>
+<li>每个人都拥有全部的代码,在本地就能看到历史记录,可以离线在本地提交,连网时放到中央服务器上,但增加了本地存储空间的占用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>发展历史</p>
+<ul>
+<li>Git是目前世界上最先进的分布式版本控制系统</li>
+<li>发展历史<ul>
+<li>谷歌</li>
+</ul>
+</li>
+<li>git下载安装<ul>
+<li>所有下载慢的话就可以去找镜像</li>
+<li>卸载<ul>
+<li>清理环境变量,然后卸载即可</li>
+</ul>
+</li>
+<li>Git Bash<ul>
+<li>Unix 和 Linux 风格的命令行,使用最多,推荐最多</li>
+</ul>
+</li>
+<li>Git CMD<ul>
+<li>windows风格命令行</li>
+</ul>
+</li>
+<li>Git GUI<ul>
+<li>图形界面,不推荐初学者使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>常用的Linux命令</p>
+<p><strong>①</strong> <strong>cd</strong> <strong>:</strong> <strong>改变目录</strong></p>
+<p><strong>②</strong> <strong>cd**</strong>.. :** <strong>返回上一级目录</strong></p>
+<p><strong>③</strong> <strong>pwd:</strong> <strong>显示当前所在的目录路径</strong></p>
+<p>④ is(II): 列出当前目录中的所有文件, (II) 的内容更详细</p>
+<ul>
+<li>绿色代表 程序 紫蓝色代表 文件夹 白色 代表 文件</li>
+</ul>
+<p>⑤ touch: 当前新建一个文件, 如 touch index.js 就会在当前目录新建一个 index.js 文件</p>
+<p>⑥ rm : 删除一个文件</p>
+<ul>
+<li> 切勿在 Linux中尝试 rm -rf /</li>
+</ul>
+<p>⑦ mkdir : 新建一个文件夹</p>
+<p>⑧ rm-r : 删除一个文件夹</p>
+<p>⑨ mv : 移动文件</p>
+<ul>
+<li>mv 要移动文件 src 目标文件夹 , 必须保证文件和目标文件夹在同一目录下</li>
+</ul>
+<p>⑩ reset : 初始化终端</p>
+<p><strong>⑪</strong> <strong>clear</strong> <strong>:</strong> <strong>清屏</strong></p>
+<p>⑫ history : 查看命令历史</p>
+<p>⑬ help : 帮助</p>
+<p><strong>⑭</strong> <strong>exit</strong> <strong>:</strong> <strong>退出</strong></p>
+<p><strong>⑮ # : 注释</strong></p>
+<p>查看配置</p>
+<ul>
+<li>git config -l</li>
+<li>git config –system –list  #查看系统config</li>
+<li>git config –global –list #查看当前用户config</li>
+</ul>
+<p>配置文件</p>
+<ul>
+<li>① Git\etc\gitconfig    —- system 系统级</li>
+<li>② C:\Users\Administrator\.gitconfig  — global 全局</li>
+</ul>
+<p>用户配置</p>
+<ul>
+<li>$ git config –global user.name “chaochao”</li>
+<li>git config –gobal user.email 用户邮箱 #名称</li>
+</ul>
+<p>工作区域</p>
+<ul>
+<li>Git本地有三个工作区域<ul>
+<li>工作目录 (Working Directory)<ul>
+<li>平时存放项目代码的地方</li>
+</ul>
+</li>
+<li>暂存区 (Stage/Index)<ul>
+<li>保存即将提交文件的地方</li>
+</ul>
+</li>
+<li>资源区 (Repository/Git Directory)<ul>
+<li>本地仓库,HEAD指向最新放入仓库的版本</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>远程工作区域:Git仓库 (Remote Directory)<ul>
+<li>远程仓库,托管代码的服务器</li>
+<li>本地仓三个区域确切的说应该是git仓库中HEAD指向的版本</li>
+</ul>
+</li>
+</ul>
+<p>工作流程</p>
+<ul>
+<li>① 在工作目录中添加,修改文件</li>
+<li>② 将需要进行版本管理的文件放入暂存区域</li>
+<li>③ 将暂存区域的文件提交到git仓库</li>
+<li>git管理的文件有三种状态<ul>
+<li>① modified 已修改</li>
+<li>② staged 已暂存</li>
+<li>③ committed 已提交</li>
+</ul>
+</li>
+</ul>
+<p>本地仓库搭建</p>
+<ul>
+<li>① 创建全新的仓库<ul>
+<li>$ git init</li>
+</ul>
+</li>
+<li>② 克隆远程仓库<ul>
+<li>$ git clone [url]</li>
+<li>在 gtee 或者 github Fork</li>
+</ul>
+</li>
+<li>常用的6个命令</li>
+</ul>
+<p>命令</p>
+<ul>
+<li>git add<ul>
+<li>添加所有文件到暂存区</li>
+</ul>
+</li>
+<li>git status<ul>
+<li>查看所有文件状态</li>
+</ul>
+</li>
+<li>git commit (-m”注释内容”) <ul>
+<li>提交暂存区的内容到本地仓库</li>
+</ul>
+</li>
+</ul>
+<p>文件的4种状态</p>
+<ul>
+<li>Untracked<ul>
+<li>未跟踪(新建文件),并没有加入git库,不参与版本控制,通过 <strong>git</strong> <strong>add</strong> 状态 变为 <strong>S**</strong>taged**</li>
+</ul>
+</li>
+<li>Unmodify<ul>
+<li>已经入库,但未修改.</li>
+<li>如果修改,则变为 <strong>Modified</strong></li>
+<li>如果使用 <strong>git</strong> <strong>rm</strong> 移出版本库,则成为 <strong>U**</strong>ntracked**</li>
+</ul>
+</li>
+<li>Modified<ul>
+<li>文件已经修改,但仅仅是修改</li>
+<li>通过 <strong>git</strong> <strong>add</strong> 进入 Staged</li>
+<li>使用 <strong>git</strong> <strong>checkout</strong> 丢弃修改 返回到 Unmodify,</li>
+<li>git checkout 从库中取出文件,覆盖当前修改</li>
+</ul>
+</li>
+<li>Staged<ul>
+<li>暂存状态</li>
+<li>执行 <strong>git</strong> <strong>commit</strong> 将修改同步到库(本地仓库)中 ,文件变成 Unmodify</li>
+<li><strong>git</strong> <strong>reset</strong> <strong>HEAD</strong> <strong>filename</strong> 取消暂存, 变为 Modified</li>
+</ul>
+</li>
+</ul>
+<p>忽略文件</p>
+<ul>
+<li>有时候不想把某些文件纳入版本控制种,比如数据库文件,日志文件</li>
+<li>在主目录建立.gitignore 文件<ul>
+<li>忽略文件种的空行或#开头的行将被忽略</li>
+<li>可以使用Linux通配符<ul>
+<li>*</li>
+<li>?</li>
+<li>[]</li>
+</ul>
+</li>
+<li>名称最前面有一个!,表示例外规则,将不被忽略</li>
+<li>名称最前面有一个/,表示要忽略的文件在此目录下,而子目录的文件不可忽略</li>
+<li>名称最后面有一个/,表示要忽略的是此目录下该名称的子目录,而非文件</li>
+<li>案例<ul>
+<li>*.txt                # 忽略所有 .txt的文件,这样的话上传就不会检查</li>
+<li>!lib.txt             # lib.txt除外</li>
+<li>/temp             #temp下的不被忽略</li>
+<li>build/               #忽略build/目录下的所有文件</li>
+<li>doc/*.txt           #会忽略 doc/notes.txt 但不包括 doc/server//arch/txt</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>gitee的注册</p>
+<p>绑定SSH,实现免密码登录</p>
+<ul>
+<li>注册完毕后,点设置完善个人信息</li>
+<li>免密码登录<ul>
+<li>$ ssh-keygen -t rsa</li>
+</ul>
+</li>
+<li>许可证(限制):<ul>
+<li>开源是否可以随意转载,但不能商业使用</li>
+</ul>
+</li>
+</ul>
+<p>IDEA集成Git</p>
+<p>① 新建项目,绑定git</p>
+<ul>
+<li>将我们远程的git文件目录拷贝到项目中即可</li>
+<li>注意观IDEA</li>
+<li>Commit Message<ul>
+<li>一般用来写我们修改了哪些代码</li>
+</ul>
+</li>
+</ul>
+<p>② 修改文件,使用IDEA</p>
+<ul>
+<li>添加到暂存区</li>
+<li>commit提交</li>
+<li>push到远程仓库</li>
+</ul>
+<p>③ 提交测试</p>
+<p>git分支种常用指令</p>
+<ul>
+<li><p>git branch</p>
+<ul>
+<li>列出所有本地分支</li>
+</ul>
+</li>
+<li><p>git branch -r</p>
+<ul>
+<li>列出所有远程分支</li>
+</ul>
+</li>
+<li><p>git branch [branch-name]</p>
+<ul>
+<li>新建一个分支,但依然保留在当前分支</li>
+</ul>
+</li>
+<li><p>git checkout -b [branch]</p>
+<ul>
+<li>新建一个分支,并切换到新分支</li>
+</ul>
+</li>
+<li><p>$ git merge [branch]</p>
+</li>
+<li><p>合并指定分支到当前分支</p>
+</li>
+</ul>
+<p>$ git branch -d [branch-name]</p>
+<ul>
+<li>删除分支</li>
+</ul>
+<p>$ git push origin –delete [branch-name]</p>
+<ul>
+<li>删除远程分支</li>
+</ul>
+<p>$ git branch -dr [remote/branch]</p>
+<ul>
+<li>删除远程分支</li>
+</ul>
+<p>master分支应该非常稳定,一般情况下不允许在上面工作.</p>
+<p>工作一般是在新建的dev分支上工作</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/24/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bgit/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温学习了一下javascript四" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/22/%E7%AC%94%E8%AE%B0%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%9B%9B/">笔记:温(学)习了一下JavaScript(四)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/22/%E7%AC%94%E8%AE%B0%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%9B%9B/" class="archive-article-date">
+  	<time datetime="2020-07-22T11:51:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>数组</p>
+<ul>
+<li><p>创建数组</p>
+<ul>
+<li>方式① new 创建数组<ul>
+<li>Array构造函数</li>
+<li>var arr = new Array();</li>
+<li>var arr2 = new Array(2);</li>
+<li>arr2表示 数组长度为2,里面有两个空的数组元素</li>
+<li>var arr3 = new Array(2,3);</li>
+<li>arr3 表示 有两个数组元素,是2 和3</li>
+</ul>
+</li>
+<li><strong>方式② 数字字面量创建数组</strong></li>
+<li><strong>var 数组名 = [‘值1’,’值2’,’值3’,……];</strong></li>
+</ul>
+</li>
+<li><p>检测是否为数组</p>
+<ul>
+<li>方法① instanceof 运算符<ul>
+<li>变量名 instanceof Array  —&gt; 返回true 和 false</li>
+</ul>
+</li>
+<li>方法② Array.isArray(被检验参数)    —&gt; 返回true和false</li>
+</ul>
+</li>
+<li><p>添加/删除数组的方法</p>
+<ul>
+<li>push()<ul>
+<li>该方法可以向数组的末尾添加一个或多个元素,并返回数组的新的长度</li>
+<li>将要添加的元素作为参数传递</li>
+<li>arr.push(“唐僧”);</li>
+<li>该方法会将数组新的长度作为返回值返回</li>
+</ul>
+</li>
+<li>pop()<ul>
+<li>删除数组的最后一个元素,并将被删除的元素作为返回值返回</li>
+<li>arr.pop()</li>
+</ul>
+</li>
+<li>unshift()<ul>
+<li>向数组的开头添加一个或多个元素,并返回新的数组长度</li>
+<li>向前面插入元素以后,其他元素的索引会依次调整</li>
+</ul>
+</li>
+<li>shift()<ul>
+<li>删除数组的第一个元素,并将被删除的元素作为返回值返回</li>
+</ul>
+</li>
+<li>案例: 选择满足某条件的数组元素并删除,剩下的组成一个新的数组<ul>
+<li>newAr.push(arr[i]); / newArr[newArr.length] = arr[i];</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数组排序</p>
+<ul>
+<li><p>reverse() —冒泡排序</p>
+<ul>
+<li>反转数组(前边的去后边,后边的去前边)</li>
+<li>会直接修改原数组</li>
+<li>arr.reverse();</li>
+</ul>
+</li>
+<li><p>sort()</p>
+<ul>
+<li><p>对数组中元素进行排序**,默认按照Unicode编码进行排序**</p>
+</li>
+<li><p>会影响原数组</p>
+</li>
+<li><p><strong>可以自己指定排序规则</strong></p>
+</li>
+<li><p><strong>在sort()添加回调函数参数,来指定排序规则回调函数需要定义两个形参</strong></p>
+</li>
+<li><p><strong>浏览器将会分别使用数组中的元素作为实参去调用回调函数</strong></p>
+</li>
+<li><p><strong>使用哪个元素调用不确定,但是肯定的是在数组中a一定在b前边</strong></p>
+</li>
+<li><p><strong>浏览器会根据回调函数的返回值来决定元素的顺序如果返回一个大于0的值,则元素会交换位置</strong></p>
+</li>
+<li><p><strong>如果返回一个小于等于0的值,则元素位置不变</strong></p>
+</li>
+<li><p><strong>arr.sort(function(a,b){</strong></p>
+</li>
+<li><p>if(a&gt;b){      </p>
+<ul>
+<li>return a-b; // 升序排列       </li>
+<li>return b-a; // 降序排列</li>
+<li>return 1;</li>
+<li>}else if(a&lt;b){<ul>
+<li>return -1;</li>
+<li>}else{<ul>
+<li>return 0;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><strong>})</strong>              </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数组索引方法</p>
+<ul>
+<li>indexOf()<ul>
+<li>根据元素值从前往后查找索引</li>
+<li>只返回第一个满足条件的索引号</li>
+<li>如果存在则返回索引号,不存在返回-1</li>
+</ul>
+</li>
+<li>lastIndexOf()<ul>
+<li>根据元素值从后往前查找索引号</li>
+<li>如果存在则返回索引号,不存在返回-1</li>
+</ul>
+</li>
+<li>数组去重案例<ul>
+<li>核心<ul>
+<li> 遍历旧数组, 根据旧数组的元素值去查询新数组,如果返回-1,则添加这个数组,否则不添加</li>
+</ul>
+</li>
+<li>functon unique(arr) {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>var newArr[];</p>
+<p>for (var i = 0; i&lt; arr.length; i++){</p>
+<p>if (newArr[].indexOf(arr[i]) === -1){</p>
+<p>newArr.push(arr[i]);</p>
+<p>}</p>
+<p>return newArr;</p>
+<p>}</p>
+<ul>
+<li>}</li>
+<li>数组转换为String<ul>
+<li>join(‘连接符’)<ul>
+<li>将数组转换为字符串,将转换后的字符串作为结果返回</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>该方法不会对原数组产生影响</p>
+<ul>
+<li><strong>在join**</strong>()<strong><strong>中可以指定一个字符串作为参数</strong></strong>,<strong>**这个字符串将会成为数组中元素的连接符</strong></li>
+</ul>
+<p><strong>默认为</strong> <strong>,</strong></p>
+<ul>
+<li>arr.join()</li>
+<li>toString()<ul>
+<li>转换为String,逗号分隔</li>
+</ul>
+</li>
+<li>其它<ul>
+<li>forEach<ul>
+<li>一般都是使用for循环去遍历数组,JS中还有forEach()方法来遍历数组</li>
+<li>forEach()方法需要作为一个函数作为参数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>数组中有几个元素,函数就会执行几次,每次执行时,浏览器会将遍历到的元素会以实参的形式传递进来,我们可以定义形参来读取这些内容</p>
+<p><strong>浏览器会在回调函数中传递**</strong>3**<strong>个参数</strong></p>
 <ol>
-<li>display: none !important;</li>
+<li><strong>数组元素</strong></li>
+<li><strong>数组索引</strong></li>
+<li><strong>数组对象</strong></li>
 </ol>
+<p>arr.forEach(function(){</p>
+<p>console.log()</p>
+<p>});</p>
+<p>这种由我们创建但不由我们调用的,我们称为回调函数</p>
+<ul>
+<li>slice()<ul>
+<li>可以从数组中提取指定元素</li>
+</ul>
+</li>
+</ul>
+<p>不会改变原数组,而是将截取到的元素封装到一个新数组中返回</p>
+<ul>
+<li>参数:<ul>
+<li>[start,end)</li>
+<li>start<ul>
+<li>开始位置索引</li>
+</ul>
+</li>
+<li>end<ul>
+<li>结束位置索引</li>
+<li>第二个参数可以不写,会截取开始索引以后的所有元素</li>
+</ul>
+</li>
+<li>索引可以传递负值,如果传递一个负值,则从后往前计算</li>
+</ul>
+</li>
+</ul>
+<p>-1 表示倒数第一个</p>
+<p>-2 倒数第二个</p>
+<ul>
+<li><p>arr.slice(0,2);</p>
+</li>
+<li><p>splice()</p>
+<ul>
+<li>可用于删除数组中的指定元素</li>
+</ul>
+</li>
+</ul>
+<p><strong>会改变原数组**</strong>,<strong>**会将指定元素从原数组中删除</strong></p>
+<p>并将被删除的元素作为返回值返回</p>
+<ul>
+<li>参数:<ul>
+<li>第一个:start<ul>
+<li>开始位置索引</li>
+</ul>
+</li>
+<li>第二个:删除数量n</li>
+<li>第三个及以后<ul>
+<li>可以传递一些新的元素,这些元素会自动插入到第一步开始位置索引的前边</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>arr.splice(0,2,”牛魔王”,”铁扇公主”);</li>
+<li>concat()<ul>
+<li>可以连接多个数组,并将新的数组返回</li>
+</ul>
+</li>
+</ul>
+<p>该方法不会对原数组产生影响</p>
+<ul>
+<li>不仅可以传数组,还可以传其他</li>
+<li>arr.concat(arr2);</li>
+</ul>
+<p>arr.concat(arr2,arr3);</p>
+<p><strong>String</strong></p>
+<ul>
+<li>三个特殊的引用类型: String , Number , Boolean.基本包装类型就是把简单数据类型包装成为复杂数据类型,这样基本数据类型就有了属性和方法.</li>
+<li>在底层字符串是以字符数组的形式保存的<ul>
+<li>[“I” “L” “o” “v” “e” “y” “o” “u”]</li>
+</ul>
+</li>
+<li>字符串的不可变<ul>
+<li>指具体的值不可变,虽然看起来可以改变内容, 但其实是地址变了,内存中新开辟了一个内存空间</li>
+<li>在大量拼接字符串的时候会有效率内存问题</li>
+</ul>
+</li>
+<li>length属性<ul>
+<li>可以获取字符串的长度</li>
+</ul>
+</li>
+<li>方法  — 所有的方法都不会修改字符串本身(字符串的不可变),而是返回一个新的字符串<ul>
+<li><strong>char**</strong>A**<strong>t**</strong>()**<ul>
+<li><strong>返回字符串中指定位置的字符</strong></li>
+<li><strong>根据索引获取指定字符</strong></li>
+<li><strong>str**</strong>.<strong><strong>char</strong></strong>A**<strong>t**</strong>()**</li>
+</ul>
+</li>
+<li><strong>char**</strong>C**<strong>ode**</strong>A**<strong>t**</strong>()**<ul>
+<li><strong>根据索引号返回字符串指定位置相应**</strong>ASCII**<strong>的编码</strong></li>
+<li><strong>目的**</strong>:<strong>**判断用户按下了哪个键</strong></li>
+</ul>
+</li>
+<li><strong>str[index]</strong><ul>
+<li><strong>获取指定索引处字符</strong></li>
+<li><strong>HTML5,**</strong>和**<strong>charAt()**</strong>等效**</li>
+</ul>
+</li>
+<li><strong>案例**</strong>:<strong><strong>判断一个字符串中出现次数最多的字符</strong></strong>,<strong>**并统计其次数</strong><ul>
+<li><strong>①</strong> <strong>利用**</strong>charAt()<strong>**遍历整个字符串</strong></li>
+<li><strong>②</strong> <strong>把每个字符存储给一个对象作为属性名**</strong>,<strong><strong>如果对象没有该字符</strong></strong>,<strong><strong>就让其属性值为</strong></strong>1,<strong><strong>如果存在了就让属性值</strong></strong>+1**</li>
+<li><strong>③</strong> <strong>遍历对象**</strong>,<strong>**得到最大值和该字符</strong></li>
+<li><strong>var o = {};</strong></li>
+<li><strong>for(var i = 0; i&lt;str.length;i++){</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>var chars = str.charAt(i);</p>
+<p>if(o[chars]) {</p>
+<p>o[chars]++;</p>
+<p>}else {</p>
+<p>o[chars] = 1;</p>
 <p>}</p>
-<p>上面这一个很长很长的东西.</p>
-<p>前缀都有. 和class有关,我有一次给一个div类名叫做 home-advert 意思是家-广告,结果再浏览器中就是不显示,原因我找了半天,在控制台中我发现了这个,很长很长的后面有一个</p>
-<p><strong>display: none !importtant;</strong></p>
-<p>虽然不知道为什么,但在取class名的时候还是不要取上面的名字.</p>
-<p>不规范!</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/17/%E8%B8%A9%E5%9D%91-class%E7%B1%BB%E5%90%8D%E9%97%AE%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-一往无前-小米10周年演讲" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/12/%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D-%E5%B0%8F%E7%B1%B310%E5%91%A8%E5%B9%B4%E6%BC%94%E8%AE%B2/">一往无前: 小米10周年演讲</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/12/%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D-%E5%B0%8F%E7%B1%B310%E5%91%A8%E5%B9%B4%E6%BC%94%E8%AE%B2/" class="archive-article-date">
-  	<time datetime="2020-08-12T06:38:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>点击<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14Z4y1M7En?from=search&seid=351191193542939835">这里</a></p>
-<p><img src="https://chaochao.info/wp-content/uploads/2020/08/v2-9c3aa7488b25b485c7a87b849c00d10c_1440w-1-1024x683.jpg"></p>
-<p>上面是原视频哟,很长很长但还是推荐去看一下,毕竟小米的下一个10年还很远😄</p>
-<p><strong>我相信小米未来会走的更远</strong></p>
-<p>昨天在B站从晚上19:30看到将近22:00多吧,一直守着在笔记本电脑前看,说实话我对这次的演讲非常期待,毕竟哪里有那么多是10年,并且我一直在用小米的产品,我的手机,耳机,蓝牙耳机,充电宝一直都是小米,不仅仅是我,我周围的很多同学也是用的小米,反正很推荐大家去看一下!</p>
-<p>在我眼里,雷军是和马云,马化腾在同一个水平的,马云要也是公开演讲我也去听,他们都是很厉害的人.并且有梦想不是吗?</p>
-<p><strong>并不是以一个米粉的角色去推荐而是以一个学生的身份去推荐!</strong></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/12/%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D-%E5%B0%8F%E7%B1%B310%E5%91%A8%E5%B9%B4%E6%BC%94%E8%AE%B2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-彩蛋-各大官网浏览器中的console" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/08/%E5%BD%A9%E8%9B%8B-%E5%90%84%E5%A4%A7%E5%AE%98%E7%BD%91%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84console/">彩蛋: 各大官网浏览器中的Console</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/08/%E5%BD%A9%E8%9B%8B-%E5%90%84%E5%A4%A7%E5%AE%98%E7%BD%91%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84console/" class="archive-article-date">
-  	<time datetime="2020-08-08T08:38:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>前言:</p>
-<p>下午用VScode的时候跳转了一下百度的页面打开Console,突然发现了小彩蛋,挺好玩的,然后就想着其它网站会不会也有,于是访问了<br>网易云音乐,滴滴,阿里云,阿里巴巴,腾讯,QQ,知乎,百度,京东,淘宝,网易游戏,网易,gitee,CSDN,YouTube,微信开发文档,B站,美团常见网页,然后还真的有!😄<br>知乎的那个大大的HIRE🤭</p>
-<p>先来放一下整体截图</p>
-<p><img src="http://qny.chaochao.info/2020/08/08/3a84a539f48aa.png"></p>
-<p>知乎</p>
-<p><img src="http://qny.chaochao.info/2020/08/08/25dab42ffece5.png"></p>
-<p>滴滴</p>
-<p><img src="http://qny.chaochao.info/2020/08/08/652419ed60615.png"></p>
-<p>京东</p>
-<p><img src="https://chaochao.info/wp-content/uploads/2020/08/DRV3UU9GR3O51V9RSWH-1024x487.png"></p>
-<p>百度</p>
-<p><strong>下面是具体的彩蛋内容</strong></p>
-<p><img src="http://qny.chaochao.info/2020/08/08/575f2cd02ee83.png"></p>
-<p>知乎</p>
-<p><img src="http://qny.chaochao.info/2020/08/08/89df037fdfbab.png"></p>
-<p>滴滴</p>
-<p><img src="http://qny.chaochao.info/2020/08/08/781e3cf0dfc72.png"></p>
-<p>京东</p>
-<p><img src="https://chaochao.info/wp-content/uploads/2020/08/DRV3UU9GR3O51V9RSWH-1.png"></p>
-<p>百度</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/08/%E5%BD%A9%E8%9B%8B-%E5%90%84%E5%A4%A7%E5%AE%98%E7%BD%91%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84console/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mvvm思想" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/08/mvvm%E6%80%9D%E6%83%B3/">MVVM思想</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/08/mvvm%E6%80%9D%E6%83%B3/" class="archive-article-date">
-  	<time datetime="2020-08-08T01:17:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://chaochao.info/wp-content/uploads/2020/08/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/总结//" class="article-tag-list-link color3">总结</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/08/mvvm%E6%80%9D%E6%83%B3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-笔记-学习了一下vue一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/05/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bvue%E4%B8%80/">笔记: 学习了一下Vue(一)</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/05/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bvue%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-08-05T12:39:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Vue</p>
 <ul>
-<li>① JavaScript框架</li>
-<li>② 简化Dom操作</li>
-<li>③ 页面由数据生成,数据改变页面会同步更新</li>
+<li><strong>}</strong></li>
+<li><strong>var max = 0 ;var ch = ‘’;</strong></li>
+<li><strong>for (var k in o) {</strong></li>
 </ul>
-<p>Vue程序</p>
-<ul>
-<li>① 导入开发版本的Vue.js</li>
-<li>② 创建Vue实例对象,色湖之el属性和data属性</li>
-<li>③ 使用模板语法把数据渲染到页面上</li>
-</ul>
-<p>el - 挂载点</p>
-<ul>
-<li>选中对应的元素及其内部的后代元素</li>
-<li>一般使用id选择器</li>
-<li>只支持双标签(body,html除外),单标签不支持</li>
-</ul>
-<p>data - 数据对象</p>
-<ul>
-<li>Vue需要使用的实例都会定义在data中</li>
-</ul>
-<p>v-text</p>
-<ul>
-<li>设置标签的text值</li>
-<li>如果要部分替换要使用大括号的写法,其它的都会把原来原本存在的值取代</li>
-</ul>
-<p>v-html</p>
-<ul>
-<li>设置标签的innerHTML</li>
-<li>html里面可以被解析为标签,text不论什么只会是文本</li>
-</ul>
-<p>v-on</p>
-<ul>
-<li>为元素绑定事件</li>
-<li>v-on 可以替换为@</li>
-<li>绑定的方法定义在 methods 属性中<ul>
-<li>方法内部通过this关键字访问定义data中数据</li>
-</ul>
-</li>
-<li>事件修饰符<ul>
-<li>某些限制</li>
-<li>@keyup.enter=”方法”<ul>
-<li>只有在按下了回车才会触发这个事件</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>v-show</p>
-<ul>
-<li>根据表达式的真假,让元素显示/隐藏</li>
-<li>本质是切换display</li>
-<li>频繁切换用v-show,反之用v-if</li>
-</ul>
-<p>v-if</p>
-<ul>
-<li>根据表达式的真假,让元素显示/隐藏</li>
-<li>本质是直接移除/添加相应的元素</li>
-</ul>
-<p>v-bind</p>
-<ul>
-<li>设置元素的属性(class/src/url等写在元素内部)</li>
-<li>v:bind:属性名=属性值</li>
-<li>可以省略v:bind</li>
-</ul>
-<p>v-for</p>
-<ul>
-<li>根据数据生成列表结构(响应式)</li>
-<li>item in 被遍历的数据<ul>
-<li>根据数组里元素的个数批量生成元素</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>数组里的元素</li>
-</ul>
-</li>
-<li>(item,index) in 被遍历的数据<ul>
-<li> ---- 索引</li>
-</ul>
-</li>
-<li>对象数据要合理运用 ** .**</li>
-</ul>
-<p>v-model</p>
-<ul>
-<li>获取和设置表单元素的值(双向数据绑定)</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/05/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bvue%E4%B8%80/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-笔记-温学习了一下javascript七" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/29/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%83/">笔记: 温(学)习了一下JavaScript(七)</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/29/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%83/" class="archive-article-date">
-  	<time datetime="2020-07-29T09:53:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/29/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%83/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-笔记-温习了一下html5和css3二" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/29/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml5%E5%92%8Ccss3%E4%BA%8C/">笔记:  温习了一下HTML5和CSS3(二)</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/29/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml5%E5%92%8Ccss3%E4%BA%8C/" class="archive-article-date">
-  	<time datetime="2020-07-29T09:51:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>transform</p>
-<ul>
-<li>可以实现元素的位移,旋转,缩放等效果</li>
-<li><strong>对行内标签无效**</strong>,<strong><strong>不会影响其它元素的位置</strong></strong>,<strong><strong>百分比单位是参照于元素自身大小</strong></strong>.**</li>
-<li>translate —- 移动<ul>
-<li>类似于定位,改变元素的位置</li>
-<li>transform:translate(xpx,ypx);</li>
-<li>transform:translateX(xpx);</li>
-<li>transform:translateY(ypx);</li>
-<li><strong>让盒子水平垂直居中</strong><ul>
-<li><strong>top**</strong>: 50%;**</li>
-<li><strong>left**</strong>: 50%;**</li>
-<li><strong>tr**</strong>ansform**<strong>:**</strong>translate**<strong>(-50%,-50%);</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>rotate —- 旋转<ul>
-<li>transform: rotate(xdeg);</li>
-<li>角度为正时,顺时针,负时,逆时针,旋转中心默认为元素的中心点<ul>
-<li>transform-origin: x y; —- 设置元素转换中心点<ul>
-<li>默认为 50% 50% ,可以写百分比也可以写px 和 bottom/left/top/right/center</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>scale —- 缩放<ul>
-<li>transform: scale(x,y);<ul>
-<li>只写一个参数,则第二个参数和第二个参数一样</li>
-<li>transform: scale(2,2); —- 宽和高都放大了2倍</li>
-</ul>
-</li>
-<li>优势:不会影响其他盒子,而且可以设置缩放中心点<ul>
-<li>transform-origin: x y;</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>2D转换综合写法</p>
-<ul>
-<li>① 同时使用多个转换:transform: translate() rotate() scale()</li>
-<li>② 会影响转换效果,先旋转会改变坐标轴方向</li>
-<li>③ 当同时有位移和其它属性的时候,先将位移放在最前面</li>
-</ul>
-<p>animation</p>
-<ul>
-<li>相较于translation,能实现更多变化,更多控制,连续自动播放等</li>
-<li>基本使用<ul>
-<li>① 定义动画(类似于定义类选择器,写在style里)<ul>
-<li>@keyframes 动画名称 {</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>0% {</p>
-<p>width: 100px;</p>
+<p>if (o[k] &gt; max) {</p>
+<p>max = o[k];</p>
+<p>ch = k;</p>
 <p>}</p>
-<p>x% {</p>
-<p>语句…</p>
-<p>}</p>
-<p>100% {</p>
-<p>width: 200px;</p>
-<p>}</p>
+<ul>
+<li><p><strong>}</strong></p>
+</li>
+<li><p>fromCharCode()</p>
+<ul>
+<li>可以根据字符编码去获取字符</li>
+<li>语法:<ul>
+<li>String.formCharCode()</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>indexOf()</p>
+<ul>
+<li><strong>可以检索一个字符串中是否含有指定内容**</strong>,**</li>
+</ul>
+</li>
+</ul>
+<p><strong>将第一次出现的索引作为返回值</strong></p>
+<p><strong>如果没有找到**</strong>,<strong><strong>则返回</strong></strong>-1**</p>
+<ul>
+<li>str.indexOf(“h”)</li>
+<li>可以第二个参数(索引号),指定开始查找位置</li>
+<li>案例题 : 查找字符串中某个具体值(x)的位置和出现的次数<ul>
+<li>① 先查找第一个x出现的位置</li>
+<li>② 只要indexOf返回的结果不是 -1,则继续往后查找</li>
+<li>③ 利用indexOf的的二哥参数,当前索引+1,从而继续查找<ul>
+<li>var str = ‘被查找的字符串’;</li>
+<li>var index = str.indexOf(‘x’);</li>
+<li>var i = 0;</li>
+<li>while(index !== -1) {</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>console.log(index);</p>
+<p>i++;</p>
+<p>str.indexOf(‘x’,index + 1);</p>
 <ul>
 <li><p>}</p>
 </li>
-<li><p>里面的百分比是总的时间的划分</p>
+<li><p>console.log(‘x出现的次数是:’ + i )</p>
 </li>
-<li><p>② 调用动画</p>
+<li><p>lastIndexOf()</p>
 <ul>
-<li>选择器 {<ul>
-<li>animation-name: 动画名称;</li>
-<li>animation-duration: 持续时间(单位为s);</li>
+<li>类似于indexOf(),不同是从后往前找</li>
+<li>也可以指定第二参数</li>
 </ul>
 </li>
-<li>}</li>
-</ul>
-</li>
-<li><p>常见属性</p>
+<li><p>concat(str1,str2,str3……)</p>
 <ul>
-<li>animation-timing-function —- 速度曲线<ul>
-<li>默认为ease</li>
-<li>ease-in —- 低速开始</li>
-<li>ease-in-out —- 低速开始和结束</li>
-<li>ease-out —- 低速结束</li>
-<li>linear —- 匀速</li>
-<li>steps() —- 指定步数,根据步数完成动画</li>
-</ul>
-</li>
-<li>animation-delay —- 动画何时开始<ul>
-<li>默认为0</li>
-</ul>
-</li>
-<li>animation-iteration-count —- 播放次数<ul>
-<li>默认为1</li>
-<li>infinite</li>
-</ul>
-</li>
-<li>animation-direction —- 逆向播放<ul>
-<li>默认为 normal</li>
-<li>alternate —- 逆播放</li>
-</ul>
-</li>
-<li>animation-fill-mode —- 动画结束状态<ul>
-<li>默认为backwards —- 回到起始状态</li>
-<li>forwards —- 保持结束状态</li>
-</ul>
-</li>
-<li>animation-play-state —- 动画运行或暂停<ul>
-<li>默认为running</li>
-<li>pause</li>
-</ul>
-</li>
-<li>animation —- 简写<ul>
-<li>名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 结束状态</li>
+<li>可以连接多个字符串</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<p>3D</p>
+<p>作用和+一样</p>
 <ul>
-<li>特点: ① 近大远小 ② 物体后面遮挡不可见</li>
-<li>Z轴,垂直屏幕,冲向人的是正值,反之负值</li>
-<li>perspective —- 透视 —- 人的眼睛到屏幕的距离<ul>
-<li>网页产生3D效果需要透视</li>
-<li>perspective 写在被观察元素的父元素上</li>
-</ul>
-</li>
-<li>translate3d(x,y,z)<ul>
-<li>transform:translateX(xpx);</li>
-<li>transform:translateY(ypx);</li>
-<li>transform:translateZ(zpx);</li>
-<li>transform:translate3d(x,y,z);</li>
-</ul>
-</li>
-<li>rotate3d(x,y,z)<ul>
-<li>沿着轴旋转</li>
-<li>transform: rotateX(xdeg) —- 沿着X轴旋转x度</li>
-<li>transform: rotateY(ydeg) —- 沿着Y轴旋转y度</li>
-<li>transform: rotateZ(zdeg) —- 沿着Z轴旋转z度</li>
-<li>transform: rotate3d(x,y,z,deg) —- 沿着自定义(矢量)轴方向旋转deg度</li>
-<li>左手法则</li>
-</ul>
-</li>
-<li>transfrom-style<ul>
-<li>控制子元素是否开启三维立体环境</li>
-<li>flat —- 默认不开启</li>
-<li>preserve-3d —- 开启</li>
+<li>str.concat()</li>
+<li>slice(start,end)<ul>
+<li>从字符串中截取指定内容</li>
 </ul>
 </li>
 </ul>
-<p>浏览器私有前缀</p>
+<p>[  )</p>
 <ul>
-<li>兼顾老版本的写法</li>
-<li>-moz- —- Firefox</li>
-<li>-ms- —- IE</li>
-<li>-webkit- —- Safari,Chrome</li>
-<li>-o- —- Opera</li>
-<li>写法:<ul>
-<li>-moz-border-radius: 10px;</li>
-<li>-webkit-border-radius: 10px;</li>
-<li>-o-border-radius: 10px;</li>
-<li>border-radius: 10px;</li>
+<li><p>str.slice(0,2)</p>
+</li>
+<li><p>参数:</p>
+<ul>
+<li>第一个: 开始位置索引</li>
+<li>第二个:结束位置参数<ul>
+<li>如果省略第二个参数,则会截取到后边所有的</li>
+<li>-1 表示倒数第一个</li>
 </ul>
 </li>
 </ul>
+</li>
+<li><p>substr(start,length)</p>
+<ul>
+<li>从start(索引号)开始,length为取的个数.</li>
+</ul>
+</li>
+<li><p>subString()</p>
+<ul>
+<li>截取字符串,和slice()类似</li>
+<li>参数:<ul>
+<li>第一个,开始位置索引</li>
+<li>第二个:结束位置索引</li>
+</ul>
+</li>
+<li>不同的是不能接受负值,如果传递负值则默认使用0,而且会自动调整参数的位置,如果第一个参数大于第二个,则自动交换</li>
+</ul>
+</li>
+<li><p>split(分隔符)</p>
+<ul>
+<li>将字符串拆分为一个数组</li>
+<li>str.split(,)</li>
+<li>参数:<ul>
+<li>需要一个字符串作为参数,将会根据该字符串去拆分数组<ul>
+<li>该字符串会没了</li>
+<li>传递””空串则会将每个字符都拆分为数组中的一个元素</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>replace(‘被替换的字符’,’替换的字符’)</p>
+<ul>
+<li>只会替换第一个字符</li>
+</ul>
+</li>
+<li><p>替换案例</p>
+<ul>
+<li>var str1 = ‘被替换的字符串’;</li>
+<li>while (str1.indexOf(‘被替换字符’) !== -1){</li>
+</ul>
+</li>
+</ul>
+<p>str1 = str1.replace(‘被替换字符’,’替换的字符’);</p>
+<ul>
+<li><p>}</p>
+</li>
+<li><p>toUpperCase()</p>
+<ul>
+<li>转换成大写</li>
+<li>abcdefg = ABCDEFG</li>
+</ul>
+</li>
+<li><p>toLowerCse()</p>
+<ul>
+<li>转换成小写</li>
+</ul>
+</li>
+<li><p>基本数据类型/引用数据类型</p>
+<ul>
+<li>基本数据类型存放在栈 ;引用数据类型存放在堆</li>
+<li>值类型<ul>
+<li>基本数据类型在存储变量中存储的是值,因此叫做值类型</li>
+</ul>
+</li>
+<li>引用数据类型是把地址(十六进制)存放在了栈,这个地址指向了堆<ul>
+<li>如果有个变量打算存储为对象,暂时没想好放啥,这个时候给null</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-14.png" alt="计算机生成了可选文字:
+篙单掂类型漱到栈
+面存的是值
+18
+11“亡
+[1,2，3]：复杂
+掘窦型
+2
+3"></p>
+<ul>
+<li>每创建一个新对象,就会在堆内存中开辟初一个新的空间</li>
+</ul>
+<p>而变量保存的是对象的内存地址(对象的引用)</p>
+<ul>
+<li><p>如果两个变量保存的是同一个变量引用,当一个通过一个变量修改属性时命令一个也会受到影响</p>
+<ul>
+<li>(类似与 孤独娃娃)<ul>
+<li>扎娃娃就是扎本人.娃娃和本人建立了联系</li>
+<li>两个娃娃都指向本人,其中一个娃娃的腿没了,另一个也没有了.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>当比较两个基本数据类型时,就是比较值</p>
+</li>
+<li><p>而当比较两个引用数据类型时,比较的是内存地址.</p>
+</li>
+</ul>
+<p>API - Application Programming Interface  – 应用程序编程接口</p>
+<ul>
+<li>一些预先定义的函数,提供给程序员的一种工具,以便能更轻松的实现想要完成的功能.</li>
+</ul>
+<p>手机充电功能,不需要知道手机内部充电的原理,只需要把充电线插入充电接口就行,<strong>充电接口就是一个**</strong>API**</p>
+<p>Web API</p>
+<ul>
+<li>浏览器提供的一套操作浏览器功能和页面元素的API(BOM / DOM)</li>
+<li>是JS的应用,大量使用JS基础语法做交互效果</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.22 晚上</strong></p>
 
       
 
@@ -1078,7 +1863,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/29/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bhtml5%E5%92%8Ccss3%E4%BA%8C/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/07/22/%E7%AC%94%E8%AE%B0%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%9B%9B/">展开全文 >></a>
         </p>
       
 
@@ -1108,301 +1893,160 @@
 
 
   
-    <article id="post-笔记-温学习了一下javascript六" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-笔记学习了一下微信小程序一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/27/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%85%AD/">笔记: 温(学)习了一下JavaScript(六)</a>
+      <a class="article-title" href="/2020/07/21/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%80/">笔记:学习了一下微信小程序(一)</a>
     </h1>
   
 
         
-        <a href="/2020/07/27/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%85%AD/" class="archive-article-date">
-  	<time datetime="2020-07-27T10:40:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-27</time>
+        <a href="/2020/07/21/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2020-07-21T07:55:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>BOM- Browser Object Model</p>
+        <p>结构目录</p>
+<p>MINA</p>
 <ul>
-<li>与浏览器进行交互效果,缺乏标准,包含DOM</li>
-<li>在BOM中为我们提供了一组对象,用来完成对浏览器的操作<ul>
-<li>window<ul>
-<li>代表整个浏览器的窗口,同时window也是网页中的全局对象</li>
-<li>是JS访问浏览器窗口的一个接口</li>
-<li>定义在全局作用域中的变量,函数都会称为window对象的属性和方法(alert,prompt)</li>
+<li>原生框架</li>
 </ul>
-</li>
-<li>Navigator<ul>
-<li>航海家,代表当前浏览器的信息,通过该对象可以识别不同的浏览器</li>
-</ul>
-</li>
-<li>Locationn<ul>
-<li>代表当前浏览器的地址栏信息,通过Location可以获取地址栏信息,或者操作浏览器跳转页面</li>
-</ul>
-</li>
-<li>History<ul>
-<li>代表浏览器的历史记录,可以通过该对象来操作浏览器的历史记录,由于隐私原因,该对象不能获取到具体的历史记录,<strong>只能操作浏览器向前或向后翻页</strong></li>
-<li>而且该操作只在当次访问时有效</li>
-</ul>
-</li>
-<li>Screen<ul>
-<li>屏幕,代表用户屏幕的信息,通过该对象可以获取到用户的显示器的相关信息</li>
-<li><strong>PC**</strong>端用的很少**</li>
-</ul>
-</li>
-<li><strong>这些**</strong>BOM**<strong>对象在浏览器中都是作为window对象的属性保存的</strong><ul>
-<li><strong>可以通过window对象来使用**</strong>,<strong>**也可以直接使用</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>window对象常见事件</p>
-<p>窗口加载事件</p>
+<p>WXML</p>
 <ul>
-<li>当文档内容完全加载完成会触发该事件</li>
-<li>window.onload = function() {}<ul>
-<li>只能写一次,以最后一个为准</li>
+<li>HTML</li>
 </ul>
-</li>
-<li>window.addEventListener(‘load’,function() {});<ul>
-<li>没有限制</li>
-<li>document.addEventListner(‘DOMContentLoaded’,function() {})<ul>
-<li>仅当DOM加载完成,不包括css,图片,flash等</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>调整窗口大小事件</p>
+<p>WXSS</p>
 <ul>
-<li>当调整窗口大小就会触发该事件,我们经常利用这个事件完成<strong>响应式布局</strong>.<ul>
-<li>window.innerWidth — 当前屏幕的宽度</li>
+<li>CSS</li>
 </ul>
-</li>
-<li>window.onresize = function() {}</li>
-<li>window.addEventListener(‘resize’,function() {});</li>
-</ul>
-<p>定时器</p>
+<p>JavaScript</p>
+<p>JSON(小程序专有)</p>
 <ul>
-<li><p>window对象方法,定时调用函数</p>
-</li>
-<li><p>页面中可能有很多定时器,我们经常把定时器存入变量</p>
-</li>
-<li><p>setTimeout(调用函数,延时时间(ms));</p>
+<li>配置</li>
+</ul>
+<p>Pages-页面</p>
 <ul>
-<li>也称为回调函数callback</li>
-<li>调用函数可以直接写 function() {} 也可以写函数名(没有括号)</li>
+<li>index - 首页</li>
+<li>logs -日志页面文件</li>
 </ul>
-</li>
-<li><p>clearTimeout(setTimeout()名字);</p>
+<p>utils - 帮助文档(可删除)</p>
 <ul>
-<li>停止setTimeout()</li>
+<li>util.js  (自带的一些方法)</li>
 </ul>
-</li>
-<li><p>setIntervar(调用函数,延时时间);</p>
+<p>app.js</p>
 <ul>
-<li>可以将一个函数,每隔一段时间执行一次</li>
-<li>var timer = setInterval(function(){<ul>
-<li>count.innerHTML = num++;</li>
+<li>入口文件/全局文件</li>
 </ul>
-</li>
-<li>},1000);</li>
-</ul>
-</li>
-<li><p>返回值:</p>
+<p>app.json</p>
 <ul>
-<li>返回一个Number类型的数据</li>
-<li>这个数字用来作为定时器的唯一标识</li>
+<li>整个小程序的项目进行统一的配置(全局配置文件)</li>
 </ul>
-</li>
-<li><p>clearInterval(setInterval()名字);</p>
+<p>app.wxss</p>
 <ul>
-<li>关闭setIntervar()</li>
-<li>clearInterval(timer);</li>
-<li>希望定时器执行一段时间后来关闭定时器</li>
-<li>var timer = setInterval(function(){<ul>
-<li>count.innerHTML = num++;</li>
-<li>if(num == 1000){<ul>
-<li>clearInterval(timer);</li>
+<li>全局的样式文件</li>
 </ul>
-</li>
-<li>}</li>
-</ul>
-</li>
-<li>},1000);</li>
-</ul>
-</li>
-</ul>
-<p>JavaScript是单线程</p>
+<p>project.config.json</p>
 <ul>
-<li>同一时间只能做一件事</li>
+<li>微信开发者工具的详情</li>
 </ul>
-<p>同步/异步</p>
+<p>sitemap.json</p>
 <ul>
-<li>同步: 前一个任务结束再去执行后一个任务</li>
-<li>异步: 在做一件事的同时还去处理其它事情</li>
-<li>同步任务<ul>
-<li>同步任务都在主线程上执行,形成一个执行栈</li>
+<li>微信索引配置文件</li>
 </ul>
-</li>
-<li>异步任务<ul>
-<li>回调函数实现异步,异步任务添加到任务队列中</li>
-<li>普通事件: click,resize</li>
-<li>资源加载: load,error</li>
-<li>定时器: setInterval,setTimeout</li>
-</ul>
-</li>
-</ul>
-<p>JavaScript执行机制</p>
+<p>app.json</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-13.png"></p>
 <ul>
-<li>① 先执行执行栈中的同步任务</li>
-<li>② 异步任务放到任务队列中</li>
-<li>③ 当执行栈中国的同步任务都执行完成,再读取任务队列中的异步任务,异步任务进入执行栈开始执行</li>
-<li>由于主线程不断的重复获得任务,执行任务,再获取任务,再执行,这种机制被称为事件循环(event loop)</li>
-</ul>
-<p>location</p>
+<li><p>pages</p>
 <ul>
-<li>window对象提供的属性用于获取或设置窗体的URL(网址),并且解析URL.该属性返回的是一个对象<ul>
-<li>URL(Uniform Resource Locator) — 统一资源定位符,是互联网上标准资源的地址.互联网上每个文件都有一个唯一的URL.它<strong>包含的信息指出文件的位置以及浏览器应该怎么处理它</strong></li>
-<li><strong>URL**</strong>的一般语法格式为**<strong>:</strong><ul>
-<li><strong>protocol**</strong>://<strong><strong>host</strong></strong>[:<strong><strong>port</strong></strong>]/<strong><strong>path</strong></strong>/[?<strong><strong>query</strong></strong>]#<strong>**fragment</strong></li>
-<li><a target="_blank" rel="noopener" href="https://www.itcast.cn/index.html?name=andy&age=18#link"><strong>https**</strong>://<strong><strong>www</strong></strong>.<strong><strong>itcast</strong></strong>.<strong><strong>cn</strong></strong>/<strong><strong>index</strong></strong>.<strong><strong>html</strong></strong>?<strong><strong>name</strong></strong>=<strong><strong>andy</strong></strong>&amp;<strong><strong>age</strong></strong>=18#<strong>**link</strong></a></li>
+<li>新增page: 在app.json 文件的”pages” 填写相关代码</li>
+<li>设置默认页面<ul>
+<li>将”pages”里的相关页面代码放在index前面</li>
 </ul>
 </li>
-<li><strong>组成</strong><ul>
-<li>protocol —- 通信协议,ftp.http</li>
-<li>host —- 主机(域名) <a target="_blank" rel="noopener" href="http://www.chaochao.info/">www.chaochao.info</a></li>
-<li>port —- 端口号(可选),省略时使用协议的默认端口,如http的默认端口为80</li>
-<li>path —- 路径,由0或者多个/符号隔开的字符串,一般用来表示主机上的一个目录或者文件地址</li>
-<li>query —- 可选参数,以键值对的形式,通过&amp;符号分隔开</li>
-<li>fragment —- 片段 #和后面内容,常见于链接,瞄点</li>
+<li>在vscode中编辑时不会实时处理,需要在微信开发者工具中相关文件进行保存</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>location对象的属性<ul>
-<li>location.href —- 获取/设置整个URL<ul>
-<li>跳转页面效果,location.href = ‘<a target="_blank" rel="noopener" href="https://www.chaochao.info/">https://www.chaochao.info</a>‘;</li>
-</ul>
-</li>
-<li>location.host —- 返回host)</li>
-<li>location.port —- 返回port,如果没有端口号则返回空字符串</li>
-<li>location.pathname —- 返回path</li>
-<li>location.search —- 返回query</li>
-<li>location.hash —- 返回fragment</li>
-</ul>
-</li>
-<li>location对象的方法<ul>
-<li>location.assign() —- 和href一样可以跳转页面,可以后退</li>
-<li>location.replace() —- 替换当前页面,不记录历史,不能后退页面</li>
-<li>location.reload() —- 重新加载,相当于F5,参数为true时为Ctrl+F5</li>
-</ul>
-</li>
-</ul>
-<p>history</p>
+<li><p>window</p>
 <ul>
-<li>对象可以操作浏览器向前或向后翻页</li>
-<li>属性<ul>
-<li>length<ul>
-<li>返回浏览器当次访问的链接数量</li>
+<li>定义小程序所有页面的底部背景颜色,文字颜色定义等</li>
+<li>backgroundTextStyle - 下拉loading的样式(背景文字颜色)<ul>
+<li>enablePullDownRefresh - 是否开启全局的下拉刷新</li>
+<li>backgroundColor - 下拉刷新的背景颜色</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>方法<ul>
-<li>back()<ul>
-<li>可以用来回退到上一个页面,作用和浏览器的回退一样</li>
-</ul>
-</li>
-<li>forward()<ul>
-<li>可以用来跳转到下一个页面,作用和浏览器的前进按钮一样</li>
-</ul>
-</li>
-<li>go()<ul>
-<li>可以用来跳转到指定的页面</li>
-<li>需要一个整数作为参数<ul>
-<li>数字1: 前进,相当于forward()</li>
-<li>数字2: 前进两个页面</li>
-<li>数字-1: 后退,相当于back()</li>
-<li>数字-2: 后退两个页面</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>offset系列</p>
+<li><p>navigationBar(导航栏)</p>
 <ul>
-<li>元素偏移量,可以动态的得到元素的位置,大小<ul>
-<li><strong>获取元素距离带有定位父元素的位置</strong></li>
-<li><strong>获取元素自身的宽度高度</strong></li>
-<li><strong>返回的数值都不带单位</strong></li>
+<li>navigationBarBackgroundColor - 导航栏背景颜色</li>
+<li>navigationBarTitleText - 导航栏标题名称</li>
+<li>navigationBarTextStyle - 导航栏标题颜色</li>
 </ul>
 </li>
-<li>常见属性<ul>
-<li>element.offsetParent —- 返回该元素带有定位的父元素,没有则返回body</li>
-<li>element.offsetTop —- 返回元素相对父元素上方的偏移</li>
-<li>element.offsetLeft —- 返回元素相对父元素左边框的偏移</li>
-<li>element.offsetWidth —- 返回元素宽度(包括padding,border,width)</li>
-<li>element.offsetHeight —- 返回元素高度(包括padding,border,height)</li>
-</ul>
-</li>
-<li>offset和style的区别<ul>
-<li>① style 只能获得**行内样式表(html)**的样式值,而offset可以得到任意样式表的样式值</li>
-<li>② style获得的是带有单位的字符串</li>
-<li>③ style.width 不包含padding和border</li>
-<li>④ style是可读可写属性,offset是只读属性,只能获取不能赋值</li>
-<li>获取元素大小位置用offset合适,要改值需要style</li>
-</ul>
-</li>
-</ul>
-<p>client系列</p>
+<li><p>tabBar</p>
 <ul>
-<li>元素可视区,返回元素border,width,height等,不带单位</li>
-<li>系列属性<ul>
-<li>element.clientTop —- 返回元素上border的大小</li>
-<li>element.clientLeft —- 返回元素左border的大小</li>
-<li>element.clientWidth —- 返回width(包含padding,width但不包含border)</li>
-<li>element.clientHeight —- 返回width(包含padding,height但不包含border)</li>
+<li>list - 数组<ul>
+<li>pagePath - 页面路径</li>
+<li>text - 标题</li>
+<li>iconPath - 未被选中图标</li>
+<li>selectedIconPath - 已经选中图标</li>
+</ul>
+</li>
+<li>案例<ul>
+<li>① 将icon文件放入微信小程序页面</li>
+<li>② page 上写<ul>
+<li>“pages/index/index”  // 首页</li>
+<li>“pages/img/img”,      // 图片中心</li>
+<li>“pages/mine/mine”,  // 个人中心</li>
+<li>“pages/search/search”, // 搜索中心</li>
+</ul>
+</li>
+<li>③ tabBar 上写<ul>
+<li>“pagePath”: “pages/index/index”,</li>
+<li>“text”: “首页”,</li>
+<li>“iconPath”: “icon/_home.png”,</li>
+<li>“selectedlconPath”:”icon/home.png”</li>
+</ul>
+</li>
+<li>④ 以此类推,至少要包含两项</li>
 </ul>
 </li>
 </ul>
-<p>scroll系列</p>
+</li>
+<li><p>color - 字体颜色</p>
 <ul>
-<li>元素滚动,动态的得到元素的大小滚动距离,不带单位</li>
-<li>系列属性<ul>
-<li>element.scrollTop —- 返回被卷去的(上border的下沿)上侧距离</li>
-<li>element.scrollLeft —- 返回被卷去的左侧距离</li>
-<li>element.scrollWidth —- 返回自身实际的宽度(width+padding,不含border)</li>
-<li>element.scrollHeight —- 返回自身实际的高度(height+padding,不含border),不含border</li>
+<li>注意: 这些是和list是同层级了,不要忘了逗号</li>
 </ul>
 </li>
-<li>事件<ul>
-<li>onscroll -滚动条滚动时</li>
-</ul>
+<li><p>selectedColor - 被选中时字体颜色</p>
+</li>
+<li><p>还有其他属性,详情看文档</p>
 </li>
 </ul>
-<p>三大系列总结</p>
-<p>① offset系列常用于获取元素位置</p>
-<p>② client系列常用于获取元素大小</p>
-<p>③ scroll系列常用于获取滚动距离</p>
-<p>页面滚动距离是通过window.pageX(Y)offset获得</p>
-<p>立即执行函数</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-55.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-56.png"></p>
+<p>page.json</p>
 <ul>
-<li> (function() {})()  /  (function() {}());</li>
-<li>不需要调用,立马能够自己执行的函数</li>
-<li>里面的变量都是局部变量,不会有命名冲突问题</li>
+<li>在不同的page指定不同的标题,颜色等</li>
+<li>指每个page文件中的后缀为.json文件</li>
+<li>操作<ul>
+<li>① 在app.json 全局配置文件的 window 复制想要修改的相关属性</li>
+<li>② 复制到 page相关.json文件中</li>
 </ul>
-<p><strong>第一次更新时间: 2020.7.28 晚上</strong></p>
-<p><strong>最后更新时间: 2020.7.29 下午</strong></p>
+</li>
+</ul>
+<p>sitemap.json</p>
+<ul>
+<li>配置小程序及其页面是否允许被微信索引.详情见文档</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.21 下午</strong></p>
 
       
 
@@ -1426,7 +2070,2266 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/27/%E7%AC%94%E8%AE%B0-%E6%B8%A9%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E5%85%AD/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/07/21/%E7%AC%94%E8%AE%B0%E5%AD%A6%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记了解了一下linux" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/20/%E7%AC%94%E8%AE%B0%E4%BA%86%E8%A7%A3%E4%BA%86%E4%B8%80%E4%B8%8Blinux/">笔记:了解了一下Linux</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/20/%E7%AC%94%E8%AE%B0%E4%BA%86%E8%A7%A3%E4%BA%86%E4%B8%80%E4%B8%8Blinux/" class="archive-article-date">
+  	<time datetime="2020-07-20T13:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>发展历史</p>
+<p>UNIX与Linux发展史</p>
+<ul>
+<li><p>1969年,美国贝尔实验室的肯·汤姆森在DEC PDP-7机器上开发除了UNIX系统</p>
+</li>
+<li><p>UNIX主要发行版本</p>
+<ul>
+<li>AIX IBM</li>
+<li>HP - UX HP</li>
+<li>Solaris Sun</li>
+<li>Linux Red Hat Linux</li>
+</ul>
+</li>
+<li><p>Linux发展历史</p>
+<ul>
+<li>Linux系统诞生于1991年</li>
+<li><strong>L**</strong>inux是是一款操作系统**<strong>,**</strong>免费**<strong>,**</strong>开源**<strong>,**</strong>安全**<strong>,**</strong>高效**<strong>,**</strong>稳定**<strong>,**</strong>处理高并发非常强悍**</li>
+<li><strong>现在很多的企业级的项目都部署到**</strong>L**<strong>inux**</strong>/U**<strong>nix服务器运行</strong></li>
+<li>吉祥物:<ul>
+<li>企鹅 Tux</li>
+</ul>
+</li>
+<li><strong>Linux主要的发行版本</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-43.png"></p>
+<p>Linux发行版本</p>
+<ul>
+<li><strong>主要操作系统有**</strong>:**<ul>
+<li><strong>windows</strong></li>
+<li><strong>android</strong></li>
+<li><strong>车载系统</strong></li>
+<li><strong>Linux</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-8-1024x632.png" alt="计算机生成了可选文字:
+．Linux和Unix的关系
+Unix
+SunSolaris
+BSD
+FreeBSD
+Ubuntu
+0
+IBMAIX
+GNU/Linux内核
+Redhat
+SUSE
+只针大型主机或务
+AT&amp;TSystemV
+适用于×86的个人计算机“
+Fedora
+Dennisrichres
+Kentompson
+LinusTorvalds
+引unlinux
+redhat争（冂to"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-44.png"></p>
+<p>VM和Linux(CentOs)的安装</p>
+<p><strong>学习Linux需要一个环境**</strong>,<strong><strong>我们需要创建一个虚拟机</strong></strong>,<strong><strong>然后再虚拟机上安装一个</strong></strong>C**<strong>entos系统来学习</strong></p>
+<ul>
+<li>先安装 virtual machine ,vm12<ul>
+<li>通过vm创建一个虚拟机空间</li>
+</ul>
+</li>
+<li>再安装 Linux (CentOS 6.8)<ul>
+<li>再创建号的虚拟机空间上,安装CentOS操作系统</li>
+</ul>
+</li>
+<li>使用CentOS</li>
+<li>原理示意图</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-45.png"></p>
+<p>原理示意图</p>
+<p>文件系统</p>
+<ul>
+<li>Linux的文件系统是采用级层式的树状目录结构<ul>
+<li><strong>此结构的最上层是根目录</strong> **” / “,**然后在此目录下再创建其它的目录<ul>
+<li><strong>经典**</strong>:** <strong>在**</strong>Linux**<strong>世界里**</strong>,<strong><strong>一切皆文件</strong></strong>.**</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>![计算机生成了可选文字:<br>“root<br>ro酬’De、op<br>[bin<br>“boot<br>{dev<br>letc<br>‘home<br>Ivar<br>/usAin<br>usr<br>jusr/lib<br><a target="_blank" rel="noopener" href="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-9.png">media<br>/r0酬/、Iaildir</a></p>
+<p>![计算机生成了可选文字:<br>宁<br>声<br>/lib<br>系统开机所需要最基本的动态连接共享库，其作用类似于Windowsæ的DLL文件。<br>乎所有的应用程序都需要用到这些共享库。<br>/lost+found<br>这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。<br>/etc[重点]<br>所有的系统管理所需要的配置文件和子目录my.conf<br>/usr点]<br>这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似与<br>一0<br>0<br>一0](<a target="_blank" rel="noopener" href="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-10.png">https://chaochao.info/wp-content/uploads/2020/07/未命名图片-10.png</a>)</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-11.png"></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87-12.png"></p>
+<p>远程登陆</p>
+<p>XShell5</p>
+<ul>
+<li>远程登陆到Linux的软件<ul>
+<li>完美解决了的中文乱码的问题</li>
+</ul>
+</li>
+</ul>
+<p>XFtp 5</p>
+<ul>
+<li>远程上传下载文件软件</li>
+</ul>
+<p>vi 和 vim 编辑器</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-46.png"></p>
+<p><strong>介绍</strong></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-47.png"></p>
+<p><strong>三种模式</strong></p>
+<p>关机&amp;重启命令</p>
+<ul>
+<li>shutdown<ul>
+<li>shutdown -h now :<ul>
+<li>表示立即关机</li>
+</ul>
+</li>
+<li>shutdown -h 1:<ul>
+<li>表示1分钟后关机</li>
+</ul>
+</li>
+<li>shutdown -r now:<ul>
+<li>表示立即重启</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>halt<ul>
+<li>直接使用,效果等价于关机</li>
+</ul>
+</li>
+<li>reboot<ul>
+<li>重启系统</li>
+</ul>
+</li>
+<li>sync<ul>
+<li>把内存的数据同步到磁盘(将未保存的东西保存)</li>
+<li><strong>在关机或重启时之前执行这个命令</strong></li>
+</ul>
+</li>
+</ul>
+<p>用户登陆和注销</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-48.png"></p>
+<p>登录和注销</p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-49.png"></p>
+<p><strong>操作截图</strong></p>
+<p>用户管理</p>
+<ul>
+<li>基本介绍<ul>
+<li><strong>Linux系统是一个多用户多任务的操作系统,任何一个要使用系统资源的用户,都必须首先向系统管理员申请一个账号,然后以这个账号的身份进入系统</strong></li>
+<li>Linux系统有多个用户,例如root,xiaoming,xiaohog,<strong>每个用户都至少属于一个用户组</strong></li>
+<li>用户家目录<ul>
+<li><strong>/home/</strong></li>
+<li><strong>目录下有各个创建的用户对应的家目录,当用户登陆时,会自动的进入到自己的家目录</strong></li>
+<li>/home/xiaoming</li>
+<li>/home/xiaohong</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-50.png"></p>
+<ul>
+<li><strong>添加用户</strong><ul>
+<li>基本语法:<ul>
+<li>useradd 用户名</li>
+</ul>
+</li>
+<li>应用案例<ul>
+<li>添加一个用户 xm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-51.png"></p>
+<p>操作-添加用户</p>
+<ul>
+<li><strong>useradd -d</strong> <strong>指定目录</strong> <strong>新的用户名</strong><ul>
+<li><strong>可以通过</strong> <strong>useradd -d</strong> <strong>指定目录</strong> <strong>新的用户名**</strong>,<strong>**给新创建的用户指定家目录</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>指定密码 passwd 用户名</strong></p>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-52.png"></p>
+<p>操作-更改密码</p>
+<ul>
+<li><strong>删除用户名</strong><ul>
+<li><strong>基本语法**</strong>:**<ul>
+<li><strong>userdel</strong> <strong>用户名</strong></li>
+</ul>
+</li>
+<li><strong>应用案例</strong><ul>
+<li><strong>删除用户**</strong>xm,<strong>**但要保留家目录</strong><ul>
+<li><strong>userdel xm</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-53.png"></p>
+<p>删除1</p>
+<ul>
+<li><strong>删除用户**</strong>xq,<strong>**同时删除家目录</strong><ul>
+<li><strong>userdel -r xq</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://chaochao.info/wp-content/uploads/2020/07/image-54.png"></p>
+<p>删除2</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/20/%E7%AC%94%E8%AE%B0%E4%BA%86%E8%A7%A3%E4%BA%86%E4%B8%80%E4%B8%8Blinux/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下javascript三" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/20/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%89/">笔记:温习了一下JavaScript(三)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/20/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%89/" class="archive-article-date">
+  	<time datetime="2020-07-20T11:07:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>function</p>
+<ul>
+<li><p>函数中可以封装一些功能(代码),在需要时可以执行这些功能</p>
+</li>
+<li><p>封装</p>
+<ul>
+<li>把一个或者多个功能通过函数的方式封装起来,对外只提供一个简单的函数<strong>接口</strong></li>
+</ul>
+</li>
+<li><p>创建函数</p>
+<ul>
+<li>函数对象创建函数<ul>
+<li>var fun = new Function();</li>
+<li>可以将要封装的代码以字符串的形式传递给构造函数</li>
+<li>var fun = new Function(“console.log(‘hello,这是我的第一个函数’)”);</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实际开发中,很少使用构造函数来创建函数对象</p>
+</li>
+<li><p><strong>函数声明创建函数</strong></p>
+<ul>
+<li><strong>function 函数名 ([形参1,形参2,形参n…]){</strong><ul>
+<li><strong>函数体</strong></li>
+</ul>
+</li>
+<li><strong>}</strong></li>
+<li><strong>function fun() {</strong><ul>
+<li><strong>console.log(“这是我的第二个函数”);</strong></li>
+</ul>
+</li>
+<li><strong>}</strong></li>
+</ul>
+</li>
+<li><p><strong>函数表达式创建函数</strong></p>
+<ul>
+<li><strong>语法:</strong><ul>
+<li><strong>var 变量名= function ([形参1,形参2,形参n……]){</strong></li>
+<li><strong>};</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>匿名函数</strong></p>
+<ul>
+<li><strong>function (){</strong></li>
+<li><strong>}</strong></li>
+</ul>
+</li>
+<li><p><strong>函数表达式创建的函数只有变量名**</strong>,<strong>**没有函数名所以也叫做匿名函数</strong></p>
+</li>
+<li><p>调用函数</p>
+<ul>
+<li>函数名();<ul>
+<li>fun();</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>函数的参数</p>
+<ul>
+<li>形参<ul>
+<li>多个形参之间用 , 隔开</li>
+<li>声明形参就相当于在函数内部声明了变量但未赋值</li>
+</ul>
+</li>
+<li>实参<ul>
+<li>在调用函数时,可以指定形参</li>
+<li><strong>实参将会赋值给函数中对应的形参</strong></li>
+<li><strong>调用函数时解析器不会检查实参的类型**</strong>(** <strong>函数的参数可以是任意的数据类型**</strong>)**<ul>
+<li><strong>要注意</strong> <strong>是否可能接受非法的类型</strong></li>
+<li><strong>有需要要对参数进行类型的检查</strong></li>
+</ul>
+</li>
+<li><strong>调用函数时**</strong>,<strong>**解析器也不会检查实参的数量</strong><ul>
+<li><strong>多余的实参不会被赋值</strong></li>
+<li><strong>少于的实参**</strong>,<strong><strong>未对应的形参将会是undefined</strong></strong>,<strong><strong>函数结果多为</strong></strong>N**<strong>a**</strong>N**</li>
+</ul>
+</li>
+<li>实参也可以是对象<ul>
+<li>参数过多时,可以将参数封装到对象中,然后通过对象传递</li>
+</ul>
+</li>
+<li><strong>实参也可以是函数</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>函数返回值</p>
+<ul>
+<li>return 需要返回的结果;<ul>
+<li>函数名() = return 需要返回的结果 ;如果函数没有 return 则返回 undefined</li>
+<li>函数只是实现某种功能,最终的结果需要<strong>返回给函数的调用者</strong><ul>
+<li>可以定义一个变量来接受执行结果</li>
+<li>vra result = sum( 4 , 4, 2);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>return ;</p>
+<ul>
+<li>如果 return 不跟任何值 会返回 undefined</li>
+</ul>
+</li>
+<li><p>如果不写 return 也会返回undefined</p>
+</li>
+<li><p><strong>return之后的代码都不会执行**</strong>(<strong>**类似于</strong> <strong>break**</strong>,<strong><strong>但更强大</strong></strong>)**</p>
+</li>
+<li><p><strong>return</strong> <strong>只能返回一个值**</strong>,<strong><strong>return后若有多个值</strong></strong>,<strong>**只会返回最后一个值</strong></p>
+<ul>
+<li><strong>若要返回多个结果**</strong>,<strong><strong>可以把多个结果保存到数组中</strong></strong>,<strong>**然后将数组返回</strong></li>
+</ul>
+</li>
+<li><p>return 可以是任意的数据类型</p>
+<ul>
+<li>也可以是Object<ul>
+<li>可以是函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>函数互调</strong></p>
+<ul>
+<li>可以在一个函数中调用另一个函数</li>
+</ul>
+</li>
+<li><p>立即执行函数</p>
+<ul>
+<li>函数定义完,立即被调用</li>
+<li>(function(){<ul>
+<li>alert(“我是一个匿名函数”);</li>
+</ul>
+</li>
+<li>})();</li>
+<li>立即执行函数往往只会执行一次</li>
+</ul>
+</li>
+<li><p>作用域</p>
+<ul>
+<li>变量的作用范围</li>
+<li>在JS中有两种作用域(es6之前)<ul>
+<li>全局作用域<ul>
+<li><strong>直接编写在script标签中的JS代码或者是单独的js文件,都在全局作用域</strong></li>
+<li><strong>全局作用域在页面打开时创建,页面关闭时销毁(比较占内存资源)</strong></li>
+<li><strong>在全局作用域有一个全局对象window,可以直接使用</strong><ul>
+<li><strong>window 代表浏览器的窗口,由浏览器创建</strong></li>
+</ul>
+</li>
+<li><strong>在全局作用域中创建的变量都会作为window对象的属性保存</strong><ul>
+<li><strong>var a = 10 == window.a</strong></li>
+</ul>
+</li>
+<li><strong>创建的函数都会作为window的方法保存</strong></li>
+<li><strong>全局变量</strong><ul>
+<li><strong>全局作用域中的变量都是全局变量</strong><ul>
+<li><strong>在页面的任意部分都可以访问到</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>局部作用域(函数作用域)<ul>
+<li><strong>调用函数</strong>时创建函数作用域,函数执行完毕以后,函数作用域销毁(比较节约内存资源)</li>
+<li>每调用一次函数就会创建一个新的函数作用域,函数作用域之间是相互独立的</li>
+<li><strong>在局部作用域中可以访问到全局作用域的变量</strong></li>
+<li><strong>在全局作用域中无法访问到函数作用域的变量</strong></li>
+<li><strong>局部变量</strong><ul>
+<li><strong>在局部作用域下的变量</strong></li>
+<li><strong>在函数中,不使用var声明的变量都会成为全局变量</strong></li>
+</ul>
+</li>
+<li>在函数中要访问全局变量,可以使用window.变量</li>
+<li>函数作用域也会有声明提前的特性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>函数声明也可以在函数声明之前被调用</p>
+<ul>
+<li>块级作用域(es6)</li>
+<li>作用域链<ul>
+<li>函数中还有函数,在这个作用域中就又诞生了一个作用域</li>
+<li>当在函数作用域中操作一个变量时,它会先在自身作用域中寻找,如果有直接使用,如果没有到<strong>上一级作用域**</strong>(<strong><strong>不一定是全局作用域</strong></strong>,<strong><strong>套娃作用域</strong></strong>)**中使用</li>
+<li>如果全局作用域中依然没有找到,就会报错</li>
+</ul>
+</li>
+</ul>
+<p>arguments</p>
+<ul>
+<li><p>当不确定有多少个参数(包括形参和实参)的时候,可以用arguments来获取</p>
+</li>
+<li><p>在调用函数时,浏览器每次都会传递两个隐含的参数:</p>
+<ol>
+<li>this</li>
+<li>arguments<ul>
+<li>封装实参的对象,只有函数有arguments对象,并且每个函数已经内置好了</li>
+<li>伪数组对象,可以通过索引来操作数据,也可以获取长度,没有Array的方法</li>
+<li>在调用函数时,我们所传递的实参都会在arguments中保存<ul>
+<li>即使不定义形参,也可以通过arguments来使用实参<ul>
+<li>arguments[0]  第一个实参</li>
+<li>arguments[1]  第二个实参</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>callee属性</p>
+<ul>
+<li>arguments的一个属性<ul>
+<li>callee属性对应一个函数对象,就是当前正在执行的函数对象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>利用函数反转数组</p>
+<ul>
+<li>function reverse(arr) {<ul>
+<li>var newArr = [];</li>
+<li>for (var i = arr.length -1 ; i &gt;=0; i–){</li>
+<li>newArr[newArr.length] = arr[i];</li>
+<li>}</li>
+<li>return newArr;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><p>利用函数冒泡排序</p>
+<ul>
+<li>function sort(arr) {<ul>
+<li>for (var i=0; i &lt;arr.length - 1;i++){<ul>
+<li>for (var j = 0; j&lt; arr.length - i - 1; j++){<ul>
+<li>if(arr[j] &gt; arr[j+1]){<ul>
+<li>var temp = arr[j];</li>
+<li>arr[j] = arr[j + 1];</li>
+<li>arr[j + 1] = temp;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><p>预解析</p>
+<ul>
+<li>JavaScript解析器在运行JavaScript代码的时候分为两步: 预解析和代码执行</li>
+</ul>
+</li>
+<li><p>变量声明提前</p>
+<ul>
+<li>所以的var 都会在代码执行前声明但不提供赋值操作</li>
+</ul>
+</li>
+<li><p>函数声明提前</p>
+<ul>
+<li>使用函数声明形式创建的函数   function 函数名(){}</li>
+</ul>
+</li>
+</ul>
+<p>它会在所有的代码执行之前就被创建,所以在函数声明前就可以调用函数</p>
+<ul>
+<li>使用函数表达式(var fun = function(){})创建的函数,不能在声明前调用</li>
+<li>案例<ul>
+<li>案例①<ul>
+<li>var a = b = c =9;</li>
+<li>相当于 var a = 9; b = 9; c = 9;</li>
+<li>b,c是没有var的,如果是在函数里则会当全局变量</li>
+</ul>
+</li>
+<li>案例②<ul>
+<li>var a = 9, b = 9, c = 9;</li>
+<li>相当于 var a = 9; var b = 9; var c = 9;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Object</p>
+<ul>
+<li><p>一个具体的事务, 就相当于 <strong>塑料袋</strong>  可把 5种基本数据类型装在一起,让基本数据类型产生联系(属性和方法)</p>
+</li>
+<li><p>分类</p>
+<ul>
+<li>内置对象<ul>
+<li>由ES标准种定义的对象,再任何的ES的实现中都可以使用</li>
+<li>比如: Math  String Number Boolean Date Array</li>
+</ul>
+</li>
+<li>宿主对象<ul>
+<li>由JS的运行环境提供的对象,目前来讲主要由浏览器提供的对象</li>
+<li>比如 BOM DOM</li>
+</ul>
+</li>
+<li>自定义对象<ul>
+<li>由开发人员自己创建对象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>创建对象</p>
+<ul>
+<li>方法①: <strong>使用字面量创建对象</strong><ul>
+<li><strong>var 变量名 = {</strong><ul>
+<li>属性: ‘xx’,</li>
+<li>方法: function() {<ul>
+<li>函数体</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><strong>}</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>方法冒号后面跟的是一个匿名函数</strong></p>
+</li>
+<li><p>属性名和属性值是一组键值对结构</p>
+<ul>
+<li>名:值    多个名值对之间使用 , 隔开</li>
+<li>一个属性之后没有属性了,不要写,</li>
+</ul>
+</li>
+<li><p>方法②: new Object 创建对象</p>
+<ul>
+<li>原理和new Array() 原理一致</li>
+<li>使用new 关键字调用的函数,是构造函数constructor</li>
+</ul>
+</li>
+</ul>
+<p>构造函数是专门用来创建对象的函数</p>
+<ul>
+<li>var 变量名 = new Object();</li>
+<li>这个方法是利用 = 赋值来增删改查的,和键值对不同,之间用;相隔</li>
+<li>方法③: 构造函数创建对象(工厂)<ul>
+<li>通过该函数可以大批量的创建类似的对象(重复的代码),这样的函数称为构造函数<ul>
+<li><strong>①</strong> <strong>构造函数习惯上首字母大写</strong></li>
+<li><strong>②</strong> <strong>普通函数是直接调用**</strong>,<strong>**构造函数需要new关键字来调用</strong></li>
+<li>③ 构造函数里面封装的不是普通代码,而是对象.</li>
+<li>④ 构造函数不需要return ,返回结果是一个对象</li>
+<li>⑤ 属性和方法前面必须添加 this</li>
+<li><strong>function</strong> <strong>构造函数名**</strong>(<strong><strong>形参</strong></strong>){**<ul>
+<li><strong>this**</strong>.<strong>**属性名</strong> <strong>=</strong> <strong>形参**</strong>;**</li>
+<li><strong>this**</strong>.<strong>**方法名</strong> <strong>=</strong> <strong>function**</strong>() {}**</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>}</strong></p>
+<p><strong>var</strong> <strong>变量名</strong> <strong>= new</strong> <strong>构造函数名**</strong>(<strong><strong>实参</strong></strong>);**</p>
+<ul>
+<li><p>使用工厂方法创建的对象,所以创建的对象都是Object类型,导致我们无法区分多种不同类型的对象</p>
+</li>
+<li><p>构造函数和对象</p>
+<ul>
+<li>构造函数泛指某一大类(抽象),类似于Java的class</li>
+<li>对象是一个具体的事物</li>
+<li>利用构造函数创建对象的过程我们称为对象的实例化</li>
+</ul>
+</li>
+<li><p>添加/调用/修改/删除</p>
+<ul>
+<li>对象.属性名 = 属性值;</li>
+<li>对象.属性名;   /   对象[‘属性名’];<ul>
+<li>如果读取对象中没有的属性,不会报错而是会返回undefined</li>
+</ul>
+</li>
+<li>对象.属性名 = 新值;</li>
+<li>delete 对象.属性名;</li>
+</ul>
+</li>
+<li><p>属性名和属性值</p>
+<ul>
+<li>属性名<ul>
+<li>不强制遵守标识符规范</li>
+<li>特殊属性名<ul>
+<li>如果要使用特殊的属性名,不能采用.的方式来操作</li>
+<li>需要使用另一种方式:<ul>
+<li>语法:<ul>
+<li>对象[ “属性名” ] = 属性值</li>
+</ul>
+</li>
+<li>读取都需要采用这种方式</li>
+</ul>
+</li>
+<li>使用[]这种形式去操作属性,更加的灵活</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>[]种可以直接传递一个变量,这样变量值是多少就会读取哪个属性</p>
+<p>obj[“123”] = 789;</p>
+<p>var n = “123”;</p>
+<p>obj[n] = 789;</p>
+<ul>
+<li>in 运算符<ul>
+<li>通过该运算符可以检查一个对象中是否含有指定的属性</li>
+</ul>
+</li>
+</ul>
+<p>如果有返回true,没有返回false</p>
+<ul>
+<li><p>语法:</p>
+<ul>
+<li>“属性名” in 对象</li>
+</ul>
+</li>
+<li><p>属性值</p>
+<ul>
+<li>JS对象的属性值,可以是任意的数据类型</li>
+</ul>
+</li>
+</ul>
+<p>甚至也可以是一个对象</p>
+<ul>
+<li><p>在塑料袋里又装了塑料袋</p>
+</li>
+<li><p>obj.rest.name      在塑料袋里的塑料袋找东西</p>
+</li>
+<li><p>遍历对象中的属性</p>
+<ul>
+<li>for  …. in 语句<ul>
+<li>语法:<ul>
+<li>for(var 变量 in 对象){</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>for(var k in obj){</p>
+<ul>
+<li>console.log(“属性名”+k); // 得到的是属性名</li>
+<li>console.log(“属性值”+obj[k]); // 得到的是属性值</li>
+</ul>
+</li>
+<li><p>}</p>
+</li>
+<li><p>for…in 里面的变量习惯上写k 或者 key</p>
+</li>
+<li><p>for … in语句中,对象有几个属性,循环体就会执行几次</p>
+<ul>
+<li>每次执行时,会将对象的属性名赋值给变量n.</li>
+</ul>
+</li>
+</ul>
+<p>内置对象</p>
+<ul>
+<li>JavaScript自带,接口.</li>
+<li>常见对象: Math, Date, Array, String</li>
+</ul>
+<p>Math对象</p>
+<ul>
+<li><p>它不是构造函数,属于工具类,不用创建对象</p>
+</li>
+<li><p>里面封装了数学运算相关的属性和方法</p>
+</li>
+<li><p>属性</p>
+<ul>
+<li>Math.PI<ul>
+<li>表示圆周率</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>方法</p>
+<ul>
+<li>abs()<ul>
+<li>计算数的绝对值<ul>
+<li>Math.abs(-1);</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ceil()<ul>
+<li>向上取整(小数位只要有值,无论数是多少,向上取整)</li>
+</ul>
+</li>
+<li>floor()<ul>
+<li>向下取整(小数部分全不要)</li>
+</ul>
+</li>
+<li>round()<ul>
+<li>四舍五入取整</li>
+</ul>
+</li>
+<li><strong>random**</strong>()**<ul>
+<li><strong>用来生成一个**</strong>0-1**<strong>之间的随机数</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>M**</strong>ath**<strong>.**</strong>random**<strong>()</strong></p>
+<ul>
+<li><p><strong>生成一个**</strong>0-10**<strong>的随机数</strong></p>
+<ul>
+<li><strong>M**</strong>ath*<strong><em>.<strong><strong>round</strong></strong>(<strong><strong>M</strong></strong>ath**<strong>.**</strong>random****()\</em>10)</strong></li>
+</ul>
+</li>
+<li><p><strong>生成一个**</strong>1-10**</p>
+<ul>
+<li><strong>M**</strong>ath*<strong><em>.<strong><strong>round</strong></strong>(M**<strong>ath**</strong>.<strong><strong>random</strong></strong>()\</em>9+1)</strong></li>
+</ul>
+</li>
+<li><p><strong>生成**</strong>0-<strong>**x之间的随机数</strong></p>
+<ul>
+<li><strong>M**</strong>ath*<strong><em>.<strong><strong>round</strong></strong>(M**<strong>ath**</strong>.<strong><strong>random</strong></strong>()**</em></strong>x**<strong>)</strong></li>
+</ul>
+</li>
+<li><p><strong>生成x**</strong>-<strong>**y之间的随机数</strong></p>
+<ul>
+<li><strong>M**</strong>ath*<strong><em>.<strong><strong>round</strong></strong>(M**<strong>ath**</strong>.<strong><strong>random</strong></strong>()\</em>(**</strong>y**<strong>-**</strong>x**<strong>)+**</strong>x**<strong>)</strong></li>
+</ul>
+</li>
+<li><p>max()</p>
+<ul>
+<li>获取多个数中的最大值</li>
+<li>Math.max(x,y,z)</li>
+</ul>
+</li>
+<li><p>min()</p>
+<ul>
+<li>获取多个书的最小值</li>
+<li>Math.min(x,y,z)</li>
+</ul>
+</li>
+<li><p>pow(x,y)</p>
+<ul>
+<li>返回x的y次幂</li>
+</ul>
+</li>
+<li><p>sqrt(x)</p>
+<ul>
+<li>返回数的平方根</li>
+</ul>
+</li>
+<li><p>随机数游戏</p>
+<ul>
+<li>var random = getRandom(x,y);</li>
+<li>while(true){<ul>
+<li>var number = prompt(‘请输入你猜的数字:’);</li>
+<li>if (number &gt; random ){<ul>
+<li>console.log(‘你输入的数字大了’);</li>
+<li>number = prompt(‘请再次输入你猜的数字:’);</li>
+</ul>
+</li>
+<li>}else if{<ul>
+<li>console.log(‘你输入的数字小了’);</li>
+<li>number = prompt(‘请再次输入你猜的数字:’);</li>
+</ul>
+</li>
+<li>}else {<ul>
+<li>console.log(‘你猜对了’);</li>
+<li>break;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+<p>Date对象</p>
+<ul>
+<li><p>使用Date对象表示时间,是一个构造函数,必须使用 new 来调用</p>
+</li>
+<li><p>var d = new Date();</p>
+</li>
+<li><p>没有参数则会封装当前代码执行的时间</p>
+</li>
+<li><p>创建一个指定的时间对象</p>
+<ul>
+<li>var d2 = new Date(“12/03/2020 11:10:30”);</li>
+</ul>
+</li>
+<li><p>参数格式</p>
+<ul>
+<li>见MDN文档</li>
+</ul>
+</li>
+<li><p>方法</p>
+<ul>
+<li>getDate()<ul>
+<li>获取当前日期是几日</li>
+<li>var date = d2.getDate();</li>
+</ul>
+</li>
+<li>getDay()<ul>
+<li>获取当前对象是星期几<ul>
+<li>会返回0-6的值,0表示周日</li>
+</ul>
+</li>
+<li>var day = d2.getDay();</li>
+</ul>
+</li>
+<li>getMonth()<ul>
+<li>获取当前是几月<ul>
+<li>会返回0-11月, 0表示1月</li>
+</ul>
+</li>
+<li>var month = d2.getMonth();</li>
+</ul>
+</li>
+<li>getFullYear()<ul>
+<li>获取当前是几年</li>
+<li>var year = d2.getFullYear();</li>
+</ul>
+</li>
+<li>getTime() / valueOf()<ul>
+<li>获取当前的时间戳</li>
+<li>var time = d2.geiTime();</li>
+<li>时间戳<ul>
+<li>从格林威治时间1970年1月1日,0时0分0秒</li>
+<li>到当前日期所花费的毫秒数(ms)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>计算机底层在保存时间时使用的都是时间戳</p>
+</li>
+<li><p><strong>获取当前的时间戳</strong></p>
+<ul>
+<li><strong>var</strong> <strong>time</strong> <strong>= D**</strong>ate**<strong>.**</strong>now**<strong>();</strong></li>
+</ul>
+</li>
+<li><p><strong>var</strong> <strong>date</strong> <strong>= +**</strong>new** <strong>D**</strong>ate**<strong>();</strong></p>
+<ul>
+<li><strong>+**</strong>new** <strong>D**</strong>ate**<strong>()</strong> <strong>返回的就是总的毫秒数</strong></li>
+<li><strong>比较常用的</strong></li>
+<li><strong>+**</strong>new** <strong>D**</strong>ate**<strong>(**</strong>time**<strong>);</strong> <strong>返回输入时间总的毫秒数</strong></li>
+</ul>
+</li>
+<li><p><strong>时间戳</strong> <strong>/ 1000 –&gt;</strong> <strong>秒数</strong></p>
+</li>
+<li><p>倒计时</p>
+<ul>
+<li>将来的时间减去现在的时间,但不能拿时分秒去减,应该用时间戳来做,然后将时间戳减缓为时分秒</li>
+<li>转换公式<ul>
+<li>d = parseInt(总秒数/60/60/24);   // 天数</li>
+<li>h = parseInt(总秒数/60/60%24);  // 小时</li>
+<li>m = parseInt(总秒数/60%60);       // 分钟</li>
+<li>s = parseInt(总秒数%60);              // 秒数</li>
+</ul>
+</li>
+<li>function countDown(time) {<ul>
+<li>var nowTime = +new Date();</li>
+<li>var inputTime = +new Date(time);</li>
+<li>var times = (input - nowTime) / 1000;</li>
+<li>var d = parseInt(times/60/60/24);   // 天数</li>
+<li>d = d &lt; 10? ‘0’+d : d;</li>
+<li>var h = parseInt(times/60/60%24);  // 小时</li>
+<li>var m = parseInt(times/60%60);       // 分钟</li>
+<li>var s = parseInt(times%60);              // 秒数</li>
+<li>return d + ‘天’ + h + ‘时’ + m + ‘分’ + s + ‘秒’ ;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+<p>MDN</p>
+<ul>
+<li>Mozilla 开发者网络(MDN) 提供了有关网络技术( Open Web)的信息,包括HTML,CSS和HTML5应用的API和万维网</li>
+</ul>
+<p>this</p>
+<ul>
+<li>解析器在调用函数每次都会向函数内部传递进一个隐含的参数,这个隐含的参数就是this</li>
+<li>this指向的是一个对象,这个对象我们称为函数执行的<strong>上下文对象</strong>,根据函数调用方式的不同,this会指向不同的对象<ol>
+<li>以函数形式的调用,this永远都是window</li>
+<li>以方法形式的调用,this就是调用方法的对象</li>
+<li>构造函数形式的调用,this就是新创建的那个对象</li>
+<li>使用call和apply调用,this就是指定的那个对象</li>
+<li>在事件的响应函数中,响应函数是给谁绑定的,this就是谁</li>
+</ol>
+</li>
+</ul>
+<p>new</p>
+<ul>
+<li>① new 构造函数 在内存中创建了一个空的对象</li>
+<li>② this 指向这个空的对象</li>
+<li>③ 执行构造函数的代码</li>
+<li>④ 返回这个对象</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.20 下午</strong></p>
+<p><strong>第二次更新时间: 2020.7.21 上午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/20/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下javascript二" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/19/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%8C/">笔记:温习了一下JavaScript(二)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/19/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%8C/" class="archive-article-date">
+  	<time datetime="2020-07-19T09:43:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>break</p>
+<ul>
+<li>跳出整个循环(吃5个包子,第3个包子有虫子,那剩下的也不吃了)<ul>
+<li>break会立即终止离他最近的那个循环语句</li>
+</ul>
+</li>
+<li>可以为循环语句创建label,来表示当前的循环<ul>
+<li>label:循环语句</li>
+<li>使用break语句时, 可以再break后跟着一个label<ul>
+<li>这样break将会结束指定的循环,而不是最近的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>continue</p>
+<ul>
+<li>跳过当次循环,继续下一次循环(吃5个包子,第3个包子有虫子扔掉,继续吃第4, 第5个包子)</li>
+<li>continue也会默认只会对离它最近的循环起作用</li>
+<li>也可以创建label,来结束指定的循环</li>
+</ul>
+<p>断点调试</p>
+<ul>
+<li>F12 –&gt; Sources –&gt;找到被调试文件 –&gt; 设置断点 –&gt; 刷新一下 –&gt; Step into next function call (F11)</li>
+</ul>
+<p>命名规范</p>
+<ul>
+<li>标识符命名规范<ul>
+<li>① 变量,函数的命名要有意义</li>
+<li>② 变量的名词一般用名词</li>
+<li>③ 函数的名词一般用动词</li>
+</ul>
+</li>
+<li>操作符规范<ul>
+<li>左右两侧保留空格</li>
+</ul>
+</li>
+<li>单行注释<ul>
+<li>// 后面有个空格再写相关内容</li>
+</ul>
+</li>
+</ul>
+<p>Array</p>
+<ul>
+<li><p>变量,能存储多个值,并且提供了方便的获取方式</p>
+</li>
+<li><p>创建数组</p>
+<ul>
+<li>方式① new 创建数组<ul>
+<li>Array构造函数</li>
+<li>var arr = new Array();</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>方式② 数字字面量创建数组</strong></p>
+<ul>
+<li><strong>var 数组名 = [‘值1’,’值2’,’值3’,……];</strong></li>
+</ul>
+</li>
+<li><p>添加元素</p>
+<ul>
+<li>方法①<ul>
+<li>数组[索引] = 值;</li>
+<li>arr[0] = 10;</li>
+</ul>
+</li>
+<li>方法②<ul>
+<li>数组[数组.length] = 值;</li>
+<li>arr[arr.length] = 值;</li>
+</ul>
+</li>
+<li><strong>数组的元素可以是任意的数据类型</strong><ul>
+<li>也可以是对象/函数/数组</li>
+<li>arr = [[1,2,3],[3.4,5],[6,7,8];]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>读取元素</p>
+<ul>
+<li>语法:<ul>
+<li>数组[索引]</li>
+<li>arr[0]</li>
+</ul>
+</li>
+<li>如果读取不存在的索引,不会报错而是返回undefined</li>
+</ul>
+</li>
+<li><p>获取数组长度</p>
+<ul>
+<li>length属性<ul>
+<li>语法:<ul>
+<li>数组.length</li>
+<li>arr.length</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>对于连续的数组,通过length可以获取到数组的长度</li>
+<li>对于非连续的数组,使用length会获取到数组最大的索引+1<ul>
+<li>尽量不要创建非连续的数组</li>
+</ul>
+</li>
+<li>修改length<ul>
+<li>length可以修改<ul>
+<li>如果修改length大于实际长度,多出部分会空出来</li>
+<li>小于实际长度,则多出的索引会被删除</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数组的遍历(也能添加/删除)</p>
+<ul>
+<li>遍历数组就是将数组中所有的元素都取出来</li>
+<li><strong>for( var i=0 ;i&lt;arr.length;i++ ){</strong><ul>
+<li><strong>console.log(arr[i]);</strong></li>
+</ul>
+</li>
+<li><strong>}</strong></li>
+</ul>
+</li>
+<li><p>数组转换为字符串</p>
+<ul>
+<li>定义新变量str=’’来存放这个字符串</li>
+<li>遍历数组,将数组的数据取出来进行 +</li>
+</ul>
+</li>
+<li><p><strong>冒泡排序</strong></p>
+<ul>
+<li><strong>一种算法,把一系列的数据按照一定的顺序(从小到大或从大到小)进行排列显示</strong></li>
+<li><strong>var arr = [x1,x2,x3,x4,……]</strong></li>
+<li><strong>for (var i = 0; i &lt;= arr.length - 1; i++) { // 外层循环管趟数</strong><ul>
+<li><strong>for (var j = 0; j &lt;= arr.lengh - i -1; j++) { // 里层循环管每层交换次数</strong><ul>
+<li>// 交换两个变量的值, 索引小的和索引大的比较</li>
+<li>if(arr[j] &gt; arr[j + 1]) {<ul>
+<li>var temp = arr[j];</li>
+<li>arr[j] = arr[ j + 1];</li>
+<li>arr[j] = temp;</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
+</li>
+<li><strong>}</strong></li>
+</ul>
+</li>
+<li><strong>}</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.19 下午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/19/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%BA%8C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-笔记温习了一下javascript一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/17/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%80/">笔记:温习了一下JavaScript(一)</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/17/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2020-07-17T13:01:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前言</p>
+<p>最近家里事情很多,加上自己又懒相当一条咸鱼,所有…..</p>
+<p>JavaScript</p>
+<ul>
+<li>浏览器执行JS<ul>
+<li>渲染引擎<ul>
+<li>解析HTML和CSS,也叫内核</li>
+<li>js引擎,js解释器.比如chrome的V8.js引擎会逐行解释每一句代码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ECMAScript<ul>
+<li>一个标准,是Javascript是标准</li>
+<li>一个完整的JavaScript由三大部分构成<ul>
+<li>ECMAScript(JavaScript语法)</li>
+<li>DOM(接口)</li>
+<li>BOM</li>
+</ul>
+</li>
+<li>解释型语言<ul>
+<li>不用编译直接运行</li>
+</ul>
+</li>
+<li>动态语言</li>
+<li>基于原型的面向对象</li>
+</ul>
+</li>
+<li>JS代码需要编写到script标签中<ul>
+<li>type = “text/javascript”</li>
+</ul>
+</li>
+<li>输入输出语句<ul>
+<li>alert();<ul>
+<li>控制浏览器弹出一个警告框</li>
+</ul>
+</li>
+<li>document.write()<ul>
+<li>让计算机在页面中输出一个内容</li>
+</ul>
+</li>
+<li>console.log()<ul>
+<li>向控制台输出一个内容(程序员测试用)</li>
+</ul>
+</li>
+<li>prompt()<ul>
+<li>输入框</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>编写位置</p>
+<ul>
+<li>可以将js代码编写到标签的onclick属性中<ul>
+<li><button onclick = "alert('讨厌,点我干嘛')">点我一下</button></li>
+</ul>
+</li>
+<li>将js代码写在超链接的href属性中,当点击超链接会执行js代码<ul>
+<li><a href="JavaScript:alert(' 让你点就点! ');">你也点我一下</a></li>
+<li>href = “JavaScript:;”</li>
+</ul>
+</li>
+<li>以上属于结构和行为耦合,不推荐使用</li>
+<li>将js代码写在script标签</li>
+<li>将js代码写在外部js文件,然后通过script标签引入<ul>
+<li><script type="text/JavaScript" src="js文件所在地"></script></li>
+<li>script标签一旦引入外部文件了,就不能编写内部代码了,即使编写浏览器也会忽略.</li>
+</ul>
+</li>
+</ul>
+<p>基本语法</p>
+<ul>
+<li>注释<ul>
+<li>多行注释<ul>
+<li>/*    */   —- Shift + Alt + A (可以修改为 Ctrl + Shift + /)</li>
+</ul>
+</li>
+<li>单行注释<ul>
+<li>// —-    Ctrl + /</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>严格区分大小写</li>
+<li>每一条语句以分号;结尾<ul>
+<li>如果不写,浏览器会自动添加,但会消耗一些系统资源,而且浏览器会加错分号</li>
+</ul>
+</li>
+<li>会忽略多个空格和换行,利用这个可以对代码进行格式化</li>
+</ul>
+<p>变量</p>
+<ul>
+<li>本质:程序在内存中申请的一块用来存放数据的空间</li>
+<li>使用变量<ul>
+<li>var(variable)<ul>
+<li>var a;  —-&gt; 输出结果为undefined</li>
+</ul>
+</li>
+<li>变量赋值<ul>
+<li>a = 123;</li>
+</ul>
+</li>
+<li>初始化<ul>
+<li>var  a = 123</li>
+</ul>
+</li>
+<li>可以不声明直接使用但不推荐</li>
+</ul>
+</li>
+<li>命名规范<ul>
+<li>① 字母,数字,下划线,美元符号($)</li>
+<li>② 区分大小写</li>
+<li>③ 不能以数字开头</li>
+<li>④ 不能是关键字/保留字/name</li>
+<li>⑤ 名字有意义,遵循驼峰命名法<ul>
+<li>首字母小写,每个单词的开头字母大写,其余字母小写</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>数据类型</p>
+<ul>
+<li>不同的数据所占用的存储空间是不同的,根据占用空间的不同来定义不同的数据类型.</li>
+<li>在JS中一共有6种数据类型—-&gt;弱类型语言<ul>
+<li>String        字符串</li>
+<li>Number     数值</li>
+<li>Boolean     布尔值</li>
+<li>Null            空值</li>
+<li>Undefined 未定义</li>
+<li>Object        对象<ul>
+<li>其中 String  Number  Boolean  Null Undefined  属于基本数据类型</li>
+<li>Object 属于引用数据类型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>String<ul>
+<li>在JS中字符串需要使用引号引起来<ul>
+<li>如果嵌套,遵循 外双内单,外单内双</li>
+<li>推荐使用单引号,因为html使用的是双引号</li>
+</ul>
+</li>
+<li>转义符<ul>
+<li>\“ 表示 “</li>
+<li>\‘ 表示 ‘</li>
+<li>\n 表示换行  newline</li>
+<li>\t 表示缩进  tab</li>
+<li>\b 表示空格 blank</li>
+<li>\\ 表示 \</li>
+</ul>
+</li>
+<li>字符串长度<ul>
+<li>length 属性</li>
+</ul>
+</li>
+<li>拼接<ul>
+<li>字符串 + 任何类型 = 拼接之后的新字符串</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Number<ul>
+<li>在js中所有的数值都是Number类型<ul>
+<li>包括整数和浮点数</li>
+</ul>
+</li>
+<li>范围<ul>
+<li>Number.MAX_VALUE<ul>
+<li>JS中可以表示的数字的最大值</li>
+<li>1.7976931348623157e+308</li>
+<li>如果使用Number表示的数字超过了最大值,则会返回Infinity,表示正无穷</li>
+</ul>
+</li>
+<li>Number.MIN_VALUE<ul>
+<li>最小的正值</li>
+<li>5e-324</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特殊值<ul>
+<li>Infinity - 正无穷</li>
+<li>-Infinity - 负无穷</li>
+<li>NaN - Not a Number</li>
+</ul>
+</li>
+<li>验证是否为Number<ul>
+<li>isNaN()  —-方法,判断非数字,如果是数字返回false,如果非数字返回true</li>
+</ul>
+</li>
+<li>如果使用JS进行浮点计算,可能得到一个不精确的结果<ul>
+<li>0.1+0.2 = 0.300000000000000004</li>
+<li>千万不要使用JS进行对精确度要求比较高的运算</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Boolean<ul>
+<li>true/false</li>
+<li>参与加法运算分别当1/0看待</li>
+</ul>
+</li>
+<li>Null<ul>
+<li>null - 空值</li>
+<li>和数字相加 结果为 被加的数字</li>
+<li>特殊:使用typeof检查会返回object</li>
+</ul>
+</li>
+<li>Undefined<ul>
+<li>undefined</li>
+<li>当声明变量但未赋值时,它的值就是undefined</li>
+<li>和数字相加 结果为 NaN</li>
+</ul>
+</li>
+</ul>
+<p>typeof</p>
+<ul>
+<li>可以使用运算符typeof来检查变量的类型</li>
+<li>语法: typeof 变量<ul>
+<li>typeof a</li>
+<li>console.log(typeof a)</li>
+</ul>
+</li>
+<li>prompt() 取过来的值是 String的</li>
+</ul>
+<p>强制类型转换</p>
+<ul>
+<li><p>指将一个数据类型强制转换为其他的数据类型</p>
+</li>
+<li><p>转换为String</p>
+<ul>
+<li>方式1<ul>
+<li>调用被转换类型的toString()方法<ul>
+<li>a.toString();</li>
+</ul>
+</li>
+<li>该方法不会影响到原变量,它会将转换结果返回<ul>
+<li>a 不变</li>
+<li>b = a.toString();</li>
+<li>a = a.toString();</li>
+</ul>
+</li>
+<li>注意:null 和 undefined 这两个值没有toString()方法,如果调用则会报错</li>
+</ul>
+</li>
+<li>方式2<ul>
+<li>调用String()函数,并将被转换的数据作为参数</li>
+<li>a = String(a);</li>
+<li>使用String()函数做强制类型 转换时</li>
+<li>对于Number和Boolean实际上就是调用的toString()方法</li>
+<li>但对于null和undefined,就不会调用toString()方法</li>
+<li>它会将 null 直接转换为”null”</li>
+<li>   将undefined转换为” undefined “</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>方法3</p>
+<ul>
+<li>‘’ + 被转换</li>
+</ul>
+</li>
+<li><p>转换为Number</p>
+<ul>
+<li>方式1<ul>
+<li>使用Number()函数</li>
+<li>a = Number(a);</li>
+<li>String -&gt; Number<ul>
+<li>纯数字字符串,则转换为数字</li>
+<li>有非数字内容字符串,则转换为NaN</li>
+<li>空串或全为空格,则转换为0</li>
+</ul>
+</li>
+<li>Boolean -&gt; Number<ul>
+<li>ture -&gt; 1</li>
+<li>false -&gt; 0</li>
+</ul>
+</li>
+<li>Null -&gt; Number<ul>
+<li>null -&gt; 0</li>
+</ul>
+</li>
+<li>Undefined -&gt; Number<ul>
+<li>undefined - &gt; NaN</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>方式2<ul>
+<li>parseInt(String)<ul>
+<li>将字符串转换为整数,可以将字符串中有效的整数内容取出来然后转换为Number</li>
+<li>对非String使用该方法,会先将其转换为String,然后再操作</li>
+<li>a = “123px”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>a = parseInt(a);</p>
+<p>a == 123;</p>
+<ul>
+<li>a = “123x423”</li>
+</ul>
+<p>a = parseInt(a);</p>
+<p>a == 123;</p>
+<ul>
+<li>a = “123.423”</li>
+</ul>
+<p>a = parseInt(a);</p>
+<p>a == 123;</p>
+<ul>
+<li>a = “rem120px”;</li>
+</ul>
+<p>a = parseInt(a)</p>
+<p>a == NaN</p>
+<ul>
+<li><p>parseFloat(String)</p>
+<ul>
+<li>将字符串转换为浮点数</li>
+<li>类似于parseInt(),但能取小数</li>
+</ul>
+</li>
+<li><p>方法3</p>
+<ul>
+<li>利用 - * /</li>
+<li>-0  ,*1, /1</li>
+</ul>
+</li>
+<li><p>其它进制数字</p>
+<ul>
+<li>16进制数字<ul>
+<li>0x开头<ul>
+<li>a = 0x123;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>8进制数字<ul>
+<li>0开头<ul>
+<li>a = 070;</li>
+<li>类似于”070”字符串,有些浏览器会当成8进制,有些会当成10进制</li>
+<li>可以在parseInt()传递第2个参数,指定数字的进制<ul>
+<li>a = parseInt(a,10);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2进制数字<ul>
+<li>0b开头,不是所有浏览器都支持<ul>
+<li>a = 0b10;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>转换为Boolean</p>
+<ul>
+<li>Boolean()函数</li>
+<li>Number -&gt; Boolean<ul>
+<li>除了0和NaN,其余的都是true</li>
+</ul>
+</li>
+<li>String -&gt; Boolean<ul>
+<li>除了””(空串),其余都是true</li>
+</ul>
+</li>
+<li>Null -&gt; Boolean<ul>
+<li>null -&gt;false</li>
+</ul>
+</li>
+<li>Undefined -&gt; Boolean<ul>
+<li>undefined -&gt; false</li>
+</ul>
+</li>
+<li>Object -&gt; Boolean<ul>
+<li>都是true</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>运算符</p>
+<ul>
+<li><p>也叫操作符,通过运算符可以对一个或多个值进行运算,并获取运算结果</p>
+<ul>
+<li>比如: typeof 就是运算符,它会将某值类型以字符串的形式返回</li>
+</ul>
+</li>
+<li><p>算术运算符(二元运算符)</p>
+<ul>
+<li>+<ul>
+<li>加法,并将结果返回</li>
+<li>非Number类型进行运算时,会先将其先转换为Number类型,再进行计算(String 除外)</li>
+<li>任何值与NaN进行运算都是NaN</li>
+</ul>
+</li>
+<li>-</li>
+<li>*</li>
+<li>/</li>
+<li>%</li>
+<li>浮点数运算会有问题<ul>
+<li>0.1+0.2 = 0.300000000000000004</li>
+<li>不要使用JS进行对精确度要求比较高的运算</li>
+<li>不要直接判断两个浮点数是否相等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>一元运算符</p>
+<ul>
+<li>只需要一个操作数</li>
+<li>+<ul>
+<li>正号</li>
+<li>对于非Number值,会先转换为Number,应用这个原理和Number()一样</li>
+</ul>
+</li>
+<li>-<ul>
+<li>负号</li>
+<li>对于非Number值,会先转换为Number然后再进行取反</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>自增和自减</strong></p>
+<ul>
+<li><strong>自增 ++</strong><ul>
+<li><strong>使变量在自身的基础上增加1</strong></li>
+<li><strong>a++;</strong> <ul>
+<li><strong>a++ 的值等于原变量的值(自增前的值)</strong></li>
+</ul>
+</li>
+<li><strong>++a;</strong> <ul>
+<li><strong>++a 的值等于原变量自增后的值</strong></li>
+</ul>
+</li>
+<li><strong>无论是a++,还是++a,自增后,原变量的值会立即自增1</strong></li>
+</ul>
+</li>
+<li><strong>自减 –</strong><ul>
+<li><strong>使变量在自身的基础上减1</strong></li>
+<li><strong>a–;</strong><ul>
+<li><strong>a–的值 等于原变量的值(自减前的值)</strong></li>
+</ul>
+</li>
+<li><strong>--a;</strong> <ul>
+<li><strong>--a 的值 等于原变量自减后的值</strong></li>
+</ul>
+</li>
+<li><strong>无论是a–还是 –a 都会立即使原变量的值自减1</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>逻辑运算符</p>
+<ul>
+<li>!<ul>
+<li>非Boolean的情况</li>
+<li><strong>如果对Boolean值进行取反,则会先将其转换为Boolean值再进行取反操作.</strong><ul>
+<li><strong>利用该特点可以将其它类型转换为Boolean</strong></li>
+<li><strong>b = ! ! b;</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&amp;&amp;<ul>
+<li>JS中的”与”是短路的”与”,如果第一个值是false,则不会再判断下一个</li>
+<li>非Boolean的情况 -&gt; 表达式1 &amp;&amp; 表达式2<ul>
+<li>会先将其转换为Boolean,然后再运算,并且返回原值<ul>
+<li>如果表达式1为true,则返回表达式2</li>
+<li>如果表达式1为false,则返回表达式1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>||<ul>
+<li>或</li>
+<li>非Boolean的情况<ul>
+<li>会先将其转换为Boolean,然后再运算,并且返回原值<ul>
+<li>如果表达式1为true,则返回表达式1</li>
+<li>如果表达式1为false,则返回表达式2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>赋值运算符</p>
+<ul>
+<li>=<ul>
+<li>右 赋 左</li>
+</ul>
+</li>
+<li>+=<ul>
+<li>a +=5   等价于 a= a+5</li>
+</ul>
+</li>
+<li>-=<ul>
+<li>a-=5   等价于 a=a-5</li>
+</ul>
+</li>
+<li>*=</li>
+<li>/=</li>
+<li>%=</li>
+</ul>
+</li>
+<li><p>关系运算符</p>
+<ul>
+<li>比较两个值之间的大小关系,如果成立会返回true,不成立则会返回false</li>
+<li>&gt;</li>
+<li>&gt;= <ul>
+<li>大于或等于</li>
+</ul>
+</li>
+<li>&lt;</li>
+<li>&lt;=<ul>
+<li>小于或等于</li>
+</ul>
+</li>
+<li>==<ul>
+<li>使用 == 来比较两个值时,如果值的类型不同,则会自动进行类型转换,将其转换为相同类型,然后再做比较.</li>
+<li>null ==0   -&gt; false</li>
+<li>undefined  == null -&gt;rue</li>
+<li>NaN不和任何值相等包括它本身</li>
+</ul>
+</li>
+<li>!=<ul>
+<li>判断两个值是否不相等</li>
+<li>类似于 ==,也会对变量进行自动的类型转换</li>
+</ul>
+</li>
+<li>===<ul>
+<li>全等</li>
+<li>判断两个值是否全等,<strong>包括数据类型**</strong>,<strong>**不会进行类型转换</strong></li>
+</ul>
+</li>
+<li>!==<ul>
+<li>不全等</li>
+<li>类似于 ===,类型不同直接返回true</li>
+</ul>
+</li>
+<li>非Number的情况<ul>
+<li>会将非Number转化为Number,然后再做比较</li>
+<li>任何值和NaN作比较都是false</li>
+<li><strong>特殊**</strong>:**<ul>
+<li><strong>如果两侧的值都是**</strong>S**<strong>tring**</strong>,<strong><strong>不会将其转换为</strong></strong>N**<strong>umber作比较**</strong>,<strong><strong>而会比较</strong></strong>S**<strong>tring中字符的**</strong>U**<strong>nicode编码</strong></li>
+<li><strong>比较字符编码时是一位一位进行比较</strong><ul>
+<li><strong>两位一样则比较下一位**</strong>,<strong>**利用这个可以来给英文进行排序</strong></li>
+</ul>
+</li>
+<li><strong>比较两个字符串型的数字时**</strong>,<strong>**一定一定要转型</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>条件运算符(三元运算符)</p>
+<ul>
+<li>语法<ul>
+<li>条件表达式 ? 语句1 : 语句2;</li>
+</ul>
+</li>
+<li>流程<ul>
+<li>首先对条件表达式进行求值<ul>
+<li>如果为true,执行语句1,返回执行结果</li>
+<li>如果为false,执行语句2,返回执行结果</li>
+</ul>
+</li>
+<li>嵌套<ul>
+<li>(a&gt;b ?  a :b) &gt; c ?(a&gt;b ?  a :b) :c</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如果 条件表达式 是非Boolean 则会自动转换为Boolean</li>
+</ul>
+</li>
+</ul>
+<p>条件判断语句</p>
+<ul>
+<li>if语句<ul>
+<li>语法1:</li>
+</ul>
+</li>
+</ul>
+<p><strong>if**</strong>(<strong><strong>表达式</strong></strong>)**</p>
+<p><strong>语句**</strong>;**</p>
+<ul>
+<li>表达式为true,则执行if后语句,否则不执行.</li>
+<li>if语句只能控制紧随其后的语句,可以加{}形成代码块</li>
+<li>语法2:<ul>
+<li><strong>if</strong> <strong>(**</strong>表达式**<strong>) {</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>语句**</strong>1;**</p>
+<p><strong>语句**</strong>2;**</p>
+<p><strong>}**</strong>else**<strong>{</strong></p>
+<p><strong>语句**</strong>3;**</p>
+<p><strong>}</strong></p>
+<ul>
+<li>若表达式为true则执行if后语句,否则执行else后的语句</li>
+<li>语法3:<ul>
+<li>if (表达式1) {</li>
+</ul>
+</li>
+</ul>
+<p>语句1</p>
+<p>语句2</p>
+<p>}else if(表达式2){</p>
+<p>语句3</p>
+<p>}else if(表达式3){</p>
+<p>语句4</p>
+<p>}else{</p>
+<p>语句5</p>
+<p>}</p>
+<ul>
+<li>推荐按照从大到小判断</li>
+<li>赋值运算转换Boolean永远为true</li>
+<li>switch<ul>
+<li>语法:<ul>
+<li><strong>switch**</strong>(<strong><strong>条件表达式</strong></strong>){**</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>case</strong> <strong>表达式**</strong>1:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>2:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>3:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>4:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>case</strong> <strong>表达式**</strong>5:**</p>
+<p><strong>语句**</strong>…**</p>
+<p><strong>break**</strong>;**</p>
+<p><strong>default**</strong>:**</p>
+<p><strong>语句</strong></p>
+<p><strong>break**</strong>;**</p>
+<p><strong>}</strong></p>
+<ul>
+<li><strong>执行流程</strong><ul>
+<li><strong>①</strong> <strong>在执行时会依次将case后的表达式的值和switch后的条件表达式进行全等比较**</strong>(===)**</li>
+<li><strong>②</strong> <strong>比较结果为true**</strong>,<strong>**则从当前case处开始执行代码</strong><ul>
+<li><strong>当前case后的代码都会执行</strong></li>
+<li><strong>break</strong><ul>
+<li><strong>使用break可以退出switch语句</strong></li>
+</ul>
+</li>
+<li><strong>de**</strong>fault**<ul>
+<li><strong>如果所有比较结果都为false**</strong>,<strong><strong>则执行default语句</strong></strong>.**</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>③</strong> <strong>比较结果为false**</strong>,<strong>**则继续向下比较</strong></li>
+</ul>
+</li>
+</ul>
+<p>循环语句</p>
+<ul>
+<li>反复执行一段代码多次</li>
+<li><strong>创建一个循环**</strong>,<strong>**往往需要三个步骤</strong><ol>
+<li><strong>初始化一个变量</strong></li>
+<li><strong>在循环中设置一个条件表达式</strong></li>
+<li><strong>定义一个更新表达式**</strong>,<strong>**每次更新初始化变量</strong></li>
+</ol>
+</li>
+<li>while<ul>
+<li>语法:</li>
+</ul>
+</li>
+</ul>
+<p>while(条件表达式){</p>
+<p>语句…</p>
+<p>}</p>
+<ul>
+<li>while语句在执行时,先对条件表达式进行求值判断<ul>
+<li>如果值为true,则执行一次循环体<ul>
+<li>循环体执行完毕后,继续对表达式进行判断<ul>
+<li>如果值位true,则继续执行循环体</li>
+<li>如果判断值为false,则终止循环</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>条件表达式为true时,叫做死循环<ul>
+<li>慎用!</li>
+</ul>
+</li>
+<li>终止循环<ul>
+<li>可以使用break;来终止循环</li>
+</ul>
+</li>
+<li>do….while<ul>
+<li>语法:</li>
+</ul>
+</li>
+</ul>
+<p>do{</p>
+<p>语句…</p>
+<p>}while(条件表达式)</p>
+<ul>
+<li>流程<ul>
+<li>do…while语句在执行时,会先执行循环体<ul>
+<li>循环体执行完毕以后,再对while后的条件表达式进行判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>如果表达式结果为true,则继续执行循环体…..</p>
+<p>如果结果为false,则终止</p>
+<ul>
+<li><p>不同于while,do…while 会先执行一次再判断</p>
+</li>
+<li><p>for</p>
+<ul>
+<li>提供了专门的位置来放三个表达式<ol>
+<li>初始化表达式</li>
+<li>条件表达式</li>
+<li>更新表达式</li>
+</ol>
+</li>
+<li>语法<ul>
+<li>for(初始化表达式;条件表达式;更新表达式){</li>
+<li>语句…</li>
+<li>}</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>执行流程</p>
+<ol>
+<li><strong>执行初始化表达式**</strong>(<strong><strong>只会执行一次</strong></strong>)**</li>
+<li><strong>执行条件表达式**</strong>,<strong>**判断是否执行循环</strong><ol>
+<li><strong>如果为true**</strong>,<strong>**则执行循环语句</strong></li>
+<li><strong>如果为false**</strong>,<strong>**终止循环</strong></li>
+</ol>
+</li>
+<li><strong>执行更新表达式**</strong>,<strong><strong>更新完毕回到步骤</strong></strong>2**</li>
+</ol>
+</li>
+<li><p>for中的三部分都可以省略,也可以写在外面</p>
+<ul>
+<li>for( ;; ){</li>
+</ul>
+</li>
+</ul>
+<p>语句…</p>
+<p>}</p>
+<ul>
+<li>利用字符串来控制在一行<ul>
+<li>var str = ‘’;</li>
+<li>str = str + xx ;</li>
+</ul>
+</li>
+<li>双重for 循环<ul>
+<li>for (外层初始化变量; 外层条件表达式; 外层更新表达式){</li>
+</ul>
+</li>
+</ul>
+<p>for(里层初始化变量; 里层条件表达式; 里层更新表达式){</p>
+<p>//执行语句;</p>
+<p>}</p>
+<p>str = str + ‘\n’;</p>
+<ul>
+<li>}</li>
+<li>可以把里层的循环看作外层循环的语句</li>
+<li>外层循环循环一次,里层的循环执行全部</li>
+</ul>
+<p><strong>第一次更新时间: 2020.7.17 晚上</strong></p>
+<p><strong>第二次更新时间: 2020.7.18 上午</strong></p>
+<p><strong>最后一次更新时间: 2020.7.19 上午</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uncategorized//" class="article-tag-list-link color4">uncategorized</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/17/%E7%AC%94%E8%AE%B0%E6%B8%A9%E4%B9%A0%E4%BA%86%E4%B8%80%E4%B8%8Bjavascript%E4%B8%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-诗歌-别丢掉" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/10/%E8%AF%97%E6%AD%8C-%E5%88%AB%E4%B8%A2%E6%8E%89/">诗歌: 别丢掉</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/10/%E8%AF%97%E6%AD%8C-%E5%88%AB%E4%B8%A2%E6%8E%89/" class="archive-article-date">
+  	<time datetime="2020-07-10T14:39:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[hermit autoplay=”false” mode=”auto” preload=”auto” ]netease_playlist#:5105159092[/hermit]</p>
+<p>心血来潮写下的,明明刚才在玩,突然脑海里浮现了&lt;朗读者&gt;这个节目,好久了,上了大学就没看过了,记得是在高三那年经常看的,语文课还是班会课?可能都有吧.</p>
+<p>然后便打开笔记本打开浏览器去搜”朗读者”这三个字,就是这三个字,然后就看见了.</p>
+<p><strong>别丢掉</strong></p>
+<p><strong>作者:林徽因</strong></p>
+<p><strong>别丢掉</strong></p>
+<p><strong>这一把过往的热情</strong></p>
+<p><strong>现在流水似的</strong></p>
+<p><strong>轻轻</strong></p>
+<p><strong>在幽冷的山泉底</strong></p>
+<p><strong>在黑夜,在松林</strong></p>
+<p><strong>叹息似的渺茫</strong></p>
+<p><strong>你仍要保存着那真</strong></p>
+<p><strong>一样是明月</strong></p>
+<p><strong>一样是隔山灯火</strong></p>
+<p><strong>漫天的星,只有人看不见</strong></p>
+<p><strong>梦似的挂起</strong></p>
+<p><strong>你向黑夜要回</strong></p>
+<p><strong>那一句话 —— 你仍得相信</strong></p>
+<p><strong>山谷中留着</strong></p>
+<p><strong>有那回音!</strong></p>
+<p>是高中吧,那时候怎么说呢,自卑无趣成绩也不算太好,现在也差不多,怎么开始接触到林徽因的也忘了,只记得当初拜托不在学校住宿晚上回家的同学在淘宝上买的,然后过了几天就到了.《别丢掉》这首诗也不知怎么就是被她吸引了.有一阵子早上的早自习不是课本,而是这首诗,上了大学也带着那本书来可惜仅仅是带着.</p>
+<p>有多久了,两年多了吧,今天在朗读者上又看见了她.当初看这首诗的时候是一个滋味,现在再看一遍又是另一个滋味,大一的时候我有一个小粉本上面抄着各种各样的诗词还有歌还有红楼梦里的片段那个时候可能是到了一个新环境灵感比较多吧.但也仅仅是大一,现在的那个小粉本和书一直放在书桌上,一直一直.</p>
+<p>未来肯定是不好过的,不尽人意,也不会想去再看这样的书,毕竟…… 今天是脑海里突然想了起来就写一些.</p>
+<p>只希望未来我真的能够”别丢掉”吧.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/分享//" class="article-tag-list-link color3">分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/10/%E8%AF%97%E6%AD%8C-%E5%88%AB%E4%B8%A2%E6%8E%89/">展开全文 >></a>
         </p>
       
 
@@ -1458,7 +4361,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
     </nav>
   
 
